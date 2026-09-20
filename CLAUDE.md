@@ -1,46 +1,129 @@
 # Digital-Products — Paolo Nieto
 
-Negocio de productos digitales. Separado de Vendí (la app de fotos de producto con IA).
+## Qué es y qué no es
 
-## Decisión tomada: la plataforma es Whop
+Negocio de productos digitales: vender archivos (PDF, plantillas, packs) o acceso pago
+a desconocidos por internet, cobrando en dólares desde Lima.
 
-**Whop es la pasarela de pagos Y la tienda digital. Está decidido, no se discute.**
+**No es Vendí** (la app de fotos de producto con IA para PyMEs). Otro negocio, otras
+cuentas. Acá no entra ni un número de Vendí: ni S/39, ni catálogo, ni Mercado Pago, ni
+costo por crédito, ni su CAC.
 
-No propongas alternativas (Gumroad, Etsy, Stan Store, Hotmart, Payhip, Lemon Squeezy
-ni ninguna otra) salvo que Paolo lo pida con esas palabras. Si aparecen en datos de
-referencia o en el análisis de un video, son **registro de lo que hace otra gente**,
-nunca una sugerencia para él.
-
-### Qué implica Whop para las cuentas
-
-- Comisión: 2.7% + US$0.30. Suma +1.5% si la tarjeta es de fuera de EE. UU.,
-  +1% si hay conversión de moneda, +3% solo si la venta da acceso automático
-  a Discord, Telegram o TradingView.
-- De un PDF de US$27 quedan ~US$25.30 a 25.97.
-- **Retiro: US$23 por transferencia internacional** (o 5% + US$1 en cripto).
-  Consecuencia práctica: no conviene retirar montos chicos. Acumular y retirar
-  de a poco mata el margen — un retiro de US$100 se come el 23%.
-- Al calcular si un anuncio cierra, la línea roja es lo que deja cada venta
-  (~US$25 por un PDF de US$27), no el precio de lista.
-
-## Cómo razonar acá
-
-Este no es Vendí. Las cuentas son distintas:
-
-| | Vendí | Productos digitales |
+| | Vendí | Acá |
 |---|---|---|
-| Costo por unidad vendida | Créditos de IA por imagen | Cero |
+| Costo por unidad vendida | créditos de IA por imagen | cero |
 | Margen bruto | ~40% | ~90% (solo comisión) |
-| Qué limita el crecimiento | Costo de generar | Conseguir tráfico |
+| Qué limita el crecimiento | costo de generar | conseguir tráfico |
 
-No apliques el CAC ni el costo por crédito de Vendí a este negocio.
+## Whop: decidido, no se discute
 
-## Agentes que aplican
+Whop es la pasarela de pagos **y** la tienda. Está cerrado. **Prohibido proponer
+alternativas** (Gumroad, Etsy, Stan Store, Hotmart, Payhip, Lemon Squeezy, Mercado Pago,
+Shopify, ninguna) salvo que Paolo lo pida con esas palabras. Si aparecen en un video o en
+research, son registro de lo que hace otra gente, nunca sugerencia para él.
 
-- **el-panadero** — formatos, precios, canales, análisis de videos. El titular acá.
-- **el-comerciante** — precios, márgenes, Office Hours, "¿vale la pena?".
-- **metapod** — pauta, si se decide meter anuncios.
-- **willy** — research de competencia.
+Números verificados el 19/09/2026 — si pasaron meses, re-chequear antes de usarlos.
+**Este archivo es la única copia de estos números: los agentes lo apuntan, no lo copian.**
 
-No aplican: bujia, frontero, integral, davinci, jonsnow, hawkeye, adsioso
+- Comisión: **2.7% + US$0.30**. +1.5% si la tarjeta es de fuera de EE. UU., +1% si hay
+  conversión de moneda, +3% solo si la venta da acceso automático a Discord, Telegram
+  o TradingView.
+- De un PDF de US$27 quedan **US$25.30 a 25.97**.
+- Retiro: **US$23 por transferencia internacional**, o 5% + US$1 en cripto.
+
+Tres reglas caras:
+
+1. Acumular antes de retirar. Un retiro de US$100 se come el 23%.
+2. No activar acceso automático a Discord/Telegram/TradingView: +3% por nada.
+3. Mirar la tasa de devoluciones: en Whop no cuesta la venta, cuesta la cuenta.
+
+**Toda cuenta se hace sobre lo que DEJA la venta (~US$25), nunca sobre el precio de
+lista.** Eso también es el techo de lo que puede costar conseguir un comprador.
+
+## Prioridad #0: todavía no hay producto
+
+Paolo no eligió nicho, ni comprador, ni formato. Cero productos, cero ventas, cero
+audiencia. **Hasta que eso esté definido no se construye nada**: ni PDF, ni página, ni
+anuncios, ni automatizaciones.
+
+Primero la calle, después el pan: el cuello de botella nunca es hacer el producto (la
+IA lo arma en una tarde), es conseguir compradores. Es la lección de Vendí — el pan
+salió bueno y nadie pasó por la puerta.
+
+Orden obligatorio: **a quién le vendo → por dónde me ve → qué le vendo → a cuánto →
+10 ventas a desconocidos → recién ahí pauta.**
+
+Primer hito, no la meta grande: **10 ventas a desconocidos** en 2 a 4 semanas con S/1,000
+de prueba. La prueba no compra ventas, compra el dato de cuánto cuesta un comprador.
+
+Regla antiautogol: la compra de prueba que hace Paolo para verificar el checkout **se
+reembolsa el mismo día y NO cuenta** en las 10. En Vendí la única venta histórica fue
+probablemente de su propia cuenta y eso contaminó el veredicto durante meses.
+
+## Cómo responderle
+
+- Corto. Titular primero, contexto después. Tablas y números antes que párrafos.
+- **Una recomendación, no un menú.** Si hay un default razonable, decidilo y explicalo
+  en una línea. "Depende" sin decidir no sirve.
+- Español coloquial, **en fácil, con analogías**. Cero emoji, cero relleno.
+- Todo veredicto viene con el número que lo cambiaría de opinión.
+- Nunca inventar ventas, precios ni métricas. Lo que sale de un video de YouTube es
+  "no verificado" hasta ver de dónde sale; los supuestos se marcan inline ("si compran
+  2 de cada 100, supuesto").
+- Plata en dos monedas cuando aplica a Paolo (US$100 a 300 / unos S/350 a 1,100).
+- Si el pedido salta pasos del orden de arriba, decirlo y volver al paso que falta.
+
+## Agentes
+
+| # | Agente | De qué es dueño | Dónde vive |
+|---|---|---|---|
+| 1 | **el-panadero** | nicho, comprador, formato, **el índice y el borrador del producto**, **la entrega del archivo**, forense de videos de YouTube | cuenta |
+| 2 | **el-pregonero** | un solo canal, gancho, guiones, cadencia, DM, registro de origen, y la página de venta en Whop | **este repo** |
+| 3 | **el-comerciante** | el juez y el único que hace cuentas: Office Hours, precio, comisión, retiro, devoluciones, **el setup operativo de Whop** | cuenta |
+| — | **metapod** | pauta paga. Suplente: ni un peso antes de 10 ventas a desconocidos | cuenta |
+
+No aplican acá: willy, bujia, frontero, integral, davinci, jonsnow, hawkeye, adsioso
 (son para construir la app de Vendí).
+
+Desempates, donde dos agentes se pisan:
+
+- Links de YouTube → **el-panadero** (no willy).
+- Hooks y guiones orgánicos → **el-pregonero**. metapod es solo lo pagado.
+- Portada del producto y miniaturas → **el-pregonero** (no davinci: Cuaderno v2 es de Vendí).
+- La página de venta **se escribe, no se programa**: vive en Whop (no frontero).
+- Probar que el checkout cobra y la entrega llega → **el-pregonero**, 4 puntos y se termina
+  ahí (no hawkeye, que es QA de app).
+- Garantía: **el-comerciante decide** los días y la condición, **el-pregonero solo la
+  redacta**. Nunca al revés.
+- Abrir la cuenta de Whop, subir el archivo, política de devolución, W-8BEN →
+  **el-comerciante**.
+
+## Qué se escribe en el repo
+
+Sí: este archivo, notas de nicho y comprador, análisis de videos en
+`references/videos.md`, el registro de publicaciones en `references/publicaciones.md`,
+borradores de producto y de copy, y el agente `el-pregonero` en `.claude/skills/`.
+
+No: el producto final (vive en Whop), claves ni credenciales, capturas con datos
+personales, y nada de Vendí.
+
+Regla: **un número que se compara vive una sola vez en el repo.** Si ya está acá, los
+demás archivos lo apuntan, no lo copian.
+
+## Estado actual — actualizar cuando cambie
+
+_Última actualización: 20/09/2026_
+
+- Nicho: **sin definir**
+- Comprador concreto (nombre y problema en una frase): **sin definir**
+- Formato del producto: **sin definir**
+- Precio: **sin definir**
+- Canal elegido (uno solo): **sin definir**
+- Cuenta de Whop: **sin abrir**
+- Productos publicados: **0** · Ventas a desconocidos: **0 de 10**
+- Cobrado: **US$0** · acumulado sin retirar: **US$0**
+- Pauta: **apagada** (compuerta: 10 ventas)
+- Arsenal: ver `agentes/ediciones-pendientes.md` — **hay 2 arreglos sin hacer en
+  el-panadero que hoy mandan a plataformas prohibidas**
+- Próximo paso: arreglar el arsenal, después comprador (panadero) → UN canal (pregonero)
+  → Office Hours (comerciante)

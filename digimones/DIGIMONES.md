@@ -30,8 +30,10 @@ Los nombres los eligió Paolo. En claude.ai, Diseñante figura como `disenante` 
 
 ## Dónde vive cada cosa
 
-- **El manual de cada digimon** es una skill en la cuenta de claude.ai. Si cambia, se
-  rearma su zip y se vuelve a subir en Settings → Capabilities → Skills.
+- **El manual de cada digimon** vive en este repo, en `.claude/skills/<nombre>/`, y su
+  ficha para lanzarlo en `.claude/agents/<nombre>.md`. En Claude Code, dentro de este
+  repo, ya funcionan. Para usarlos también en claude.ai se sube el zip de cada uno en
+  Settings → Capabilities → Skills; si cambia un manual, se rearma su zip.
 - **Lo que aprenden** vive en esta carpeta, y crece solo por la regla de `CLAUDE.md`:
 
 | Archivo | Qué guarda | Quién lo llena |

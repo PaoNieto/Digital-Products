@@ -91,13 +91,26 @@ probablemente de su propia cuenta y eso contaminó el veredicto durante meses.
 Sí: este archivo, `CONTEXTO.md` (el por qué de cada decisión), notas de nicho y
 comprador, lo que aprenden los digimones en `digimones/` (el equipo en `DIGIMONES.md`,
 videos en `videos.md`, otras fuentes en `fuentes.md`, ofertas de la competencia en
-`mercado.md`, publicaciones en `publicaciones.md`), y borradores de producto y de copy.
+`mercado.md`, publicaciones en `publicaciones.md`), los manuales de los digimones en
+`.claude/skills/` y `.claude/agents/`, y borradores de producto y de copy.
 
 No: el producto final (vive en Whop), claves ni credenciales, capturas con datos
 personales, y nada de Vendí.
 
 Regla: **un número que se compara vive una sola vez en el repo.** Si ya está acá, los
 demás archivos lo apuntan, no lo copian.
+
+## Digimones: el equipo de este repo
+
+Los agentes de este negocio viven acá: el manual de cada uno en `.claude/skills/<nombre>/`
+y su ficha para lanzarlo en `.claude/agents/<nombre>.md`. Quién es quién:
+`digimones/DIGIMONES.md`.
+
+- La sesión principal reparte: lee la tarea, lanza al digimon que toca y no le pregunta
+  a Paolo a quién mandar.
+- En este repo mandan los digimones. Si se activa un minion de Vendí (el-comerciante,
+  metapod, willy, adsioso, frontero, davinci, integral y el resto) o una versión vieja de
+  un digimon que esté en la cuenta de claude.ai, se ignora.
 
 ## Digimones: se nutren solos — OBLIGATORIO en cada sesión
 

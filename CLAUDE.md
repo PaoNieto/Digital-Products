@@ -85,6 +85,23 @@ personales, y nada de Vendí.
 Regla: **un número que se compara vive una sola vez en el repo.** Si ya está acá, los
 demás archivos lo apuntan, no lo copian.
 
+## Digimones: se nutren solos — OBLIGATORIO en cada sesión
+
+`digimones/` es lo que van aprendiendo los agentes de este negocio (hoy, el-panadero).
+Antes de cerrar cada sesión, **sin esperar a que Paolo lo pida**, se guarda ahí lo nuevo
+que haya aparecido sobre productos digitales, y se hace commit:
+
+| Si apareció... | Va a |
+|---|---|
+| Un video analizado | una fila en el tablero y un apartado en `digimones/videos.md` |
+| Un precio visto, un formato o un canal nuevo, con fecha y fuente | `digimones/videos.md` si vino de un video; si no, `digimones/mercado.md` |
+| Un dato de Whop verificado (comisión, retiro, cómo se entrega) | este archivo, sección Whop, no `digimones/` |
+| Nicho, comprador, formato, precio o canal decidido | "Estado actual" de este archivo |
+
+Lo que no entra: nada de Vendí, nichos que todavía no se decidieron, ni números de
+creadores sin marcar "no verificado". Si en la sesión no se aprendió nada nuevo, no se
+toca nada.
+
 ## Estado actual — actualizar cuando cambie
 
 _Última actualización: 21/09/2026_

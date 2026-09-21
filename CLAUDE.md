@@ -91,7 +91,7 @@ _Última actualización: 21/09/2026_
 
 - Nicho: **sin definir**
 - Comprador concreto (nombre y problema en una frase): **sin definir**
-- Formato del producto: **sin definir**
+- Formato del producto: **sin definir** (pensando en PDF, ebook o plantilla de Notion)
 - Precio: **sin definir**
 - Canal elegido (uno solo): **sin definir**
 - Cuenta de Whop: **sin abrir**

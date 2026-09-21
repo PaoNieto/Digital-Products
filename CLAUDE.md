@@ -76,8 +76,8 @@ probablemente de su propia cuenta y eso contaminó el veredicto durante meses.
 ## Qué se escribe en el repo
 
 Sí: este archivo, `CONTEXTO.md` (el por qué de cada decisión), notas de nicho y
-comprador, análisis de videos en `references/videos.md`, el registro de publicaciones
-en `references/publicaciones.md`, y borradores de producto y de copy.
+comprador, análisis de videos en `digimones/videos.md`, el registro de publicaciones
+en `digimones/publicaciones.md`, y borradores de producto y de copy.
 
 No: el producto final (vive en Whop), claves ni credenciales, capturas con datos
 personales, y nada de Vendí.

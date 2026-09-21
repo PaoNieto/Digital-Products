@@ -23,7 +23,7 @@ Shopify, ninguna) salvo que Paolo lo pida con esas palabras. Si aparecen en un v
 research, son registro de lo que hace otra gente, nunca sugerencia para él.
 
 Números verificados el 19/09/2026 — si pasaron meses, re-chequear antes de usarlos.
-**Este archivo es la única copia de estos números: los agentes lo apuntan, no lo copian.**
+**Este archivo es la única copia de estos números: los demás archivos lo apuntan, no lo copian.**
 
 - Comisión: **2.7% + US$0.30**. +1.5% si la tarjeta es de fuera de EE. UU., +1% si hay
   conversión de moneda, +3% solo si la venta da acceso automático a Discord, Telegram
@@ -73,36 +73,11 @@ probablemente de su propia cuenta y eso contaminó el veredicto durante meses.
 - Plata en dos monedas cuando aplica a Paolo (US$100 a 300 / unos S/350 a 1,100).
 - Si el pedido salta pasos del orden de arriba, decirlo y volver al paso que falta.
 
-## Agentes
-
-| # | Agente | De qué es dueño | Dónde vive |
-|---|---|---|---|
-| 1 | **el-panadero** | nicho, comprador, formato, **el índice y el borrador del producto**, **la entrega del archivo**, forense de videos de YouTube | cuenta |
-| 2 | **el-pregonero** | un solo canal, gancho, guiones, cadencia, DM, registro de origen, y la página de venta en Whop | **este repo** |
-| 3 | **el-comerciante** | el juez y el único que hace cuentas: Office Hours, precio, comisión, retiro, devoluciones, **el setup operativo de Whop** | cuenta |
-| — | **metapod** | pauta paga. Suplente: ni un peso antes de 10 ventas a desconocidos | cuenta |
-
-No aplican acá: willy, bujia, frontero, integral, davinci, jonsnow, hawkeye, adsioso
-(son para construir la app de Vendí).
-
-Desempates, donde dos agentes se pisan:
-
-- Links de YouTube → **el-panadero** (no willy).
-- Hooks y guiones orgánicos → **el-pregonero**. metapod es solo lo pagado.
-- Portada del producto y miniaturas → **el-pregonero** (no davinci: Cuaderno v2 es de Vendí).
-- La página de venta **se escribe, no se programa**: vive en Whop (no frontero).
-- Probar que el checkout cobra y la entrega llega → **el-pregonero**, 4 puntos y se termina
-  ahí (no hawkeye, que es QA de app).
-- Garantía: **el-comerciante decide** los días y la condición, **el-pregonero solo la
-  redacta**. Nunca al revés.
-- Abrir la cuenta de Whop, subir el archivo, política de devolución, W-8BEN →
-  **el-comerciante**.
-
 ## Qué se escribe en el repo
 
-Sí: este archivo, notas de nicho y comprador, análisis de videos en
-`references/videos.md`, el registro de publicaciones en `references/publicaciones.md`,
-borradores de producto y de copy, y el agente `el-pregonero` en `.claude/skills/`.
+Sí: este archivo, `CONTEXTO.md` (el por qué de cada decisión), notas de nicho y
+comprador, análisis de videos en `references/videos.md`, el registro de publicaciones
+en `references/publicaciones.md`, y borradores de producto y de copy.
 
 No: el producto final (vive en Whop), claves ni credenciales, capturas con datos
 personales, y nada de Vendí.
@@ -112,7 +87,7 @@ demás archivos lo apuntan, no lo copian.
 
 ## Estado actual — actualizar cuando cambie
 
-_Última actualización: 20/09/2026_
+_Última actualización: 21/09/2026_
 
 - Nicho: **sin definir**
 - Comprador concreto (nombre y problema en una frase): **sin definir**
@@ -123,7 +98,4 @@ _Última actualización: 20/09/2026_
 - Productos publicados: **0** · Ventas a desconocidos: **0 de 10**
 - Cobrado: **US$0** · acumulado sin retirar: **US$0**
 - Pauta: **apagada** (compuerta: 10 ventas)
-- Arsenal: ver `agentes/ediciones-pendientes.md` — **hay 2 arreglos sin hacer en
-  el-panadero que hoy mandan a plataformas prohibidas**
-- Próximo paso: arreglar el arsenal, después comprador (panadero) → UN canal (pregonero)
-  → Office Hours (comerciante)
+- Próximo paso: elegir un comprador con nombre y su problema en una frase

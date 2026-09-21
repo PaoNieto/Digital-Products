@@ -22,16 +22,21 @@ alternativas** (Gumroad, Etsy, Stan Store, Hotmart, Payhip, Lemon Squeezy, Merca
 Shopify, ninguna) salvo que Paolo lo pida con esas palabras. Si aparecen en un video o en
 research, son registro de lo que hace otra gente, nunca sugerencia para él.
 
-Números verificados el 19/09/2026 — si pasaron meses, re-chequear antes de usarlos.
-**Este archivo es la única copia de estos números: los demás archivos lo apuntan, no lo copian.**
+Números verificados en docs.whop.com/fees el 21/09/2026 — si pasaron meses, re-chequear
+antes de usarlos. **Este archivo es la única copia de estos números: los demás archivos
+lo apuntan, no lo copian.**
 
 - Comisión: **2.7% + US$0.30**. +1.5% si la tarjeta es de fuera de EE. UU., +1% si hay
-  conversión de moneda, +3% solo si la venta da acceso automático a Discord, Telegram
-  o TradingView.
-- De un PDF de US$27 quedan **US$25.30 a 25.97**.
-- Retiro (docs.whop.com/fees, 21/09/2026): **US$23 por transferencia internacional
-  (wire)**; **banco local de Perú: "varía por país", sin verificar** — se ve recién al
-  abrir la cuenta y elegir Perú. Cripto: 5% + US$1.
+  conversión de moneda. Además, por venta: **US$0.07 antifraude** y **US$0.03** si el
+  checkout pide verificación 3DS.
+- De un PDF de US$27 quedan **US$25.20 a 25.90**.
+- El recargo de +3% por acceso automático a Discord, Telegram o TradingView **ya no
+  figura** en las tarifas oficiales. Se confirma al abrir la cuenta.
+- Contracargo (el comprador reclama al banco): **US$15 cada uno**, y alerta temprana
+  US$29. La línea de las tarjetas es **1.5%** de pagos con contracargo.
+- Retiro: **US$23 por transferencia internacional (wire)**; **banco local de Perú:
+  "varía por país", sin verificar** — se ve recién al abrir la cuenta y elegir Perú.
+  Cripto: 5% + US$1. Mínimo de retiro: US$10.
 - Whop paga en la moneda del país: a un banco peruano llega **en soles, a una cuenta en
   soles**. Una cuenta en dólares en Perú hace rebotar el retiro.
 
@@ -39,8 +44,11 @@ Tres reglas caras:
 
 1. Acumular antes de retirar. Por wire, un retiro de US$100 se come el 23%. Si el banco
    local de Perú sale barato, esta regla se afloja.
-2. No activar acceso automático a Discord/Telegram/TradingView: +3% por nada.
-3. Mirar la tasa de devoluciones: en Whop no cuesta la venta, cuesta la cuenta.
+2. Mirar los **contracargos**, no las devoluciones. Las devoluciones no cuentan en la
+   tasa; los contracargos sí, y pasado 1.5% Whop retiene plata y cobra más. Devolver
+   rápido sale más barato que un contracargo. Con 10 ventas, uno solo ya es 10%.
+3. Lo que sí hace perder la cuenta es vender algo prohibido: promesas de ingresos o de
+   salud sin sustento, o prometer "acceso de por vida".
 
 **Toda cuenta se hace sobre lo que DEJA la venta (~US$25), nunca sobre el precio de
 lista.** Eso también es el techo de lo que puede costar conseguir un comprador.
@@ -81,8 +89,9 @@ probablemente de su propia cuenta y eso contaminó el veredicto durante meses.
 ## Qué se escribe en el repo
 
 Sí: este archivo, `CONTEXTO.md` (el por qué de cada decisión), notas de nicho y
-comprador, análisis de videos en `digimones/videos.md`, el registro de publicaciones
-en `digimones/publicaciones.md`, y borradores de producto y de copy.
+comprador, lo que aprenden los digimones en `digimones/` (el equipo en `DIGIMONES.md`,
+videos en `videos.md`, otras fuentes en `fuentes.md`, ofertas de la competencia en
+`mercado.md`, publicaciones en `publicaciones.md`), y borradores de producto y de copy.
 
 No: el producto final (vive en Whop), claves ni credenciales, capturas con datos
 personales, y nada de Vendí.
@@ -92,14 +101,16 @@ demás archivos lo apuntan, no lo copian.
 
 ## Digimones: se nutren solos — OBLIGATORIO en cada sesión
 
-`digimones/` es lo que van aprendiendo los agentes de este negocio (hoy, el-panadero).
+`digimones/` es lo que van aprendiendo los agentes de este negocio. Quién es quién está
+en `digimones/DIGIMONES.md`.
 Antes de cerrar cada sesión, **sin esperar a que Paolo lo pida**, se guarda ahí lo nuevo
 que haya aparecido sobre productos digitales, y se hace commit:
 
 | Si apareció... | Va a |
 |---|---|
 | Un video analizado | una fila en el tablero y un apartado en `digimones/videos.md` |
-| Un precio visto, un formato o un canal nuevo, con fecha y fuente | `digimones/videos.md` si vino de un video; si no, `digimones/mercado.md` |
+| Una fuente leída (estudio, docs, artículo, libro, foro), con link y fecha | `digimones/fuentes.md`, en el tema que corresponda |
+| Una oferta, precio o anuncio de la competencia visto, con fecha | `digimones/mercado.md`, una fila por observación |
 | Un dato de Whop verificado (comisión, retiro, cómo se entrega) | este archivo, sección Whop, no `digimones/` |
 | Nicho, comprador, formato, precio o canal decidido | "Estado actual" de este archivo |
 

@@ -34,30 +34,17 @@ en pocas horas por semana.
 
 **Whop es la pasarela de pagos Y la tienda. Cerrado.**
 
-Se decidió comparando comisiones sobre un PDF de US$27:
+Se decidió el 19/09/2026 comparando lo que deja un PDF de US$27: con Whop quedaba más
+que con la alternativa más común (10% de comisión más la tarjeta), y además Whop es la
+tienda, así que no hace falta armar nada aparte.
 
-| Plataforma | Te queda |
-|---|---|
-| **Whop** | **US$25.30 a 25.97** |
-| La alternativa más común (10% + tarjeta) | US$22.72 |
+Las comisiones, lo que deja cada venta, el costo de retirar y las reglas caras viven
+**solo en `CLAUDE.md`**. Se revisaron contra la documentación oficial el 21/09/2026 y
+cambiaron dos cosas: el recargo por Discord o Telegram ya no figura, y lo que pone en
+riesgo la cuenta son los contracargos, no las devoluciones.
 
-Números verificados el 19/09/2026. Si pasaron meses, re-chequear.
-
-- Comisión: 2.7% + US$0.30. +1.5% si la tarjeta es de fuera de EE. UU., +1% si hay
-  conversión de moneda, +3% solo si la venta da acceso automático a Discord, Telegram
-  o TradingView.
-- **Retiro: US$23 por transferencia internacional**, o 5% + US$1 en cripto.
-
-Tres consecuencias caras:
-
-1. **Acumular antes de retirar.** Un retiro de US$100 se come el 23%.
-2. **No activar acceso automático** a Discord/Telegram/TradingView: +3% por nada.
-   Si se vende comunidad, el acceso se entrega a mano.
-3. **Mirar la tasa de devoluciones.** En Whop una devolución no cuesta la comisión:
-   cuesta la cuenta si la tasa se dispara.
-
-Toda cuenta se hace sobre **lo que deja la venta (~US$25)**, nunca sobre el precio de
-lista. Ese número es también el techo de lo que puede costar conseguir un comprador.
+Toda cuenta se hace sobre **lo que deja la venta**, nunca sobre el precio de lista. Ese
+número es también el techo de lo que puede costar conseguir un comprador.
 
 Nota de contexto: Paolo no conocía las plataformas alternativas ni le interesan. Están
 listadas como prohibidas en `CLAUDE.md` para que no vuelvan a aparecer como sugerencia.

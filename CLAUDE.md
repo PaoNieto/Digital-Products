@@ -29,11 +29,16 @@ Números verificados el 19/09/2026 — si pasaron meses, re-chequear antes de us
   conversión de moneda, +3% solo si la venta da acceso automático a Discord, Telegram
   o TradingView.
 - De un PDF de US$27 quedan **US$25.30 a 25.97**.
-- Retiro: **US$23 por transferencia internacional**, o 5% + US$1 en cripto.
+- Retiro (docs.whop.com/fees, 21/09/2026): **US$23 por transferencia internacional
+  (wire)**; **banco local de Perú: "varía por país", sin verificar** — se ve recién al
+  abrir la cuenta y elegir Perú. Cripto: 5% + US$1.
+- Whop paga en la moneda del país: a un banco peruano llega **en soles, a una cuenta en
+  soles**. Una cuenta en dólares en Perú hace rebotar el retiro.
 
 Tres reglas caras:
 
-1. Acumular antes de retirar. Un retiro de US$100 se come el 23%.
+1. Acumular antes de retirar. Por wire, un retiro de US$100 se come el 23%. Si el banco
+   local de Perú sale barato, esta regla se afloja.
 2. No activar acceso automático a Discord/Telegram/TradingView: +3% por nada.
 3. Mirar la tasa de devoluciones: en Whop no cuesta la venta, cuesta la cuenta.
 

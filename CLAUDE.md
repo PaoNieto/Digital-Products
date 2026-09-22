@@ -131,17 +131,34 @@ Lo que no entra: nada de Vendí, nichos que todavía no se decidieron, ni númer
 creadores sin marcar "no verificado". Si en la sesión no se aprendió nada nuevo, no se
 toca nada.
 
+Excepción: en un chat de producto, lo nuevo se anota en `productos/<producto>/NOTAS.md`
+y la torre de control lo pasa a `digimones/` (ver la sección siguiente).
+
+## Un chat por producto
+
+Cuando Paolo trabaja con un chat para cada producto y uno central (la torre de control):
+
+- **Cada chat de producto** lee su `productos/<producto>/BRIEF.md`, escribe **solo** dentro
+  de su carpeta y hace commit **solo** de esa carpeta (`git add productos/<producto>`).
+  Lo que aprende o decide lo anota en `productos/<producto>/NOTAS.md`.
+- **La torre de control** es la única que toca `CLAUDE.md`, `CONTEXTO.md`, `digimones/` y
+  `.claude/`. Lee los `NOTAS.md` y pasa lo que sirva a `digimones/` y a "Estado actual".
+- Así dos chats nunca editan el mismo archivo a la vez.
+
 ## Estado actual — actualizar cuando cambie
 
-_Última actualización: 21/09/2026_
+_Última actualización: 22/09/2026_
 
-- Nicho: **sin definir**
-- Comprador concreto (nombre y problema en una frase): **sin definir**
-- Formato del producto: **sin definir** (pensando en PDF, ebook o plantilla de Notion)
-- Precio: **sin definir**
+- Nicho: **3 en prueba**, sin validar todavía con la Biblioteca de anuncios de Meta:
+  grasa abdominal en la perimenopausia · eyaculación precoz por ansiedad · IA para
+  abogados en Perú. Ecommerce quedó afuera (demanda floja).
+- Comprador concreto: **uno por producto**, en `productos/<producto>/BRIEF.md`.
+- Formato: **PDF** (menopausia y eyaculación precoz) y **plantilla de Notion** (abogados).
+- Precio: **sin definir** (lo propone Mercaneto en cada `NOTAS.md`)
 - Canal elegido (uno solo): **sin definir**
 - Cuenta de Whop: **sin abrir**
 - Productos publicados: **0** · Ventas a desconocidos: **0 de 10**
 - Cobrado: **US$0** · acumulado sin retirar: **US$0**
 - Pauta: **apagada** (compuerta: 10 ventas)
-- Próximo paso: elegir un comprador con nombre y su problema en una frase
+- Próximo paso: los 3 productos al 80% el miércoles 23/09/2026. En paralelo, Paolo revisa
+  la Biblioteca de anuncios (15 minutos por nicho) y abre la cuenta de Whop.

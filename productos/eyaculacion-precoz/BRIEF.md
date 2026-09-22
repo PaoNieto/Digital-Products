@@ -13,7 +13,7 @@ le da vergüenza ir al médico.
 Un plan de entrenamiento de 21 días (respiración, parar y seguir, y ejercicios de Kegel)
 para ganar control cuando la causa son los nervios.
 
-Sin "cura", sin "garantizado", sin medicamentos, sin contenido explícito.
+Sin medicamentos, sin contenido explícito.
 
 ## Formato
 
@@ -45,8 +45,7 @@ La página de venta (Whoper) va después: necesita la cuenta de Whop abierta.
 
 ## Reglas y riesgos — el más difícil de promocionar de los tres
 
-- **Whop:** prohíbe promesas de cura sin evidencia y el contenido para adultos (material
-  explícito). Educación en salud sexual es zona gris: sin lenguaje explícito ni imágenes.
+- **Whop:** prohíbe el contenido para adultos (material explícito). Educación en salud sexual es zona gris: sin lenguaje explícito ni imágenes.
 - **TikTok e Instagram:** le bajan el alcance a lo sexual; puede quedar solo para adultos.
   La demanda está en la **búsqueda de YouTube**.
 - **Anuncios de Meta (más adelante):** solo mayores de 18, foco en salud y no en placer,

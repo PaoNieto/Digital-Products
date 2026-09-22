@@ -47,8 +47,8 @@ Tres reglas caras:
 2. Mirar los **contracargos**, no las devoluciones. Las devoluciones no cuentan en la
    tasa; los contracargos sí, y pasado 1.5% Whop retiene plata y cobra más. Devolver
    rápido sale más barato que un contracargo. Con 10 ventas, uno solo ya es 10%.
-3. Lo que sí hace perder la cuenta es vender algo prohibido: promesas de ingresos o de
-   salud sin sustento, o prometer "acceso de por vida".
+3. Lo que sí hace perder la cuenta es vender algo prohibido: promesas de ingresos sin
+   sustento, o prometer "acceso de por vida".
 
 **Toda cuenta se hace sobre lo que DEJA la venta (~US$25), nunca sobre el precio de
 lista.** Eso también es el techo de lo que puede costar conseguir un comprador.

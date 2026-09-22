@@ -22,7 +22,7 @@ Lo que los digimones aprendieron de fuentes que no son los videos (los videos es
 4. **Una garantía generosa sube más las compras que las devoluciones** (meta-análisis de 21 estudios). [tema 1]
 5. **Cero seguidores no impide vender con videos cortos.** Copiar contenido ajeno mata el alcance; mostrar la cara no hace falta; posicionarse en Google es lento. [tema 3]
 6. **Sin confirmar:** el link en el perfil de TikTok podría pedir 1,000 seguidores. Importa para elegir canal. [tema 3]
-7. **Whop prohíbe prometer "acceso de por vida"** y promesas de ingresos o de salud sin sustento. [tema 4]
+7. **Whop prohíbe prometer "acceso de por vida"** y promesas de ingresos sin sustento. [tema 4]
 8. **Lo hecho solo con IA no tiene copyright:** se puede vender, pero otros pueden copiar esa parte. Lo que protege es el aporte humano. [tema 4]
 9. **Meta y TikTok prohíben prometer plata fácil o resultados seguros,** y las cuentas de salud o finanzas no pueden optimizar por compra. Elegir nicho también es elegir qué tan fácil es anunciarlo. [tema 5]
 10. **Perú:** vender afuera puede no pagar IGV si se cumplen 4 requisitos y hay registro en SUNAT. Confirmar con un contador antes de la primera venta. [tema 4]
@@ -454,7 +454,7 @@ _Investigado el 21/09/2026. Primero docs oficiales (docs.whop.com), después ter
 | Tasa de disputas | Umbral de las redes de tarjetas: 1.5%. Estados: Healthy, At risk, Critical. Los reembolsos NO cuentan en la tasa de disputas [20][22] | .../payment-health |
 | Tasa alta: qué pasa | Controles: reserva, auto-refund, fee por alerta, "high-risk processing fee", demora de fondos, pausa de BNPL, 3DS obligatorio y bloqueo de una marca de tarjeta. Se levantan solos cuando baja la tasa [21]. "Whop doesn't suspend accounts because customers file disputes" [23]. También pone reservas a cuentas nuevas o con muchos casos sin resolver en el Resolution Center [10] | .../account-health/controls |
 | Suspensión | Motivos: sanciones, fraude, contenido, negocio prohibido o violación de ToS. El saldo queda retenido 120 días y se apela dentro de 30 días [23] | .../account-suspensions |
-| Prohibidos | Incluye: suplementos o salud con claims no sustentados o presentados como "cura", servicios financieros no registrados, prop firms, contenido pirateado o que infringe PI, servicios legales, venta de cripto o NFT (lo educativo puede pasar) y ofertas de **"lifetime access"**: hay que declarar cuánto dura el acceso [24] | .../what-is-not-allowed-on-whop |
+| Prohibidos | Incluye: servicios financieros no registrados, prop firms, contenido pirateado o que infringe PI, servicios legales, venta de cripto o NFT (lo educativo puede pasar) y ofertas de **"lifetime access"**: hay que declarar cuánto dura el acceso [24] | .../what-is-not-allowed-on-whop |
 | Claims de ingresos | Tienen que ser exactos, sustentados y no engañosos. Los testimonios deben ser realistas y avisar si el resultado es atípico, según las guías de la FTC. Una promesa de ingresos irreal es una violación "corregible" [24] | idem |
 | Revisiones de Whop | Revisa al crear la cuenta, al listar en el marketplace, en el primer pago, en el primer payout y al pasar umbrales de ingreso recurrente. Si no se puede probar qué se vende, congela los payouts [24] | idem |
 | Discover (marketplace) | Elegir categoría en la store page "ayuda a que te descubran" [16]. Al listar, cualquier afiliado de la red puede promocionarte con 30% por defecto [28]. Discover cambia quién maneja los impuestos [9]. Comisión de Discover y ranking: no lo dicen los docs | .../affiliates/setup-global |

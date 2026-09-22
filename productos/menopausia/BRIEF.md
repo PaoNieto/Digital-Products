@@ -13,8 +13,6 @@ crece la panza y no entiende por qué.
 Entender por qué cambia el abdomen en la perimenopausia y seguir un plan simple de 4
 semanas: qué comer, cómo moverse sin saltos, cómo dormir mejor y cómo bajar el estrés.
 
-Sin plazos de resultado ("bajá X cm en 15 días"), sin "cura", sin antes y después.
-
 ## Formato
 
 - PDF de 15 a 25 páginas, que se lea bien en el celular.
@@ -45,7 +43,6 @@ La página de venta (Whoper) va después: necesita la cuenta de Whop abierta.
 
 ## Reglas y riesgos
 
-- Whop prohíbe productos presentados como cura o tratamiento sin evidencia.
 - Nada de suplementos ni medicamentos.
 - Aviso visible: no reemplaza a un médico; si hay dudas de salud, consultar.
 - Anuncios de Meta (más adelante): solo mayores de 18, sin antes y después, sin plazos,

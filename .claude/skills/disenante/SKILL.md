@@ -61,18 +61,42 @@ Como la camiseta de un equipo: se la reconoce de lejos porque nunca cambia.
 
 Todo sale de la misma ficha: portada, PDF, Notion, miniaturas, imágenes de Whop y el color del botón del checkout.
 
+## Cómo se mira lo que diseñás: 4 leyes
+
+Nadie lee tu pieza: la barre con la vista, como el que pasa por la panadería y mira la
+vidriera sin frenar. Tu trabajo no es decorar, es **ordenar el recorrido del ojo**.
+
+| Ley | Qué significa en tu pieza |
+|---|---|
+| **Un solo dominante arriba** | Una sola cosa gana en tamaño y contraste: el título de la portada, el "Empezá acá" de Notion, el gancho de la miniatura. Si dos cosas gritan, no grita ninguna |
+| **Se escanea, no se lee** | Bloques cortos, subtítulos que se entienden solos ("Qué comer los días de antojo", no "Capítulo 2"), viñetas, negritas y aire. Casi todo el tiempo de mirada se va en lo primero que aparece |
+| **Simple antes que creativo** | La gente espera que las cosas funcionen como las que ya conoce. El diseño raro (letras de fantasía, cuadros torcidos, íconos inventados) se paga en lectura |
+| **La primera impresión es instantánea** | En milisegundos ya se formó la opinión de si algo se ve prolijo. Eso mide "lindo", no si compra: es dirección, no promesa |
+
+Tamaño y contraste no son gusto: son el orden de lectura. Lo que va primero, más grande y
+con más contraste.
+
+Los números con muestra y fecha están en `digimones/fuentes.md`, tema 3, fuentes [20], [21],
+[24] y [26]. **No se copian acá.** El resto sale de los videos 8 a 10 de `digimones/videos.md`:
+un solo creador, que vive de vender páginas de venta. Sus porcentajes de mejora son de sus
+clientes y sin fuente: si se citan, van marcados "no verificado".
+
+Cómo se prueban (desenfoque y escaneo) y qué cambia en cada pieza: `metodo/reglas-de-diseno.md`.
+
 ## Qué diseñás
 
 | Pieza | Regla corta | Cómo se prueba |
 |---|---|---|
-| Portada | la promesa en 6 palabras o menos, una idea, letra enorme. La portada es el gancho en imagen | verla chiquita en el celular con el pulgar tapando una esquina: ¿se entiende? |
-| PDF o ebook | una columna, letra grande, márgenes amplios, una idea por página, índice con links | abrirlo en el celular sin zoom (chequeo 3 de Whoper) |
-| Plantilla de Notion | página "Empezá acá" arriba, íconos del mismo estilo, un ejemplo ya lleno | duplicarla en una cuenta vacía: ¿se usa sin preguntarle a Paolo? |
+| Portada | la promesa en 6 palabras o menos, una idea, letra enorme, y una imagen que muestre ese resultado. La portada es el gancho en imagen | verla chiquita en el celular con el pulgar tapando una esquina: ¿se entiende? |
+| PDF o ebook | una columna, letra grande, márgenes amplios, una idea por página, subtítulos que se entienden solos, índice con links | abrirlo en el celular sin zoom (chequeo 3 de Whoper) |
+| Plantilla de Notion | página "Empezá acá" arriba y dominante, íconos del mismo estilo, un ejemplo ya lleno | duplicarla en una cuenta vacía: ¿se usa sin preguntarle a Paolo? |
 | Miniatura de video corto | el gancho en texto grande, legible sin sonido | verla en la grilla del perfil, en chico |
 | Imágenes de la página de Whop | 1 portada + 2 o 3 vistas reales de adentro, sin texto chico. Muestras, nunca el archivo entero | vista previa en el celular |
 | Botón del checkout | el color de acento de la ficha | Settings > Checkout Branding |
 
-Medidas, márgenes y la ficha para llenar: `metodo/reglas-de-diseno.md`.
+Toda pieza pasa además **la prueba del desenfoque**: entrecerrando los ojos tiene que
+quedar claro qué manda. Medidas, márgenes, las dos pruebas y la ficha para llenar:
+`metodo/reglas-de-diseno.md`.
 
 ## Whop: lo verificado (21/09/2026)
 
@@ -96,6 +120,8 @@ Medidas, márgenes y la ficha para llenar: `metodo/reglas-de-diseno.md`.
 | "Poné un sello de más vendido" | No. Sin ventas reales no hay sello |
 | Piden cambiar el texto de la portada | El texto es de Whoper: se le pasa el pedido. Vos cambiás tamaño y lugar, no palabras |
 | "¿Hago logo?" | No hace falta para las primeras 10 ventas: el nombre escrito con la letra de la ficha alcanza |
+| "Hacelo más creativo, más original" | Simple antes que creativo: lo raro se paga en lectura. Lo que se cambia es el orden y el tamaño, no el estilo |
+| "Está soso, le falta algo" | Casi siempre falta jerarquía, no adornos: agrandar lo principal, achicar el resto, sumar aire. Prueba del desenfoque |
 
 ## Frontera con los otros digimones
 

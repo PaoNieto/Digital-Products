@@ -48,7 +48,9 @@ Acá se cae la cuenta que paga los anuncios. Es responsabilidad directa de Bilbi
 - Anuncios que rompen las normas de publicidad. **Cada copy y cada creativo pasa la lista de chequeo de abajo
   antes de publicarse.**
 - Página que no cumple lo que dice el anuncio, que redirige, o que promete cosas raras. La página de Whop la
-  arma Whoper: si el anuncio promete algo, la página lo tiene que cumplir.
+  arma Whoper: si el anuncio promete algo, la página lo tiene que cumplir. Al revés no es política, pero
+  cuesta igual de caro: si el titular de la página no repite la promesa del anuncio con las mismas palabras,
+  el clic se cae ahí (el orden para diagnosticarlo está en el `SKILL.md`; el molde, en `creativos.md`).
 - Muchas quejas o comentarios negativos sobre los anuncios.
 - Muchos anuncios rechazados en poco tiempo: la cuenta queda marcada como de baja calidad. Por eso se arranca
   con pocos anuncios limpios, no con 30 al borde.

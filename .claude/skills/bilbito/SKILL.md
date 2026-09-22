@@ -52,6 +52,7 @@ Para la pauta de Vendí está Metapod. Acá no entra ni un número de Vendí: ni
 | Mecánica completa de Santi Bilbao: testeo, corte, escalado, surfeo | `metodo/playbook-bilbao.md` |
 | Anti-baneo en 3 niveles, políticas para infoproductos, chequeo antes de publicar | `metodo/anti-baneo.md` |
 | Creativos: anatomía de guión, prompts, espionaje | `metodo/creativos.md` |
+| De dónde salen el molde de titular y la cuenta de cuántas ventas pide comparar dos versiones | `digimones/videos.md` (videos 8 a 10) y `digimones/fuentes.md` (tema 3) del repo |
 
 Los números de Whop y lo que deja la venta se leen del `CLAUDE.md`; acá no se copian. Sin el repo, decilo y no los recites de memoria.
 
@@ -115,8 +116,26 @@ El embudo es una manguera: buscá dónde se tranca el agua. Arreglar donde no es
 1. **De arriba hacia abajo.** Si el anuncio no engancha, nada de lo de abajo importa.
 2. **Un cambio por vez.** Cambiás una cosa y comparás: si mejoró, se queda; si empeoró, se vuelve atrás.
 3. **Tiempo mínimo.** Un anuncio nuevo se juzga entre las 12 y las 72 h, y recién cuando gastó cerca del techo por comprador. Un cambio de página, precio u oferta: mínimo 3 días. Un día no es referencia.
-4. **El panel de Meta exagera las compras.** La fuente dura son las ventas que registra Whop.
-5. **Ante la primera falla no se cambia de nicho.** Se diagnostica.
+4. **Con poco volumen no se compara una versión contra otra.** Ni dos páginas ni dos creativos: hacen falta decenas de ventas en **cada** versión para que la diferencia sea real (la cuenta está en `digimones/fuentes.md`, tema 3, fuente 23). Con 10 ventas en total, "este convierte mejor" es corazonada. Se mide contra el techo por comprador —vendió o no vendió bajo el techo— y se corta por la regla de corte, nunca comparando entre sí. Mientras no haya volumen, la página no se testea: se rehace entera o se deja quieta.
+5. **El panel de Meta exagera las compras.** La fuente dura son las ventas que registra Whop.
+6. **Ante la primera falla no se cambia de nicho.** Se diagnostica.
+
+### Mucho clic y cero venta: se mira la página antes de tocar el presupuesto
+
+El anuncio solo compra el clic; la página es la que vende. Con el CTR y la carga en orden,
+subir o bajar plata no arregla nada: el freno está adentro. Antes de tocar el presupuesto se
+miran estas cuatro, en orden. El arreglo lo hace Whoper, no vos.
+
+| # | Qué mirás en la página de Whop | Si falla |
+|---|---|---|
+| 1 | ¿El titular de arriba repite la promesa del anuncio, con las mismas palabras? | Es lo primero que se arregla. Parece problema de pauta y es de mensaje |
+| 2 | ¿El resultado, para quién es y el plazo se leen sin bajar? | El que entró no sabe si es para él y se va |
+| 3 | ¿La garantía y la prueba están pegadas al botón de compra? | El miedo se queda sin respuesta justo donde se decide |
+| 4 | ¿Algo de eso está escondido en un carrusel o en un desplegable, mirado en el celular? | En el celular, escondido es lo mismo que no estar |
+
+Recién con las cuatro en orden el problema pasa a ser la oferta o el precio (el-panadero y
+Mercaneto). De dónde sale: videos 8 a 10 de `digimones/videos.md`. Es **una sola fuente y
+vende páginas de venta**: se toma el orden de chequeo, nunca sus porcentajes de mejora.
 
 ## El primer test (solo con 10 de 10)
 
@@ -187,6 +206,8 @@ Solo anuncios pagos: el contenido orgánico es de el-panadero y las tapas, de Di
 | Desafío directo o vergüenza social | "¿Vas a seguir [X] toda la vida?" | Roza atributos personales: nunca en salud |
 | Multiplicador de ingresos | "de 300 a 3 mil al mes" | **Prohibido** |
 
+- **El gancho y el titular de la página dicen lo mismo.** La promesa del anuncio tiene que aparecer arriba de la página de Whop **con las mismas palabras**, no con palabras parecidas. Es el cartel de la vidriera y el cartel de adentro: si no coinciden, el que entró se da media vuelta, y en el panel eso se lee como pauta cara cuando es problema de mensaje. Antes de publicar, el gancho se lee seguido del titular exacto que escribió Whoper; si hace ruido, no sale. También es riesgo de cuenta (`metodo/anti-baneo.md`, nivel 2).
+- **Molde de titular que sirve igual de gancho:** resultado concreto + para quién + la cadena de "para que…" hasta el beneficio final. El plazo va adentro solo si es real. Detalle y ejemplos en `metodo/creativos.md`.
 - El re-hook desarma la culpa ("y no es porque seas mala [X]"); el método lleva nombre propio; se diferencia por negación ("no es X, no es Y: es Z").
 - Imagen: problema → solución → llamado. Video: engancha en los primeros 3 segundos. Carruseles rinden mal. Más de un creativo por ángulo, y el segundo ataca otra capa sin repetir lo visual del primero.
 - Generar imágenes o videos con herramientas que gastan créditos: solo con el OK de Paolo. Prompts, anatomía completa y filtros de espionaje: `metodo/creativos.md`.

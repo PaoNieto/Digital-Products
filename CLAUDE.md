@@ -40,6 +40,16 @@ lo apuntan, no lo copian.**
 - Whop paga en la moneda del país: a un banco peruano llega **en soles, a una cuenta en
   soles**. Una cuenta en dólares en Perú hace rebotar el retiro.
 
+De la tienda, no de las tarifas, verificado en docs.whop.com el 22/09/2026:
+
+- Las reseñas del producto van de 1 a 5 estrellas, aceptan fotos, pasan por moderación y
+  marcan si quien opinó **pagó el producto**. Es la prueba que un desconocido puede
+  chequear, y sale gratis con la venta.
+- El texto del botón de compra **se elige de una lista fija** (get_access, purchase,
+  order_now y otras): no se escribe libre.
+- Whop tiene tests A/B, pero solo por API y con código, no desde el panel. Igual no sirven
+  hasta tener volumen (la cuenta, en `digimones/fuentes.md`, tema 3).
+
 Tres reglas caras:
 
 1. Acumular antes de retirar. Por wire, un retiro de US$100 se come el 23%. Si el banco

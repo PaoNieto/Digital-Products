@@ -35,6 +35,7 @@ Repo: `C:\Users\Usuario\Digital Products\Digital-Products`.
 | La página publicada | Whop. Es la verdad; el borrador la sigue |
 | Armado en Whop paso a paso, con links a la documentación | `metodo/whop-paso-a-paso.md` de esta skill |
 | Plantilla de los 7 bloques, garantía, FAQ y mensaje de bienvenida | `metodo/plantilla-pagina.md` de esta skill |
+| De dónde sale la receta de la página, y qué de eso es humo | `digimones/videos.md` (videos 8 a 10) y `digimones/fuentes.md` (tema 3) |
 
 - Un dato nuevo de Whop verificado (cómo se entrega, qué cobra) va a la sección Whop de `CLAUDE.md`, no a `digimones/`. Antes de cerrar la sesión se guarda solo, sin que Paolo lo pida.
 - Sin el repo (claude.ai): entregá el borrador como `.md` para que Paolo lo pase a Claude Code.
@@ -51,24 +52,57 @@ Corto. Titular primero. Cuando Paolo pide la página, se entrega **la página es
 
 | # | Bloque | Qué dice | Dónde va en Whop |
 |---|---|---|---|
-| 1 | Promesa | el resultado, para quién, en cuánto tiempo | nombre y titular (80 caracteres cada uno) |
+| 1 | Promesa | el resultado y para quién, en cuánto tiempo; el subtítulo dice **cómo** | nombre y titular (80 caracteres cada uno) + primera línea de la descripción |
 | 2 | Para quién sí y para quién no | dos listas cortas; lo que se excluye da certeza | descripción |
-| 3 | Qué se lleva | contado como resultado, no como índice | descripción |
-| 4 | Prueba | solo lo real; si no hay, se dice | descripción + galería (imágenes de Diseñante) |
-| 5 | Garantía | redactada acá; días y condición de Mercaneto | descripción + política de devolución en Whop |
+| 3 | Qué se lleva y cómo funciona | contado como resultado, no como índice, + 3 pasos de cómo se usa | descripción |
+| 4 | Prueba | solo lo real y chequeable; si no hay compradores, se muestra el producto por dentro | descripción + galería (imágenes de Diseñante) |
+| 5 | Garantía | redactada acá; días y condición de Mercaneto; va **pegada al botón** | descripción + política de devolución en Whop |
 | 6 | Precio y botón | el precio de Mercaneto; un solo plan visible | el plan y su link de pago |
 | 7 | Dudas | 4 o 5 objeciones, textuales del canal | descripción, al final |
 
-**La promesa es el gancho.** La misma frase que frena el scroll en el video es el titular de la página. Si se separan, se fuga la venta: se arregla la página, no el gancho. Test de un segundo: qué resuelve, para quién, en qué es distinto.
+**El titular dice el resultado y para quién, nunca el nombre del producto.** Se arma encadenando "para que" hasta el resultado final: modelos de escritos, para que no arranques de cero, **para que salgas del estudio a las 6 y no a las 9**. El último eslabón es el titular; el subtítulo cuenta el cómo y por qué es fácil ("en 10 minutos", "sin aprender nada nuevo").
+
+**La promesa es el gancho.** La misma frase que frena el scroll en el video es el titular de la página. Si se separan, se fuga la venta: se arregla la página, no el gancho.
+
+### Los primeros 5 segundos
+
+Lo que se ve sin bajar se lleva casi todo el trabajo. Ese pedazo va en este orden y sin nada más en el medio: **titular → subtítulo → una prueba → botón → garantía pegada abajo del botón → imagen del resultado** (la imagen la hace Diseñante). Si en 5 segundos no se entiende qué gana el que lee, no hay página.
 
 Disciplina de lectura (la de una buena pantalla, aplicada a texto):
 
 - **Una sola puerta:** un plan visible, un botón, cero links hacia afuera.
 - **Primero el celular:** se escribe y se revisa en el teléfono. Frases cortas, párrafos de 2 líneas, listas.
+- **Se escanea, no se lee:** cada subtítulo dice la cosa ("Salís del estudio a las 6"), no la etiqueta ("Beneficios"). Viñetas y negritas donde está lo que importa.
 - **La consecuencia, no la función:** "en 10 minutos tenés tu primer menú", no "incluye 40 páginas".
+- **Simple antes que creativo:** el orden de siempre, con las palabras de siempre. La página tiene que funcionar como las que el comprador ya conoce.
+- **Nada escondido:** la prueba y la garantía se ven en el celular sin abrir ni deslizar nada.
 - **La respuesta incómoda se dice antes de pagar y en dos lugares:** la garantía en la página y en la política de devolución de Whop, con los mismos días. El FAQ sobre devoluciones responde sobre devoluciones.
 
-## Whop: lo verificado (21/09/2026)
+De dónde sale esta receta: videos 8, 9 y 10 de `digimones/videos.md`. Es **un solo creador**, y vende páginas de venta: sus "+220%" y "+282%" son de sus clientes y sin fuente. Si se nombran, van marcados "no verificado"; como promesa no se usan nunca.
+
+### Prueba: que se pueda chequear
+
+Prueba floja es la que nadie puede comprobar. Sirve la que tiene de dónde agarrarse: nombre de quien lo dijo, de dónde salió, una captura.
+
+**Sin compradores todavía la prueba es el producto por dentro:** capturas de dos o tres páginas reales, el índice, la plantilla abierta. Se dice que es nuevo y el peso lo lleva la garantía.
+
+A los primeros compradores se les pide el testimonio con 5 preguntas guiadas, no con un "¿qué te pareció?" (sale un "muy bueno" que no vende):
+
+1. ¿Cómo lo encontraste?
+2. ¿Qué problema querías resolver?
+3. ¿Cómo te ayudó a resolverlo?
+4. ¿Qué querías lograr?
+5. ¿Qué resultado buscabas?
+
+Se publica textual y con permiso. En temas donde nadie da la cara, va sin nombre y se dice que es así.
+
+### Con pocas ventas no se testea
+
+No se ponen dos versiones de la página a competir. La cuenta está en `digimones/fuentes.md`, tema 3, fuente [23]: hacen falta decenas de ventas **en cada versión** solo para ver una diferencia grande. Con 10 ventas eso no es un test, es ruido.
+
+Consecuencia práctica: **la página se escribe bien de entrada**, y si se cambia, se cambia en grande — titular y prueba nuevos de una — nunca el color de un botón. Lo que sí se mira mientras tanto es el link de seguimiento: cuántos entraron y cuántos compraron.
+
+## Whop: lo verificado (21/09/2026; botón y reseñas, 22/09/2026)
 
 | Paso | Dónde | Doc |
 |---|---|---|
@@ -77,6 +111,8 @@ Disciplina de lectura (la de una buena pantalla, aplicada a texto):
 | Entrega: app **Files** (plantillas, ebooks, archivos) dentro del producto | Add app > Files | https://docs.whop.com/whop-apps/consumer-apps |
 | Bienvenida automática (mensaje + mail) que diga dónde está el archivo | Marketing > Support chats > User joined | https://docs.whop.com/manage-your-business/growth-marketing/automated-messaging |
 | Política de devolución y aceptar términos antes de pagar | Settings > Legal | https://docs.whop.com/manage-your-business/manage-business/legal-documents |
+| Texto del botón: se elige de una lista fija, no se escribe | en el producto (`custom_cta`) | https://docs.whop.com/api-reference/products/product |
+| Reseñas: Whop marca si quien opina pagó el producto | Reviews | https://docs.whop.com/api-reference/reviews/review |
 | Un link de seguimiento por canal | Marketing > Tracking links | https://docs.whop.com/manage-your-business/growth-marketing/tracking-links |
 | Ver lo que ve el comprador | Preview as | https://docs.whop.com/manage-your-business/products/manage-products |
 
@@ -106,8 +142,10 @@ Se prueba con el producto oculto de la tienda; se muestra recién con los 4 en v
 | Garantía | Se redacta con los días de Mercaneto; la misma frase en la página y en la política de Whop |
 | Objeciones que aparecen en mensajes o comentarios | Van textuales al bloque 7 |
 | Piden una landing, un sitio o un checkout propio | No: la página vive en Whop y se escribe |
-| Piden testimonios "de ejemplo" o un precio tachado | No. Sin prueba real, garantía más fuerte |
-| "¿Por qué no vende?" con clics y sin compras | El problema está en la página: se cambian promesa y prueba (bloques 1 y 4), de a una cosa |
+| Piden testimonios "de ejemplo" o un precio tachado | No. Sin prueba real, se muestra el producto por dentro y la garantía más fuerte |
+| "¿Por qué no vende?" con clics y sin compras | El problema está en lo de arriba: titular y prueba nuevos, de una |
+| "Probemos dos versiones de la página" | No con este volumen: ver "Con pocas ventas no se testea". Se rehace en grande |
+| Ya hay compradores | Pedirles el testimonio con las 5 preguntas guiadas, antes de que se enfríe |
 
 ## Frontera con los otros digimones
 

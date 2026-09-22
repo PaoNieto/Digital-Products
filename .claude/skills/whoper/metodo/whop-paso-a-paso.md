@@ -1,7 +1,7 @@
 # Armar la vidriera en Whop — paso a paso verificado
 
-Para Whoper. Todo lo de acá sale de la documentación de Whop, revisada el 21/09/2026,
-con el link de cada paso. Los nombres de los menús cambian: si algo no está donde dice,
+Para Whoper. Todo lo de acá sale de la documentación de Whop, revisada el 21/09/2026
+(reseñas, texto del botón y tests A/B: 22/09/2026), con el link de cada paso. Los nombres de los menús cambian: si algo no está donde dice,
 se busca en https://docs.whop.com y se corrige este archivo, no se adivina.
 
 Lo que es plata (comisiones, retiro, lo que deja cada venta) **no está acá**: vive en
@@ -26,9 +26,26 @@ Dashboard > Products > Create product.
 | Precio | pago único (one-time), en USD; el número lo fija Mercaneto | 6 |
 | Apps | Files (ver punto 3) | — |
 | Página del producto | foto o video + descripción | 2, 3, 4, 5, 7 |
+| Texto del botón (`custom_cta`) | se elige de una lista fija, no se escribe | 6 |
 
 Whop aclara que una página de producto detallada le ayuda a entender qué se vende.
 Doc: https://docs.whop.com/manage-your-business/products/create-product
+
+### El texto del botón: la lista fija (verificado 22/09/2026)
+
+No se redacta: se elige uno de estos 13. `get_access`, `join`, `order_now`, `shop_now`,
+`call_now`, `donate_now`, `contact_us`, `sign_up`, `subscribe`, `purchase`, `get_offer`,
+`apply_now`, `complete_order`.
+
+Default nuestro para un archivo de pago único: **`get_access`** (dice lo que pasa: se
+entra a lo que se compró). `purchase` y `order_now` son los otros dos que encajan;
+`subscribe` y `join` mienten sobre un pago único. Como el texto no se puede escribir, lo
+que sí es de Whoper es la línea que va **justo arriba y justo abajo** del botón: el precio
+arriba, la garantía abajo.
+
+Hay un `custom_cta_url` que manda el botón afuera del checkout: **no se toca.** Una sola
+puerta.
+Doc: https://docs.whop.com/api-reference/products/product
 
 ### Opciones avanzadas: qué se toca y qué no
 
@@ -98,6 +115,28 @@ El look del checkout (color de fondo, color de botón, letra, bordes) lo elige D
 Settings > Checkout Branding.
 Doc: https://docs.whop.com/manage-your-business/payment-processing/checkout-branding
 
+## 8. Las reseñas (verificado 22/09/2026)
+
+La mejor prueba de la página no la escribe Whoper: la deja el comprador adentro de Whop.
+Lo que dice la documentación de la reseña:
+
+| Campo | Qué guarda | Para qué sirve |
+|---|---|---|
+| `paid_for_product` | si quien opina **pagó** el producto (sí, no, o se desconoce) | es la prueba chequeable: no es un comentario suelto de internet |
+| `attachments` | archivos y media adjuntos (imagen, video, audio) | el comprador puede sumar una foto o un video, que convence más que el texto |
+| `stars` | de 1 a 5 | — |
+| `status` | `pending`, `published`, `removed`: pasa por moderación | una reseña no aparece al instante; no se promete "mirá las reseñas" el día 1 |
+
+Doc: https://docs.whop.com/api-reference/reviews/review
+
+Consecuencias para la página:
+
+- Las primeras reseñas se piden con las 5 preguntas guiadas de `plantilla-pagina.md`.
+- Mientras haya pocas, se eligen las mejores y **no se muestra el conteo**; lo que llena
+  el bloque 4 es el producto por dentro.
+- Nunca se escribe una reseña desde otra cuenta. La compra de prueba de Paolo se
+  reembolsa el mismo día y no deja reseña.
+
 ## Qué pasa después de pagar (documentado)
 
 | Momento | Qué pasa | Doc |
@@ -114,6 +153,13 @@ Doc: https://docs.whop.com/manage-your-business/payment-processing/checkout-bran
   la página se escribe en Whop.
 - Prueba gratis, cuotas, lista de espera, stock: no para un archivo de entrada.
 - Acceso automático a Discord, Telegram o TradingView.
+- **Los tests A/B de Whop** (Experiments, verificado 22/09/2026): existen, pero son una
+  API para programadores — se crea el experimento, se le pone un `flag_key` y se lee desde
+  el código. No hay botón en el panel, y con 10 ventas no alcanza para que un test diga
+  nada (la cuenta, en `digimones/fuentes.md`, tema 3, fuente [23]). Se anota para cuando
+  haya volumen; hoy la página se rehace en grande, no se testea.
+  Doc: https://docs.whop.com/api-reference/beta/experiments/create-experiment
+- `custom_cta_url`: manda el botón fuera del checkout. Una sola puerta.
 
 ## Con el conector de Whop (opcional)
 

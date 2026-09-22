@@ -13,8 +13,6 @@ le da vergüenza ir al médico.
 Un plan de entrenamiento de 21 días (respiración, parar y seguir, y ejercicios de Kegel)
 para ganar control cuando la causa son los nervios.
 
-Sin medicamentos, sin contenido explícito.
-
 ## Formato
 
 - PDF de 15 a 25 páginas, que se lea bien en el celular.
@@ -40,23 +38,18 @@ La página de venta (Whoper) va después: necesita la cuenta de Whop abierta.
   durar más*.
 - **Ya se vende (El Gato):** más de 10 ebooks en español sobre el tema, de vendedores
   distintos. Precios en `digimones/mercado.md`.
-- **Quién domina:** sexólogas, clínicas y marcas. El ángulo es "entrenamiento para los
-  nervios", no "tratamiento".
+- **Quién domina:** sexólogas, clínicas y marcas. El ángulo: "entrenamiento para los
+  nervios".
 
-## Reglas y riesgos — el más difícil de promocionar de los tres
+## Riesgos — el más difícil de promocionar de los tres
 
-- **Whop:** prohíbe el contenido para adultos (material explícito). Educación en salud sexual es zona gris: sin lenguaje explícito ni imágenes.
 - **TikTok e Instagram:** le bajan el alcance a lo sexual; puede quedar solo para adultos.
   La demanda está en la **búsqueda de YouTube**.
 - **Anuncios de Meta (más adelante):** solo mayores de 18, foco en salud y no en placer,
   y prohibido señalar a quien mira ("¿terminás rápido?").
-- Aviso visible: si pasa siempre o hay dolor, consultar a un profesional; hay causas
-  médicas que un plan no resuelve.
 - Riesgo: **alto**. Si uno de los tres se cae, es este.
 
 ## Pendiente antes de publicar
 
-- Paolo revisa la Biblioteca de anuncios de Meta con "eyaculación precoz": 2 o más
-  anunciantes con 7 o más anuncios activos y alguno con 3 semanas o más corriendo.
 - Elegir un solo canal (el candidato es YouTube).
 - Abrir la cuenta de Whop.

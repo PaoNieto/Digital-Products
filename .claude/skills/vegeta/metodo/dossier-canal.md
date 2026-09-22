@@ -59,7 +59,6 @@ están en su página.
 
 ## Reglas
 
-- Mecánica sí, copy de ingresos nunca: si algo termina en un anuncio, las políticas de Meta prohíben las promesas de ingresos.
 - Cada número del canal lleva la fecha de la consulta: las vistas y los suscriptores cambian todas las semanas.
 - Los precios viven en el apartado del canal. Si un video de ese canal ya está en el tablero con sus precios, se apunta a "Video N" en vez de copiarlos.
 - Ni un nicho candidato, ni "esto le sirve a Paolo": el cruce se arma solo cuando Paolo pide cruzar todo, y la decisión es de el-panadero.

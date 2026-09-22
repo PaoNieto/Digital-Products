@@ -53,6 +53,4 @@ Biblioteca a mano y se le avisa a Paolo que el conector no conectó.
 
 ## Lo que ninguna herramienta cambia
 
-- El veredicto sale de días corriendo y creativos activos, no del puntaje de una app.
-- Sin comprador candidato no se espía: se deriva a el-panadero.
-- Nada de Vendí entra ni sale por estas herramientas.
+- El veredicto sale de días corriendo y creativos activos, no del puntaje de una app.- Nada de Vendí entra ni sale por estas herramientas.

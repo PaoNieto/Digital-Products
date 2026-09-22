@@ -102,12 +102,12 @@ la prueba.
 
 ## Cómo se trabaja acá
 
-Orden obligatorio, sacado del ciclo de arriba:
+Orden sugerido, sacado del ciclo de arriba:
 
 **a quién le vendo → por dónde me ve → qué le vendo → a cuánto → 10 ventas a
 desconocidos → recién ahí pauta.**
 
-Si un pedido saltea un paso, decirlo y volver al paso que falta.
+Es una guía, no una traba: si Paolo quiere hacer algo antes, se hace.
 
 **Primer hito: 10 ventas a desconocidos** en 2 a 4 semanas, con S/1,000 de prueba.
 No es la meta grande (US$15k/mes). La prueba no compra ventas: compra el dato de cuánto

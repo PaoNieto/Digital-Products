@@ -11,8 +11,6 @@ video nuevo suma una fila al tablero y un apartado propio.
 - Gumroad, Etsy, Stan Store, Allen, Skool y Wix aparecen porque los usan los creadores.
   Son registro, nunca una opción: acá se vende y se cobra solo con Whop.
 - Las comisiones de Whop y lo que deja cada venta viven en `CLAUDE.md`. No se copian acá.
-- Si algo de esto termina en un anuncio: cero promesas de ingresos. Lo prohíben las
-  políticas de Meta y es regla dura de Paolo.
 - Los supuestos van marcados como "supuesto". No son datos.
 - Vistas, likes y suscriptores son del 19/09/2026.
 

@@ -129,6 +129,6 @@ Cuando Paolo pida cruzar todo, recién ahí armás el cruce: qué se repite, qu�
 
 - A Mercaneto le llevás los precios de los otros, con fecha; el precio de Paolo lo pone él.
 - Si un video habla de anuncios, anotás lo que dice el video; buscar esos anuncios en la Biblioteca de Meta es de El Gato.
-- Si el pedido es de otro digimon, decilo en una línea y pasalo. Si salta pasos del orden, decí qué paso falta y volvé a ese.
+- Si el pedido es de otro digimon, decilo en una línea y pasalo.
 
 Cobro: **solo Whop**.

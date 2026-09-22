@@ -47,23 +47,22 @@ Tres reglas caras:
 2. Mirar los **contracargos**, no las devoluciones. Las devoluciones no cuentan en la
    tasa; los contracargos sí, y pasado 1.5% Whop retiene plata y cobra más. Devolver
    rápido sale más barato que un contracargo. Con 10 ventas, uno solo ya es 10%.
-3. Lo que sí hace perder la cuenta es vender algo prohibido: promesas de ingresos sin
-   sustento, o prometer "acceso de por vida".
+3. Si Whop observa algo de un producto, lo dice Whop: acá no se le ponen reparos
+   a Paolo por adelantado.
 
 **Toda cuenta se hace sobre lo que DEJA la venta (~US$25), nunca sobre el precio de
 lista.** Eso también es el techo de lo que puede costar conseguir un comprador.
 
-## Prioridad #0: todavía no hay producto
+## Prioridad #0: conseguir compradores
 
-Paolo no eligió nicho, ni comprador, ni formato. Cero productos, cero ventas, cero
-audiencia. **Hasta que eso esté definido no se construye nada**: ni PDF, ni página, ni
-anuncios, ni automatizaciones.
+**Paolo crea libremente.** Ningún digimon frena, condiciona ni le pone reparos a lo que
+quiere hacer: se hace con lo que haya, y lo que falte queda marcado como borrador.
 
 Primero la calle, después el pan: el cuello de botella nunca es hacer el producto (la
 IA lo arma en una tarde), es conseguir compradores. Es la lección de Vendí — el pan
 salió bueno y nadie pasó por la puerta.
 
-Orden obligatorio: **a quién le vendo → por dónde me ve → qué le vendo → a cuánto →
+Orden sugerido: **a quién le vendo → por dónde me ve → qué le vendo → a cuánto →
 10 ventas a desconocidos → recién ahí pauta.**
 
 Primer hito, no la meta grande: **10 ventas a desconocidos** en 2 a 4 semanas con S/1,000
@@ -84,7 +83,6 @@ probablemente de su propia cuenta y eso contaminó el veredicto durante meses.
   "no verificado" hasta ver de dónde sale; los supuestos se marcan inline ("si compran
   2 de cada 100, supuesto").
 - Plata en dos monedas cuando aplica a Paolo (US$100 a 300 / unos S/350 a 1,100).
-- Si el pedido salta pasos del orden de arriba, decirlo y volver al paso que falta.
 
 ## Qué se escribe en el repo
 
@@ -149,8 +147,7 @@ Cuando Paolo trabaja con un chat para cada producto y uno central (la torre de c
 
 _Última actualización: 22/09/2026_
 
-- Nicho: **3 en prueba**, sin validar todavía con la Biblioteca de anuncios de Meta:
-  grasa abdominal en la perimenopausia · eyaculación precoz por ansiedad · IA para
+- Nicho: **3 en prueba**: grasa abdominal en la perimenopausia · eyaculación precoz por ansiedad · IA para
   abogados en Perú. Ecommerce quedó afuera (demanda floja).
 - Comprador concreto: **uno por producto**, en `productos/<producto>/BRIEF.md`.
 - Formato: **PDF** (menopausia y eyaculación precoz) y **plantilla de Notion** (abogados).
@@ -160,5 +157,5 @@ _Última actualización: 22/09/2026_
 - Productos publicados: **0** · Ventas a desconocidos: **0 de 10**
 - Cobrado: **US$0** · acumulado sin retirar: **US$0**
 - Pauta: **apagada** (compuerta: 10 ventas)
-- Próximo paso: los 3 productos al 80% el miércoles 23/09/2026. En paralelo, Paolo revisa
-  la Biblioteca de anuncios (15 minutos por nicho) y abre la cuenta de Whop.
+- Próximo paso: los 3 productos al 80% el miércoles 23/09/2026. En paralelo, Paolo abre
+  la cuenta de Whop.

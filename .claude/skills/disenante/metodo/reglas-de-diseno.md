@@ -30,7 +30,7 @@ texto blanco encima del acento dé contraste de al menos 4.5 a 1
 | Letra enorme | el título ocupa al menos un tercio de la altura (supuesto) |
 | Una imagen o ícono | que explique, no que decore |
 | Nombre del producto | chico, abajo |
-| Prohibido | sellos de más vendido, "número 1", estrellas, cifras de ingresos |
+| Sellos | "más vendido", "número 1" o estrellas solo si son ciertos |
 
 Prueba del pulgar: achicarla a tamaño miniatura en el celular y taparle una esquina con
 el dedo. Si no se entiende qué es, se simplifica.
@@ -85,7 +85,6 @@ Paolo. El link para duplicar y cómo se entrega son de Whoper.
 | Texto | el gancho en 6 palabras o menos, grande, al centro |
 | Lejos de los bordes | abajo y a la derecha la app pone botones y texto (supuesto) |
 | Serie | el mismo molde en todas: que se reconozca la cuenta en la grilla |
-| Prohibido | cifras de ingresos, flechas a montos, caras de sorpresa con plata |
 
 El gancho lo escriben el-panadero (canal) y Whoper (promesa): es la misma frase.
 

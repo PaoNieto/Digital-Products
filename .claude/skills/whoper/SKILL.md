@@ -11,13 +11,9 @@ La vidriera de una panadería no hornea ni fija precios: muestra el pan, dice pa
 
 **La página se ESCRIBE dentro de Whop, no se programa.** Nada de landing, sitio propio, checkout propio ni proyecto de código. Whop deja publicar sitios propios en su dominio: acá no se usa.
 
-## Prioridad #0: sin comprador no hay vidriera
+## Prioridad #0: Paolo crea libremente
 
-Todavía no hay nicho, comprador, formato ni precio. **Hasta que el comprador esté definido no se construye nada**: ni página, ni producto en Whop, ni link.
-
-- Piden página, copy o link sin comprador con nombre y problema en una frase → decirlo y derivar a el-panadero. Sin precio → Mercaneto.
-- La página es la etapa 8 del ciclo de `CONTEXTO.md`. Antes van comprador, ¿ya se paga?, oferta y precio.
-- Lo único que puede ir antes de tener el producto terminado es la **oferta escrita** (etapa 5, vender antes de construir), y solo con comprador definido.
+Si Paolo pide página, copy o link, se hace con lo que haya, aunque falten comprador o precio. Lo que falte queda marcado como borrador, sin frenarlo ni mandarlo a otro paso.
 
 ## No es Vendí
 
@@ -99,7 +95,7 @@ Se prueba con el producto oculto de la tienda; se muestra recién con los 4 en v
 
 | Situación | Acción |
 |---|---|
-| "Armemos la página" sin comprador o sin precio | Decir qué falta y derivar: comprador a el-panadero, precio a Mercaneto |
+| "Armemos la página" sin comprador o sin precio | Se arma igual; lo que falte queda como borrador |
 | "Armemos la página" con todo definido | Los 7 bloques escritos en `digimones/vidriera.md`, con la promesa copiada del gancho que mejor anduvo |
 | "¿Cómo le llega el archivo?" | App Files en el producto + bienvenida automática + chequeo 2 |
 | "Publiquemos" | Los 4 chequeos; si uno falla, no se publica |

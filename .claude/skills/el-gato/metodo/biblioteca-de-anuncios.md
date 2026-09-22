@@ -87,6 +87,5 @@ fuerte (supuesto nuestro).
 | Contar anuncios de 1 día | Son pruebas; la mayoría se apaga |
 | Tomar el panel de ingresos de un creador como dato | No verificado, siempre |
 | Copiar texto, imágenes o promesas | Se modela la estructura, se escribe de cero |
-| Espiar sin comprador | Mucha foto, cero decisión |
 | Mezclar países | Un anuncio en EE. UU. no prueba hambre en Perú, ni al revés |
 | Proponer la plataforma donde vende el competidor | Es registro de lo que hace otra gente; acá solo Whop |

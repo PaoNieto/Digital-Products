@@ -38,20 +38,15 @@ La página de venta (Whoper) va después: necesita la cuenta de Whop abierta.
 - **Ya se vende (El Gato):** libros de editorial y de creadores grandes, libros
   autopublicados en Kindle y un programa para mujeres de 40+. Precios en
   `digimones/mercado.md`.
-- **Quién domina:** nutricionistas y médicos. El ángulo tiene que ser "plan práctico,
-  semana por semana", nunca "tratamiento".
+- **Quién domina:** nutricionistas y médicos. El ángulo: "plan práctico, semana por
+  semana".
 
-## Reglas y riesgos
+## Riesgos
 
-- Nada de suplementos ni medicamentos.
-- Aviso visible: no reemplaza a un médico; si hay dudas de salud, consultar.
 - Anuncios de Meta (más adelante): solo mayores de 18, sin antes y después, sin plazos,
   sin señalar el cuerpo de quien mira. Riesgo: **medio**.
 
 ## Pendiente antes de publicar
 
-- Paolo revisa la Biblioteca de anuncios de Meta con "menopausia": 2 o más anunciantes con
-  7 o más anuncios activos y alguno con 3 semanas o más corriendo. Si no pasa, este
-  producto se cambia por diástasis después de cesárea.
 - Elegir un solo canal.
 - Abrir la cuenta de Whop.

@@ -153,4 +153,4 @@ solo en el CLAUDE.md.
 
 ## Límites
 
-Solo contenido público: nada detrás de un login ni de un pago, y respetando las reglas de cada plataforma. Se toma la mecánica, nunca el copy de promesas de ingresos: las políticas de Meta las prohíben en anuncios y es regla dura de Paolo.
+Solo contenido público: nada detrás de un login ni de un pago, y respetando las reglas de cada plataforma.

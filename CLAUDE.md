@@ -149,6 +149,9 @@ _Última actualización: 22/09/2026_
 
 - Nicho: **3 en prueba**: grasa abdominal en la perimenopausia · eyaculación precoz por ansiedad · IA para
   abogados en Perú. Ecommerce quedó afuera (demanda floja).
+- Cuarto en exploración: **fitness para mujeres**. Subnichos rankeados el 22/09/2026 en
+  `productos/fitness-mujeres/SUBNICHOS.md`; recomendado: abdomen y cintura, reto de 28
+  días. Falta que Paolo lo confirme.
 - Comprador concreto: **uno por producto**, en `productos/<producto>/BRIEF.md`.
 - Formato: **PDF** (menopausia y eyaculación precoz) y **plantilla de Notion** (abogados).
 - Precio: **sin definir** (lo propone Mercaneto en cada `NOTAS.md`)

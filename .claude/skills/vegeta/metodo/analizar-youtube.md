@@ -81,6 +81,19 @@ Trampas de `yt-dlp` que ya costaron tiempo:
 - `--flat-playlist` no trae fechas (sale `NA`) y redondea las vistas (11000). Fechas exactas: del nombre de archivo de la segunda pasada. Vistas exactas: `storyboard.py` o `-J` del video.
 - `--break-match-filter` corta en la entrada del canal. Usá solo `--match-filter`.
 - El título del mapa puede venir traducido automáticamente; el real está en la metadata completa.
+- La página de un video puede leer "147 mil suscriptores" como 147. Los suscriptores de los canales chicos (menos de 100k) se verifican en el canal: `python -m yt_dlp --flat-playlist --playlist-items 1 -J "https://www.youtube.com/@<handle>/videos"`.
+
+## Demanda de una búsqueda
+
+Es la fila de "Demanda en YouTube" de `digimones/mercado.md`: mediana de vistas de los 12 primeros videos, cuántos son de los últimos 12 meses y quién domina.
+
+```
+python -m yt_dlp --skip-download --extractor-args "youtube:lang=es" --print "%(id)s|%(view_count)s|%(upload_date)s|%(duration)s|%(channel_follower_count)s|%(channel)s|%(uploader_id)s|%(title)s" "ytsearch12:<búsqueda>" > <carpeta>/r_<n>.txt
+```
+
+- Tarda unos 70 segundos por búsqueda. Con `--flat-playlist` es más rápido, pero no trae fechas.
+- "Quién domina": qué canal se lleva más vistas de las 12 y si hay canales chicos (menos de 100k suscriptores) con videos que pegan. Canal chico que pega = se puede entrar sin ser gigante.
+- Autocompletado (sirve para encontrar subnichos): `https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&hl=es&gl=pe&ds=yt&q=<búsqueda>`. Probar también prefijos cortos.
 
 ## Dónde se guarda
 

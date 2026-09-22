@@ -51,6 +51,28 @@ Biblioteca a mano y se le avisa a Paolo que el conector no conectó.
 5. Lo que sale se filtra con los mismos umbrales (3+ días, 7+ creativos) y va a
    `digimones/mercado.md` con fecha y fuente "Apify, actor <nombre>".
 
+## Marketplaces sin pagar (probado el 22/09/2026)
+
+Cuando la Biblioteca no alcanza, la señal de ¿ya se paga? sale de los marketplaces. Los
+scripts están en `.claude/skills/el-gato/scripts/` y se corren con `python`.
+
+| Fuente | Cómo | Qué da |
+|---|---|---|
+| Hotmart, búsqueda | `hotmart_buscar.py "tema"` (agregar `all` para ver también portugués) | productos en español con reseñas, puntaje, fecha de alta y link |
+| Hotmart, ficha | `hotmart_ficha.py <link1> <link2>...` | alumnos, reseñas, garantía, promesa y precio del checkout |
+| Amazon Kindle | `kindle_buscar.py "tema" com.mx` (o `com`, `es`) | títulos, calificaciones y precio |
+| Whop | `products_list` del conector de Whop, sin `account_id` | el marketplace público, con miembros por producto |
+
+- **"Alumnos"** es el número redondeado que muestra Hotmart y puede incluir inscriptos
+  gratis. Vacío = el vendedor lo oculta, no cero ventas.
+- Las insignias de "más vendido" son de la cuenta del vendedor, no del producto.
+- Desde Lima, el precio en soles del checkout de Hotmart sale unos 6% arriba de la
+  conversión.
+- Amazon corta después de unas 6 búsquedas seguidas. "KU" = solo se ve el precio con
+  Kindle Unlimited.
+- No funcionan: Etsy (error 403) y TikTok Creative Center (no carga).
+
 ## Lo que ninguna herramienta cambia
 
-- El veredicto sale de días corriendo y creativos activos, no del puntaje de una app.- Nada de Vendí entra ni sale por estas herramientas.
+- El veredicto sale de días corriendo y creativos activos, no del puntaje de una app.
+- Nada de Vendí entra ni sale por estas herramientas.

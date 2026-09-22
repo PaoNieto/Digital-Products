@@ -1,0 +1,326 @@
+/* Ficha de estilo del PDF de menopausia. Los valores salen de productos/menopausia/diseno.md.
+   Dos colores (texto y acento) + blanco. Una letra (Open Sans). Tres tamaños (titulo, subtitulo, texto)
+   y uno chico solo para numero de pagina, aviso, citas y Fuentes.
+   Version compacta (22/09/2026): meta de 28 a 34 paginas sin tocar el texto. */
+
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 400; src: url("fuentes/OpenSans-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: 400; src: url("fuentes/OpenSans-Italic.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 600; src: url("fuentes/OpenSans-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 700; src: url("fuentes/OpenSans-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: 700; src: url("fuentes/OpenSans-BoldItalic.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 800; src: url("fuentes/OpenSans-ExtraBold.ttf") format("truetype"); }
+/* Misma familia, version angosta: solo para el titulo de portada, asi "perimenopausia" entra enorme */
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 800; font-stretch: 75%; src: url("fuentes/OpenSans-CondensedExtraBold.ttf") format("truetype"); }
+
+:root {
+  --texto: #1A1A1A;        /* casi negro */
+  --acento: #A8432A;       /* terracota: 6.00 a 1 con texto blanco encima */
+  --tinte: #F7EEEC;        /* el acento al 9 % sobre blanco: fondo de la caja "Haz esto" */
+  --gris: #666666;         /* el texto aclarado: numero de pagina y notas (5.74 a 1) */
+  --gris-fondo: #F3F3F3;   /* fondo de la caja "Importante" */
+  --linea: #DDDDDD;
+
+  --t-titulo: 22pt;
+  --t-subtitulo: 15pt;
+  --t-texto: 12pt;
+  --t-chica: 9.5pt;
+
+  --interlineado: 1.4;
+  --aire: 2mm;             /* espacio entre parrafos */
+}
+
+/* ---------- Hoja ---------- */
+
+@page {
+  size: A5;                              /* 148 x 210 mm */
+  margin: 13mm 13mm 15mm 13mm;
+  @bottom-center {
+    content: counter(page);
+    font-family: "Open Sans", sans-serif;
+    font-size: 9.5pt;
+    color: #666666;
+    vertical-align: middle;
+  }
+}
+
+@page portada {
+  margin: 0;
+  @bottom-center { content: none; }
+}
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--t-texto);
+  line-height: var(--interlineado);
+  color: var(--texto);
+  background: #FFFFFF;
+  text-align: left;
+  hyphens: manual;
+  orphans: 2;
+  widows: 2;
+}
+
+/* ---------- Portada (pagina 1) ---------- */
+
+.portada {
+  page: portada;
+  width: 148mm;
+  height: 210mm;
+  box-sizing: border-box;
+  padding: 16mm 15mm 11mm 15mm;
+  background: var(--acento);
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  break-after: page;
+  line-height: 1.45;
+}
+
+.portada-icono { position: relative; }
+.portada-icono svg { display: block; width: 25mm; height: 25mm; }
+
+.portada-titulo {
+  position: relative;
+  margin: 11mm 0 0 0;
+  font-size: 44pt;                       /* armar.py lo ajusta para que ocupe al menos 1/3 de la hoja */
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: 1.02;
+  letter-spacing: 0;
+  text-wrap: balance;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.portada-titulo .renglon { display: block; }
+
+.portada-linea {
+  position: relative;
+  width: 18mm;
+  height: 1.8mm;
+  border-radius: 1mm;
+  background: #FFFFFF;
+  margin: 8mm 0 6mm 0;
+  flex: none;
+}
+
+.portada-subtitulo {
+  position: relative;
+  margin: 0;
+  max-width: 112mm;
+  font-size: var(--t-subtitulo);
+  line-height: 1.38;
+  font-weight: 400;
+  text-wrap: pretty;
+}
+
+.portada-aviso {
+  position: relative;
+  margin: auto 0 0 0;
+  padding-top: 6mm;
+  font-size: 9pt;
+  line-height: 1.4;
+}
+
+/* ---------- Secciones ---------- */
+
+/* Cuándo una sección (#) empieza página nueva:
+   - Siempre: la primera (página 2) y la que va después del índice.
+   - Las demás, solo si en la página donde caen quedan menos de 65 mm libres: armar.py lo mide
+     en el PDF y les pone la clase .pagina-nueva. Si queda más, empiezan ahí mismo, con su barra
+     y su título, así no quedan páginas casi vacías.
+   - La hoja de seguimiento: cada semana (## con su tabla) es un bloque que no se parte, así que
+     cada semana cae en su propia página.
+   - Con "armar.py --estricto" (clase .estricto en body) todas empiezan página nueva. */
+.indice { break-before: page; }
+.seccion { break-before: auto; margin-top: 8mm; }
+.portada + .seccion, .indice + .seccion, .seccion.pagina-nueva, .estricto .seccion {
+  break-before: page;
+  margin-top: 0;
+}
+.para-llenar .grupo { break-inside: avoid; }
+
+.seccion-cabeza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2mm 0;
+  break-after: avoid;                    /* la barra nunca queda sola al pie: va con su título */
+}
+.barra { display: block; width: 14mm; height: 2mm; border-radius: 1mm; background: var(--acento); }
+/* line-height normal: con 1, el acento de la "Í" sobresale y Chrome lo pinta al pie de la página anterior */
+.ir-indice { font-size: var(--t-chica); line-height: 1.5; color: var(--gris); text-decoration: none; }
+
+h1 {
+  font-size: var(--t-titulo);
+  font-weight: 800;
+  line-height: 1.18;
+  margin: 0 0 4mm 0;
+  text-wrap: balance;
+  break-after: avoid;
+}
+
+h2 {
+  font-size: var(--t-subtitulo);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 4.5mm 0 1.5mm 0;
+  break-after: avoid;
+  text-wrap: balance;
+}
+
+h3 {                                     /* no deberia usarse: el contenido no lleva ### */
+  font-size: var(--t-texto);
+  font-weight: 700;
+  margin: 3.5mm 0 1mm 0;
+  break-after: avoid;
+}
+
+h1 + h2, .seccion-cabeza + h1 + h2 { margin-top: 0; }
+
+/* Un subtítulo seguido de una frase corta ("Trabaja piernas y glúteos.") no queda al pie de la
+   página con esa sola línea: se lleva también el comienzo del párrafo siguiente */
+h2 + p { break-after: avoid; }
+
+p { margin: 0 0 var(--aire) 0; text-wrap: pretty; }
+
+/* La frase que presenta una tabla o una lista ("Cómo llenar cada fila:") no queda sola al pie */
+p:has(+ table), p:has(+ ul), p:has(+ ol) { break-after: avoid; }
+
+a { color: var(--acento); text-decoration-thickness: 0.6pt; text-underline-offset: 1.5pt; }
+
+strong { font-weight: 700; }
+
+code { font-family: inherit; background: var(--gris-fondo); padding: 0 0.25em; border-radius: 2pt; }
+
+hr { border: 0; border-top: 0.75pt solid var(--linea); margin: 4mm 0; }
+
+.salto { break-after: page; height: 0; }
+
+figure { margin: 3mm 0; break-inside: avoid; }
+figure img { max-width: 100%; display: block; margin: 0 auto; }
+figcaption { font-size: var(--t-chica); color: var(--gris); margin-top: 1.5mm; }
+
+/* ---------- Listas y casillas ---------- */
+
+ul, ol { margin: 0 0 var(--aire) 0; padding-left: 6mm; }
+li { margin: 0 0 1mm 0; padding-left: 0.8mm; text-wrap: pretty; }
+li > ul, li > ol { margin: 1mm 0 0 0; }
+li > p { margin: 0 0 1mm 0; }
+li::marker { color: var(--acento); font-weight: 700; }
+
+ul.casillas { padding-left: 0; }
+li.casilla { list-style: none; position: relative; padding-left: 8mm; }
+ul:not(.casillas) > li.casilla { margin-left: -6mm; }
+li.casilla::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 4.2mm;
+  height: 4.2mm;
+  box-sizing: border-box;
+  border: 1.5pt solid var(--acento);
+  border-radius: 1.2mm;
+  background: #FFFFFF;
+}
+li.casilla.marcada::after {
+  content: "";
+  position: absolute;
+  left: 1.4mm;
+  top: calc(0.2em + 0.5mm);
+  width: 1.3mm;
+  height: 2.4mm;
+  border: solid var(--acento);
+  border-width: 0 1.6pt 1.6pt 0;
+  transform: rotate(45deg);
+}
+
+/* ---------- Cajas ---------- */
+
+blockquote {
+  margin: 3.5mm 0;
+  padding: 2.8mm 3.5mm 2.8mm 4mm;
+  border-radius: 0 2.5mm 2.5mm 0;
+  break-inside: avoid;
+  border-left: 1.2mm solid var(--linea);
+}
+blockquote > :last-child, blockquote li:last-child { margin-bottom: 0; }
+blockquote p { margin-bottom: 1.6mm; }
+blockquote .etiqueta { font-weight: 800; }
+blockquote p.etiqueta { margin: 0 0 1mm 0; }
+
+.accion { background: var(--tinte); border-left-color: var(--acento); }
+.accion .etiqueta { color: var(--acento); }
+
+.aviso { background: var(--gris-fondo); border-left-color: var(--texto); }
+.aviso .etiqueta { color: var(--texto); }
+
+blockquote.cita-libre { background: none; font-style: italic; }
+
+/* ---------- Tablas ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2mm 0 3.5mm 0;
+  font-size: var(--t-texto);
+  line-height: 1.3;
+}
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th {
+  text-align: left;
+  font-weight: 700;
+  vertical-align: bottom;
+  padding: 1.1mm 3mm 1.1mm 0;
+  border-bottom: 1.2pt solid var(--acento);
+}
+td {
+  vertical-align: top;
+  padding: 1.3mm 3mm 1.3mm 0;
+  border-bottom: 0.75pt solid var(--linea);
+}
+th:last-child, td:last-child { padding-right: 0; }
+
+/* Tabla para llenar (tiene celdas vacias, como la hoja de seguimiento): filas altas y
+   lineas verticales, para escribir a mano o anotar en el celular. No se parte entre paginas. */
+td:empty::after { content: "\00a0"; }
+table:has(td:empty) { break-inside: avoid; }
+table:has(td:empty) th, table:has(td:empty) td { padding-left: 1.6mm; padding-right: 1.6mm; }
+table:has(td:empty) th + th, table:has(td:empty) td + td { border-left: 0.75pt solid var(--linea); }
+table:has(td:empty) td { padding-top: 2.4mm; padding-bottom: 2.4mm; }
+
+/* ---------- Citas [1] y Fuentes ---------- */
+
+sup.cita { font-size: var(--t-chica); line-height: 0; vertical-align: super; font-weight: 600; color: var(--acento); white-space: nowrap; }
+sup.cita a { text-decoration: none; }
+
+.fuentes { font-size: 9pt; line-height: 1.28; }   /* la lista de Fuentes va un poco más chica */
+.fuentes h1 { font-size: var(--t-titulo); line-height: 1.18; }
+.fuentes h2 { font-size: var(--t-subtitulo); }
+.fuentes li { margin-bottom: 0.3mm; }
+.fuentes a { overflow-wrap: anywhere; }
+
+/* ---------- Indice ---------- */
+
+.indice h1 { margin-bottom: 2.5mm; }
+.indice ol { list-style: none; padding: 0; margin: 0; }
+.indice li { margin: 0; padding: 0; border-bottom: 0.75pt solid var(--linea); }
+.indice li::marker { content: none; }
+.indice a {
+  display: flex;
+  align-items: baseline;
+  gap: 4mm;
+  padding: 1.3mm 0;
+  line-height: 1.3;
+  color: var(--texto);
+  text-decoration: none;
+}
+.indice .t { flex: 1; font-weight: 600; text-wrap: pretty; }
+.indice .n { color: var(--acento); font-weight: 700; min-width: 8mm; text-align: right; }

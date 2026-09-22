@@ -317,7 +317,7 @@ autorreportada por el creador.
 
 ## 3. Distribución y conversión
 
-Tema: cómo conseguir los primeros compradores sin audiencia y cómo convertirlos. Investigado el 21/09/2026.
+Tema: cómo conseguir los primeros compradores sin audiencia y cómo convertirlos. Investigado el 21/09/2026; fuentes 20 a 27 sumadas el 22/09/2026 al chequear los videos 8 a 10 de `videos.md`.
 Regla de lectura: "verificado" = vi el dato en la fuente. Si un creador reporta sus propios números, es "no verificado".
 
 ### Lo que dicen las fuentes
@@ -332,6 +332,7 @@ Regla de lectura: "verificado" = vi el dato en la fuente. Si un creador reporta 
 8. **WhatsApp en LATAM.** En el Perú urbano, WhatsApp es la plataforma más usada: 98% de los que se conectan a diario (n=1,000, nov 2023) [17]. Un link wa.me con mensaje ya escrito lleva a la persona del contenido al chat sin que tenga que guardar el número [18]. El creador que Paolo ya investigó arma así el embudo: contenido o anuncio → regalo a cambio del contacto → WhatsApp → oferta barata, y después productos más caros para el mismo cliente [19].
 9. **Cuánta gente compra.** La referencia de compra con muestra más clara es 1.4% de las visitas en tiendas Shopify (2,800 tiendas, 2023) [14]. Las landing pages en general convierten 6.6% de mediana y las de educación 8.4%, pero eso incluye registros [13]. No se encontró ningún número público con muestra para páginas de venta de productos digitales. Las páginas escritas en lenguaje simple (nivel de 5.º a 7.º grado) convierten 11.1% [13].
 10. **Anotar de dónde viene cada venta.** Whop tiene links de seguimiento por canal: cuentan clics, ingresos, tasa de conversión y compradores. Whop sugiere usar un link distinto para el email, la bio de Instagram y la descripción de YouTube [16]. Google recomienda poner siempre `utm_source`, `utm_medium` y `utm_campaign`, en minúsculas, porque distingue mayúsculas de minúsculas [15].
+11. **En la página, el título hace casi todo el trabajo, y con poco tráfico no se testea.** La gente escanea en vez de leer, lee cerca del 20% del texto y pasa más de la mitad del tiempo en lo que ve sin bajar [20][21][26]. Ogilvy lo decía en 1963: con el título escrito ya se gastó el 80% del anuncio [22]. Un test A/B honesto fija el tamaño de la muestra antes de empezar y no se mira a cada rato [23]. Con la cuenta estándar, saber si una versión de la página duplica a la otra pide unas 23 ventas en cada versión, y ver una mejora de 20% pide más de 400 en cada una: con 10 ventas no hay test posible. Hasta tener ese volumen, la página se rehace en grande o se deja quieta.
 
 ### Números de referencia
 
@@ -359,6 +360,10 @@ Regla de lectura: "verificado" = vi el dato en la fuente. Si un creador reporta 
 | Redes que usa cada persona, en promedio (Perú urbano) | 5.4 | [17] | Sí (ídem) | Ídem |
 | Metas de pauta de S. Bilbao: gancho, retención, CTR, carga de la landing, ticket total vs. primer producto | gancho >50%; retención >10%; CTR 2–3%; carga >70%; ticket total ÷ primer producto = 1.5 | [19] | No verificado (lo dice el creador) | 248 videos transcritos por Paolo |
 | Canal de YouTube de S. Bilbao | 5,490 suscriptores; ~569 vistas promedio | [19] | Visto por Paolo el 06/07/2026 | 353 videos mapeados |
+| Tiempo de lectura en lo que se ve sin bajar | 57% del tiempo; 74% en las dos primeras pantallas | [20] | Sí | 120 personas; más de 130,000 fijaciones de la mirada; 2018 |
+| Usuarios que escanean una página nueva en vez de leerla | 79% escanea; 16% lee palabra por palabra | [21] | Sí (estudio viejo, 1997) | No informada en la nota |
+| Texto que se lee de una página promedio | ~20%; 28% como máximo | [26] | Sí | 25 personas; 45,237 páginas vistas; datos de 2005 |
+| Ventas necesarias por versión en un test A/B (95% de confianza, 80% de potencia) | ~23 para ver si una versión duplica a la otra; ~77 para +50%; más de 400 para +20% | [23] | Cálculo propio con la fórmula estándar de dos proporciones; casi no cambia si la conversión base es 1%, 2% o 3% | n/a |
 
 ### Fuentes
 
@@ -414,6 +419,24 @@ Regla de lectura: "verificado" = vi el dato en la fuente. Si un creador reporta 
     - Cómo le funciona a ese creador: su canal orgánico es chico y vende sobre todo con anuncios pagados en Meta. YouTube le sirve para ganar autoridad y calentar al cliente. La cuenta que maneja: costo por visitante < ingreso por visitante. Baja el costo con mejor gancho, retención y CTR, y sube el ingreso vendiéndole más al mismo cliente después de la primera compra.
     - Su embudo: contenido o anuncio → regalo a cambio del contacto → WhatsApp (wa.me) → oferta barata, y después productos más caros para el mismo cliente. Elige qué vender copiando lo que funciona en anuncios de la competencia (Biblioteca de Anuncios de Meta; anuncios con más de 3 días y 7 o más versiones).
     - Dos avisos de la nota: se copia la mecánica, nunca los anuncios que prometen ganancias ("$X/día"), porque violan las normas de Meta. Y juntar contactos sin un canal de seguimiento listo (mail o WhatsApp) deja esos contactos sin trabajar. Todo lo de pauta queda para después de las 10 ventas.
+20. **Scrolling and Attention** — Nielsen Norman Group — https://www.nngroup.com/articles/scrolling-and-attention/ — estudio de usabilidad con seguimiento de la mirada — abril 2018 — consultado 22/09/2026
+    - "Users spent about 57% of their page-viewing time above the fold. 74% of the viewing time was spent in the first two screenfuls" (verificado). La gente rara vez pasa de la tercera pantalla.
+    - No dice que el 60% de la gente nunca baje, que es como lo citan los videos 8 a 10.
+21. **How Users Read on the Web** — Jakob Nielsen (Nielsen Norman Group) — https://www.nngroup.com/articles/how-users-read-on-the-web/ — estudio de usabilidad — 30/09/1997 — consultado 22/09/2026
+    - "79 percent of our test users always scanned any new page they came across; only 16 percent read word-by-word" (verificado). Es de 1997: sirve como dirección, no como número de hoy.
+22. **Confessions of an Advertising Man** — David Ogilvy — libro — 1963 — consultado 22/09/2026 en recopilaciones de citas (https://www.campaignlive.co.uk/article/excerpt-confessions-advertising-man/996114, https://www.goodreads.com/author/quotes/25181.David_Ogilvy)
+    - "On the average, five times as many people read the headline as read the body copy. When you have written your headline, you have spent eighty cents out of your dollar." Cita vista en varias recopilaciones, no en el libro. Es de avisos impresos de los años 60 y no dice de dónde sale el "cinco veces" (no verificado).
+23. **How Not To Run an A/B Test** — Evan Miller — https://www.evanmiller.org/how-not-to-run-an-ab-test.html — artículo de un estadístico — 18/04/2010 — consultado 22/09/2026
+    - "Decide on a sample size in advance and wait until the experiment is over." Mirar los resultados a cada rato y cortar cuando "da" sube los falsos positivos de 5% a 26.1% en su ejemplo (verificado que el artículo lo dice).
+    - Las ventas por versión de "Números de referencia" son cálculo propio (dos proporciones, 95% de confianza, 80% de potencia); se pueden rehacer en su calculadora: https://www.evanmiller.org/ab-testing/sample-size.html
+24. **Attention web designers: You have 50 milliseconds to make a good first impression!** — Lindgaard, Fernandes, Dudek y Brown — https://www.tandfonline.com/doi/abs/10.1080/01449290500330448 — estudio (Behaviour & Information Technology 25(2):115-126) — 2006 — consultado 22/09/2026 (leído el resumen, no el paper)
+    - Tres experimentos: lo que la gente opina de lo lindo que es una página a los 50 milisegundos casi coincide con lo que opina a los 500. Mide belleza percibida, no si la persona se va ni si compra.
+25. **Stop The Madness: The Proliferation of The 60000 Times Faster Myth Dances On** — Alan Levine (CogDogBlog) — https://cogdogblog.com/2016/05/stop-the-madness/ ; y **The 60,000 Fallacy** — Jonathan Schwabish (PolicyViz) — https://policyviz.com/2015/09/17/the-60000-fallacy/ — artículos que rastrean el dato — 2016 y 17/09/2015 — consultado 22/09/2026 (vistos en el buscador)
+    - "Las imágenes se procesan 60,000 veces más rápido que el texto" no tiene estudio detrás. Lo más viejo que se encontró es un folleto de 3M sobre presentaciones (1997, repetido en 2001) y un inserto publicitario de 1982. Lo repiten los videos 9 y 10 de `videos.md`.
+26. **How Little Do Users Read?** — Jakob Nielsen (Nielsen Norman Group) — https://www.nngroup.com/articles/how-little-do-users-read/ — análisis de datos de navegación — 05/05/2008 — consultado 22/09/2026
+    - "More realistically, users will read about 20% of the text on the average page"; 28% si solo leyeran (verificado). Sale de 45,237 páginas vistas por 25 personas en su navegación normal (estudio de Weinreich y otros, 2005).
+27. **Can There Ever Be Too Many Options? A Meta-Analytic Review of Choice Overload** — Scheibehenne, Greifeneder y Todd — https://academic.oup.com/jcr/article-abstract/37/3/409/1827647 — meta-análisis (Journal of Consumer Research 37(3)) — octubre 2010 — consultado 22/09/2026 (visto el resumen en el buscador)
+    - 50 experimentos publicados y sin publicar: el efecto promedio de dar muchas opciones sobre elegir o quedar conforme dio casi cero. Aparece en algunos estudios y en otros no. Baja a tierra el "too much choice equals no choice" del video 10.
 
 ### Huecos
 
@@ -425,6 +448,7 @@ Regla de lectura: "verificado" = vi el dato en la fuente. Si un creador reporta 
 - **Tiempo por canal:** ninguna fuente mide cuántas horas por semana pide cada canal para llegar a la primera venta. Es el dato que más le importa a alguien con poco tiempo.
 - **Lecturas incompletas:** el post de Bullseye y la página de Reddit dieron 403, y la FAQ de WhatsApp no cargó entera; se usaron el texto del buscador y resúmenes.
 - **Fuera de alcance por ahora:** Content Rewards de Whop (se les paga a creadores por cada 1,000 vistas) es distribución pagada; es pauta y queda para después de las 10 ventas.
+- **Cuánto sube la venta cada pieza de la página:** no hay un número con muestra para productos digitales. Los aumentos de los videos 8 y 9 (+30% con garantía bajo el botón, +64% con un título nuevo, +220% con un botón que baja al formulario) son de clientes de una agencia, sin fuente. Lo de los carruseles ("casi nadie los mira") tampoco trae fuente, y el mismo creador dice lo contrario en el video 9.
 
 ## 4. Whop y derechos
 

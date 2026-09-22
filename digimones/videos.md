@@ -1,22 +1,23 @@
 # Videos de referencia
 
-7 videos de 5 creadores, analizados el 19/09/2026. Es el recetario de el-panadero: cada
-video nuevo suma una fila al tablero y un apartado propio.
+10 videos de 6 creadores, analizados entre el 19/09/2026 y el 22/09/2026. Es el recetario
+de el-panadero: cada video nuevo suma una fila al tablero y un apartado propio.
 
 ## Cómo leer este archivo
 
 - Es registro de lo que hace otra gente, no una lista de tareas.
 - Todo lo que los creadores dicen sobre sus propios ingresos es **no verificado**. Ninguno
   muestra ventas reales del producto que enseña.
-- Gumroad, Etsy, Stan Store, Allen, Skool y Wix aparecen porque los usan los creadores.
-  Son registro, nunca una opción: acá se vende y se cobra solo con Whop.
+- Gumroad, Etsy, Stan Store, Allen, Skool, Wix y Stripe aparecen porque los usan los
+  creadores. Son registro, nunca una opción: acá se vende y se cobra solo con Whop.
 - Las comisiones de Whop y lo que deja cada venta viven en `CLAUDE.md`. No se copian acá.
 - Si algo de esto termina en un anuncio: cero promesas de ingresos. Lo prohíben las
   políticas de Meta y es regla dura de Paolo.
 - Los supuestos van marcados como "supuesto". No son datos.
-- Vistas, likes y suscriptores son del 19/09/2026.
+- Vistas, likes y suscriptores son del 19/09/2026 (videos 1 a 7) y del 22/09/2026 (videos 8
+  a 10).
 
-## Resumen en 6 líneas
+## Resumen en 7 líneas
 
 1. Casi todos venden lo mismo: un PDF de nicho de US$19 a 47, hecho con IA en una tarde.
    Las variantes son una app con coach de IA (US$27 a 97) y packs de clipart en Etsy
@@ -31,6 +32,8 @@ video nuevo suma una fila al tablero y un apartado propio.
 5. Los paneles de ingresos que muestran no prueban de dónde sale esa plata.
 6. El video 7 no es de PDFs: es de anuncios de Meta para una app de suscripción. Sirve
    recién para la etapa de pauta, después de las 10 ventas.
+7. Los videos 8 a 10 tampoco son de formatos: son de la página de venta, los tres del
+   mismo creador y casi con el mismo guion. Sirven a Whoper cuando haya producto y precio.
 
 ## Tablero
 
@@ -43,6 +46,9 @@ video nuevo suma una fila al tablero y un apartado propio.
 | 5 | Nathan Nazareth: How to build & sell AI Digital Products (2026 full guide) | App de recursos con coach de IA en vez de PDF, armada en vivo | Entre US$27 y US$97. Ejemplo: programa de 8 semanas para la primera muscle-up | Contenido con gancho, historia y oferta; captar emails y seguimiento; sin anuncios | Miniatura "Total Revenue $1,860,695" con pilas de ebooks |
 | 6 | Alex: how i make $6,000/week selling ai images as digital products | Clipart hecho con IA en Etsy; el "PDF" es una hoja con el link de descarga | Packs de clipart a US$2.83 y US$4.65 con descuento | Buscador de Etsy: temas en tendencia, título y etiquetas para el buscador | Miniatura "$6000 SELLING IMAGES?"; abre con un panel de US$6,133 en 7 días |
 | 7 | Steven Cravotta: the meta ads strategy that made my app $283,273 | No es PDF: app de suscripción para dejar de vapear, vendida con anuncios de Meta | Suscripción dentro de la app (precio no visible) | Anuncios de Meta con videos de creadores pagados por rendimiento | Título con la cifra de ingresos y el panel de anuncios en la miniatura |
+| 8 | Arsh Sanwarwala (ThrillX): Alex Hormozi's Landing Page Strategy for 2026 | No es formato: cómo se arma la página de venta (título, imagen, prueba, garantía) | Agencia de páginas y un pack de 30+ páginas en Figma (precios en el apartado) | YouTube, regalos a cambio de email y teléfono, llamada de venta | Miniatura con Hormozi y un boceto de página; abre con "prints money for his nine-figure portfolio" |
+| 9 | Arsh Sanwarwala (ThrillX): 4 Proven Steps to Build a MILLION DOLLAR Landing Page | No es formato: los 4 pasos de su agencia para armar la página | Lo mismo que el video 8, más una auditoría en video (precio no visible) | Igual que el video 8 | Miniatura "$1M PAGE" sobre una página de software; abre con "over 400 landing pages in 80 niches" |
+| 10 | Arsh Sanwarwala (ThrillX): I Studied 1000 Landing Pages, Here's What Works in 2026 | No es formato: 7 lecciones para la página de venta | Lo mismo que el video 8 | Igual que el video 8 | Miniatura "$1M PAGE" sobre páginas de Mailchimp y Slack; abre con "some landing pages convert as high as 15%" |
 
 ## Detalle por video
 
@@ -347,6 +353,299 @@ No verificado:
   precio a los 100 miembros: anclas y escasez.
 - Las tablas de anuncios se ven, pero a baja resolución no se leen las cifras.
 
+### Video 8. Arsh Sanwarwala: la página de venta con la ecuación de valor de Hormozi
+
+- Link: https://www.youtube.com/watch?v=zA0B-VwOPn4
+- Canal: Arsh Sanwarwala | ThrillX, 21,100 suscriptores. Publicado el 10/04/2026. 14:18 min,
+  en inglés. 95,185 vistas, 3,234 likes, 97 comentarios (datos del 22/09/2026).
+- Idea central: el dueño de una agencia de páginas de venta repasa el método de Alex
+  Hormozi, con clips de Hormozi y páginas de sus clientes (servicios, ecommerce, cursos).
+  No trata de productos digitales: trata de cómo se arma la página. **Tiene guion**
+  (subtítulos automáticos en inglés).
+- Capítulos: 0:00 intro · 0:28 eficiencia · 4:44 resultado soñado · 6:20 probabilidad de
+  éxito · 9:20 tiempo de espera · 9:44 menos esfuerzo · 10:56 títulos · 12:02 test A/B.
+- En Whop no hay página propia que programar: todo esto se escribe en la página del
+  producto, que es de Whoper. El titular tiene tope de 80 caracteres (`fuentes.md`, tema 4,
+  fila "Crear producto").
+
+Gancho (literal, 0:00): "Alex Hormozi's landing page strategy absolutely prints money for
+his nine-figure portfolio, and he's built it by ignoring a lot of the best practices that
+you see online." Visual: Hormozi con gorra y remera de Skool al lado de un boceto de página.
+
+Paso a paso. Es la ecuación de valor de Hormozi (`fuentes.md`, tema 1 [4]) llevada a la
+página:
+
+1. Convertir mejor antes que traer más gente (0:28): prefiere duplicar la conversión que
+   duplicar el tráfico, porque el anuncio es una subasta y gana el que saca más plata de
+   cada visita.
+2. Casi todo el esfuerzo en lo que se ve sin bajar (3:33): título, subtítulo, botón e
+   imagen. Hormozi: "90% of our tests are either headline or image tests".
+3. El resultado en el título (4:44), no el nombre ni "qué hacemos". Truco "so that" (para
+   que): limpieza exterior, para que los paneles den más energía, para que baje la cuenta
+   de luz. La imagen muestra ese resultado.
+4. Prueba antes que promesa (6:20): "your proof is going to do more selling than any
+   promise". Mejor una foto que una frase y un video que una foto. Reseñas todas a la
+   vista, en un muro, nunca en carrusel.
+5. Menos riesgo pegado al botón (8:36): garantía, devolución o prueba gratis, con íconos
+   justo debajo del botón de compra.
+6. El plazo en el título (9:20): "in less than 30 days", "in just 2 weeks".
+7. Menos esfuerzo (9:44): el subtítulo dice cómo y que es fácil ("sin X"). La sección
+   "cómo funciona" en 3 o 4 pasos, no más.
+8. Títulos que se entienden solos (10:56): la gente escanea. En vez de "Qué dicen nuestros
+   clientes", el título dice lo que dicen. Cita a Ogilvy (`fuentes.md`, tema 3 [22]).
+9. Un test por semana (12:02), pero solo con tráfico: pide 40,000 a 50,000 visitas por mes.
+   Con menos, rehace la página en grande en vez de testear.
+
+Cómo consigue compradores: videos largos en YouTube, regalos a cambio de email y teléfono
+(le manda SMS) y una llamada de venta para la agencia.
+
+Cómo gana plata el creador (páginas consultadas el 22/09/2026):
+
+| Producto | Qué es | Precio |
+|---|---|---|
+| Agencia ThrillX — https://thrillxdesign.com/book-consult-youtube/ | Página hecha a medida, vendida con llamada | Desde US$5,000 con desarrollo; US$3,500 solo diseño (FAQ de su página) |
+| Swipe file — https://thrillxdesign.com/high-converting-lp/ | 30+ páginas de clientes en Figma, de 27 industrias, para copiar la estructura; no es una web lista | US$199 (dice "valor total" US$800); cobra con Stripe; sin reembolsos |
+| Regalos — prompts para escribir la página con IA y un layout en Figma | Imán para juntar contactos | Gratis a cambio de email y teléfono |
+| "Comunidad en Skool" de la descripción | El link lleva a un formulario de Google: lista de espera para una comunidad paga que todavía no abrió | Sin precio |
+
+Mecánica copiable (anda sin su fama ni su audiencia):
+
+- El titular dice el resultado y para quién, no el nombre del producto. Se encadenan "para
+  que" hasta llegar al resultado final.
+- Prueba visual antes que texto. Sin compradores todavía, la única prueba honesta es
+  mostrar el producto por dentro, con capturas de sus páginas (deducción propia).
+- La garantía escrita al lado del botón. Cómo funciona, en 3 pasos.
+- Con poco tráfico no se testea: se rehace en grande o se deja quieta. Cálculo propio
+  (`fuentes.md`, tema 3 [23]): para saber si una versión duplica a la otra hacen falta
+  unas 23 ventas en cada una; para ver una mejora de 20%, más de 400 en cada una. Con 10
+  ventas no hay test posible.
+- Su lista de espera pregunta antes de construir la comunidad: es el "vender antes de
+  construir" de `fuentes.md`, tema 1.
+
+Toca a los nichos en prueba:
+
+- **Grasa abdominal en la perimenopausia:** la prueba que más recomienda (antes y después
+  del cuerpo, video pesándose) y el plazo en el título son el molde entero de la página.
+  Para el anuncio, las reglas de Meta en salud las lleva Bilbito (`fuentes.md`, tema 5,
+  fila "Meta: salud y bienestar").
+- **Eyaculación precoz por ansiedad:** el plazo va igual en el título ("dura más en X
+  días"). La prueba con foto o video es casi imposible porque nadie da la cara en ese
+  tema (deducción propia): el peso lo cargan "menos esfuerzo" y "menos riesgo".
+- **IA para abogados en Perú:** el antes y después puede ser de cosas (expediente
+  desordenado contra ordenado) y el "para que" se arma con tiempo ahorrado, no con plata.
+  Entre los ejemplos (9:25) hay un curso para mediadores de EE. UU., "Build a 6-figure
+  mediation practice in 30 days": el mismo molde de resultado más plazo en el título.
+
+No verificado:
+
+- Todos los aumentos son de sus clientes y sin fuente: +64% con el título "so that", +130%
+  testeando lo de arriba, +50 a 70% con prueba visual, +30% con los íconos bajo el botón,
+  US$3 millones "incrementales" y +385%. El panel de 7:26 (+72.39% de conversión, +83.18%
+  de ingreso por visita) no dice de qué herramienta es ni con cuántas visitas.
+- Su FAQ: "average client sees at least a 40-64% increase" y "98% client retention".
+- Que haya hecho más de 400 páginas y generado "millones" para sus clientes.
+- Mal citado: "60% of people statistically will never even scroll past" lo de arriba. El
+  estudio que se suele citar (NN/g 2018, `fuentes.md`, tema 3 [20]) mide otra cosa: 57%
+  del tiempo de lectura se pasa arriba de todo.
+- Contradicción: predica la garantía y su propio pack dice "all sales are final and
+  refunds are not offered". El "valor total" de US$800 es un ancla.
+- La "comunidad en Skool" de la descripción todavía no existe: es un formulario.
+
+### Video 9. Arsh Sanwarwala: los 4 pasos de su agencia para la página de venta
+
+- Link: https://www.youtube.com/watch?v=KneaEGicMZ4
+- Canal: el mismo del video 8. Publicado el 12/03/2025, un año antes que el 8. 26:19 min,
+  en inglés. 25,116 vistas, 1,249 likes, 67 comentarios (datos del 22/09/2026).
+- Idea central: su propio método en 4 pasos, con páginas de clientes, casi todas de
+  software para empresas. **Tiene guion** (subtítulos automáticos en inglés). Al final del
+  video 8 manda a este.
+- Capítulos: 0:00 intro · 0:35 para qué una página · 2:06 lo de arriba · 6:46 prueba arriba
+  · 8:57 jerarquía visual · 10:37 bajar el miedo · 11:43 imagen · 13:36 secciones de
+  beneficio · 16:37 convertir fácil · 20:28 pedir de a poco · 22:51 prueba en toda la
+  página.
+
+Gancho (literal, 0:00): "after building over 400 landing pages in 80 niches I've narrowed
+down the process to just four simple steps that anyone can follow to build a million
+dollar landing page". Visual: "$1M PAGE" en rojo sobre la página de un software (Copilot)
+que no aparece en el guion.
+
+Los 4 pasos:
+
+1. **Lo de arriba** (2:06), "80% of your time and energy":
+   - Qué hacés y qué gana el que lee, claro en 5 segundos, con el "so that" del video 8.
+   - El título dice lo mismo que el anuncio o el post que trajo el clic (3:35).
+   - Prueba arriba de todo, varias juntas (reseñas, números, logos). Si hay pocas reseñas,
+     elegir 2 y no mostrar el total (7:08).
+   - Jerarquía visual: si se desenfoca la página, igual se tiene que ver cuál es el botón
+     (9:42).
+   - Bajar el miedo junto al botón: garantía, prueba gratis, "sin tarjeta" (10:37).
+   - Una imagen que muestre lo que promete el título (11:43).
+2. **Secciones de beneficio** (13:36): 4 o 5 secciones, beneficio y no función. Contraste:
+   primero el dolor, después la solución ("Denied again? We can help"). Hablarle de "vos".
+3. **Convertir fácil** (16:37): botones en toda la página, no solo arriba; formularios de 4
+   campos o menos; pedir de a poco (primero el email, después el resto).
+4. **Prueba en toda la página** (22:51): cada beneficio con un testimonio al lado.
+
+Para pedir testimonios (24:30) usa preguntas guiadas: "how did you discover us, what problem
+were you trying to solve, how did we help you solve that problem, what were your goals, what
+was your desired outcome". Mejor en video.
+
+- Herramienta que usa el creador: Microsoft Clarity (grabaciones y mapas de calor).
+- En Whop el formulario es el checkout de Whop. Lo único que se le agrega son las preguntas
+  antes del pago (`fuentes.md`, tema 4, fila "Checkout links"); el video diría que cada
+  campo de más frena.
+
+Cómo gana plata el creador: lo mismo que en el video 8 (precios en ese apartado), más una
+auditoría de página: un video personalizado de 20 a 30 minutos, entregado en 48 horas
+(https://thrillxdesign.com/lp-audit/, consultado el 22/09/2026). El precio no se ve: el
+cobro es de Stripe y no lo muestra sin abrir el pago. No dice nada de reembolsos.
+
+Mecánica copiable:
+
+- El título dice lo mismo que el post o el anuncio que trajo a la persona.
+- La prueba de desenfocar la página: el botón se tiene que ver igual.
+- Botón de compra repetido en toda la página, no solo arriba.
+- Las preguntas guiadas para pedirles testimonio a los primeros compradores. Así el
+  testimonio cuenta el dolor, el antes y el resultado, en vez de un "muy bueno".
+- Con pocas reseñas no se muestra el conteo; se eligen las mejores.
+
+Qué repite y qué contradice del video 8:
+
+| | Video 9 (03/2025) | Video 8 (04/2026) |
+|---|---|---|
+| Coincide | "Double your traffic or double your conversions... I will take doubling your conversions any day" (1:32) | La misma frase (3:02) |
+| Coincide | "60% of people statistically will never even scroll past" (2:04) | La misma frase (3:33), igual de mal citada |
+| Coincide | Cadena de "so that" (5:06), prueba apilada (7:40), bajar el miedo junto al botón (10:37), imagen que muestra el resultado (11:43) | Los mismos puntos, ahora atribuidos a Hormozi |
+| Coincide | Lo de arriba se lleva el "80%" del esfuerzo, como regla suya (13:18) | Se lo atribuye a Hormozi ("80 to 90%") |
+| Contradice | Su página estrella usa un carrusel arriba de todo y dice que el test dio "a huge increase" (12:15) | "Never want to hide it in a carousel because statistically, carousels have very low engagement" (8:06) |
+| Matiz | Con pocas reseñas, mostrar 2 elegidas (7:08) | Mostrar todas, en un muro (8:06) |
+| Solo en el 9 | Título igual al anuncio, jerarquía visual, botones en toda la página, formularios cortos, testimonios con preguntas | — |
+
+Deducción propia: el video 8 es, en buena parte, este mismo método con clips de Hormozi
+encima. La "estrategia de Hormozi" del título es sobre todo la de la agencia.
+
+Toca a los nichos en prueba:
+
+- **Grasa abdominal en la perimenopausia y eyaculación precoz por ansiedad:** el
+  "contraste" (primero el dolor) va en la página. El video pide que el anuncio diga lo
+  mismo que la página; en el anuncio, Bilbito cuida no atribuirle el problema a quien lo
+  mira ("¿Tenés...?", `fuentes.md`, tema 5, fila "Meta: atributos personales"). En
+  eyaculación precoz un testimonio con cara o en video es casi imposible (deducción
+  propia): quedan las preguntas guiadas, en texto y sin nombre.
+- **IA para abogados en Perú:** casi todos los ejemplos son de software para empresas, lo
+  más parecido a una plantilla de Notion para un estudio. Sus títulos son de tiempo y
+  errores ("Reduce errors and save time on your warehouse operations", 3:58), no de
+  plata.
+
+No verificado:
+
+- Más de 400 páginas en 80 nichos; que Influence Hunter saque más de 40 llamadas por
+  semana y más de US$3 millones con una sola página.
+- +142% de conversión para un cliente (el nombre sale mal en los subtítulos), +220% al
+  hacer que el botón baje al formulario, y un "huge increase" con el carrusel, sin número.
+- "11 tricks" que suben los ingresos "more than 80%" (el video siguiente).
+- En la página de la auditoría: "64% lift in conversions on average" y "up to 3X".
+- Mito: "the human brain processes images 60,000 times faster than text and 90% of the
+  information transmitted to the brain is visual" (11:43). No tiene fuente científica
+  (`fuentes.md`, tema 3 [25]).
+- Los "50 milliseconds" (1:01) sí salen de un estudio, pero mide cuánto tarda en formarse
+  la opinión de si la página es linda, no si la persona se va (`fuentes.md`, tema 3 [24]).
+
+### Video 10. Arsh Sanwarwala: 7 lecciones de "1,000 páginas"
+
+- Link: https://www.youtube.com/watch?v=PcwuZJNJny4
+- Canal: el mismo de los videos 8 y 9. Publicado el 21/09/2025, entre el 9 y el 8. 16:45
+  min, en inglés. 69,298 vistas, 2,452 likes, 117 comentarios (datos del 22/09/2026).
+- Idea central: 7 lecciones que dice sacar de mirar páginas ajenas y de su agencia. **Tiene
+  guion** (subtítulos automáticos en inglés). Los links de la descripción llevan a las
+  mismas páginas del video 8.
+- Capítulos: 0:00 intro · 0:46 regla de 5 segundos · 5:06 emoción · 7:25 estructura · 9:16
+  escaneo · 10:36 prueba verificable · 12:49 jerarquía visual · 14:50 simple antes que
+  creativo.
+
+Gancho (literal, 0:00): "Do you ever wonder why some landing pages convert as high as 15%
+while others barely struggle to get any leads or sales?" Visual: "$1M PAGE" sobre páginas
+de Mailchimp y Slack. El título dice 1,000 páginas; hablando dice "more than 1,500 plus".
+
+Las 7 lecciones:
+
+1. **Regla de 5 segundos** (0:46): el título contesta "why should I care?" con un solo
+   beneficio; el subtítulo dice quién sos y en qué sos distinto; al menos dos pruebas
+   arriba; botón con beneficio; debajo, lo que baja el miedo; imagen.
+2. **Se compra con emoción** (5:06): fotos de gente contenta usando el producto, y copy de
+   problema, agitar y solución: nombrar el problema, "really made people feel the problem
+   and turned up the heat", y después la salida. Su ejemplo es un coach para gente con
+   mareos.
+3. **Lo largo no mata; la mala estructura sí** (7:25): "the ad is simply just to get the
+   click", la página vende. Varias secciones de beneficio, prueba y objeciones. Nada
+   escondido en carruseles ni desplegables en el celular.
+4. **Se escanea** (9:16): "people will only read 20% of the content". Títulos que dicen la
+   cosa, viñetas y negritas.
+5. **Prueba que sea prueba** (10:36): los logos de "salimos en" ya no convencen; sumarles la
+   frase que dijo cada medio. Reseñas con nombre, foto y de dónde salieron, para que se
+   puedan chequear.
+6. **Jerarquía visual** (12:49) y "less is more": muchas opciones paralizan.
+7. **Simple antes que creativo** (14:50): ley de Jakob, la gente espera que una página
+   funcione como las que ya conoce. Receta final: un título, el texto pegado, prueba
+   arriba, botón, lo que baja el miedo debajo e imagen.
+
+Cómo gana plata el creador: lo mismo que en el video 8 (precios en ese apartado).
+
+Mecánica copiable:
+
+- Reseñas que se puedan chequear: nombre, foto y dónde se dejaron, mejor que muchas
+  reseñas sueltas. Cómo muestra Whop las reseñas es tema de Whoper.
+- Una sola receta para la parte de arriba, igual en los videos 8, 9 y 10: título con el
+  resultado, subtítulo con el cómo, prueba, botón, garantía debajo e imagen.
+- Nada escondido: en el celular, las reseñas a la vista.
+
+Qué repite y qué contradice de los videos 8 y 9:
+
+| | Video 10 (09/2025) | Videos 8 (04/2026) y 9 (03/2025) |
+|---|---|---|
+| Coincide | "60% of people will never even scroll past" (1:01 y 3:03) | La misma frase en los dos: tres veces, siempre mal citada |
+| Coincide | "80 to 90% of your efforts" arriba, como regla suya (1:01) | En el 9 también es suya ("80%"); en el 8 se la atribuye a Hormozi |
+| Coincide | "Why should I care?" (1:31) y "instead of what makes us unique, just simply say what makes you unique" (10:14) | Casi literal en el 8 (4:44 y 11:38) |
+| Coincide | "Everyone is using social proof so much so that people have gotten very very skeptical" (10:45) | Casi literal en el 8 (6:36) |
+| Coincide | "60,000 times faster than text" (5:38) | Igual en el 9 (11:43) |
+| Coincide | Problema, agitar y solución (6:39) | El "contraste" del 9: primero el dolor, después la solución |
+| Coincide | Nunca esconder reseñas en un carrusel (8:42) | Igual en el 8 (8:06) |
+| Contradice | — | El 9 usa un carrusel arriba de todo y dice que el test lo hizo ganar (12:15) |
+| Solo en el 10 | Reseñas verificables, logos con cita, ley de Jakob, "menos opciones" | — |
+
+Deducción propia: los videos 9, 10 y 8, en ese orden, son el mismo guion de la agencia
+reciclado entre marzo de 2025 y abril de 2026. En el 8 le suma clips de Hormozi y le cambia
+el dueño a varias reglas. Sirve como una sola fuente, no como tres que se confirman entre
+sí.
+
+Toca a los nichos en prueba:
+
+- **Grasa abdominal en la perimenopausia y eyaculación precoz por ansiedad:** "agitar el
+  problema" y "turn up the heat" van en la página, y su ejemplo es justo de salud: el
+  coach de mareos, con +282% (no verificado). Para el anuncio, las reglas de Meta en salud
+  y el anti-baneo los lleva Bilbito (`fuentes.md`, tema 5, fila "Meta: salud y
+  bienestar"). Sobre reseñas con nombre y foto en eyaculación precoz, ver el video 9.
+- **IA para abogados en Perú:** su ejemplo de un cliente contable cuantifica el valor en
+  tiempo ahorrado (2:03), el ángulo más cercano a una plantilla para un estudio. Entre
+  profesionales, una reseña con nombre, foto y estudio es lo normal (deducción propia). El
+  curso de técnico de imagen digital del mismo minuto pasa de "qué es" a "más ingresos y
+  viajar por el mundo": el mismo salto al resultado que el curso de mediadores del video 8.
+
+No verificado:
+
+- Que algunas páginas conviertan "as high as 15%" y que haya estudiado 1,000 o 1,500
+  páginas (dice los dos números).
+- +80% con el título, +40 a 60% con lo que baja el miedo, +132%, +108%, +282%, +38% con
+  logos y cita, +64% con jerarquía visual, y de 2.5% a 5% de conversión con anuncios de
+  Meta para un cliente de educación.
+- "100% social proof does help with conversions. It's statistically backed": sin fuente.
+- Bien citado: "people will only read 20%" sale de NN/g 2008 (`fuentes.md`, tema 3 [26]),
+  aunque es de 25 personas.
+- Exagerado: "too much choice equals no choice at all". En 50 experimentos, el efecto
+  promedio de tener muchas opciones dio casi cero (`fuentes.md`, tema 3 [27]); a veces
+  pasa y a veces no.
+- "60%" y "60,000 veces": ver los videos 8 y 9.
+
 ## Lo que se repite en todos
 
 - Nicho súper específico: "bajar de peso" no vende; "bajar de peso en la menopausia", sí.
@@ -359,6 +658,8 @@ No verificado:
 - Lanzar al 80%. Hacer el producto con IA es lo fácil.
 - Escalera de precios: un PDF barato como primer escalón hacia curso, comunidad o
   acompañamiento.
+- La garantía suma: el video 5 la pone en la oferta y los videos 8 a 10, pegada al botón
+  de compra (esos tres son del mismo creador: cuentan como una sola fuente).
 
 Canales que aparecen: videos cortos sin mostrar la cara (TikTok, Instagram), a veces con un
 personaje hecho con IA; el buscador de Etsy; contenido con gancho, historia y oferta más
@@ -373,21 +674,27 @@ emails; anuncios de Meta con videos de creadores pagados por rendimiento (video 
 | E'Calm (video 1) | Productos propios en Gumroad de US$19.90 a 49.99, más afiliados (Abacus AI, vidIQ) |
 | Alex (video 6) | Trend2Design (US$25), comunidad en Skool (US$37 al mes), afiliados (Kittl, Alura) |
 | Steven Cravotta (video 7) | Su app, Posted y comunidad en Skool (US$79 al mes) |
+| Arsh Sanwarwala (videos 8 a 10) | Agencia de páginas a medida con llamada de venta, un pack de páginas en Figma y una auditoría en video (precios en el apartado del video 8); regalos para juntar email y teléfono |
 
 ## Señales de humo
 
 Se repiten: paneles de ingresos sin origen, promesas en la miniatura, "valores" ancla de
 cursos, cursos "gratis" que se activan comprando una herramienta, estimaciones de terceros
-presentadas como ventas y testimonios que solo están en la página del creador.
+presentadas como ventas y testimonios que solo están en la página del creador. Los videos
+8 a 10 suman tres: estadísticas mal citadas ("el 60% nunca baja"), mitos sin fuente ("las
+imágenes se procesan 60,000 veces más rápido") y predicar la garantía mientras el producto
+propio no acepta reembolsos.
 
 Datos realistas vistos: un testimonio de US$63 en dos semanas y una tienda de Etsy con unas
 21 mil ventas en 3 años.
 
 ## Limitaciones del análisis
 
-- Falta el guion hablado de los 7 videos: YouTube bloquea los subtítulos y las
+- Falta el guion hablado de los videos 1 a 7: YouTube bloqueaba los subtítulos y las
   transcripciones. Lo que dicen solo hablando no está capturado. Se podría sacar con Apify,
   solo con aprobación de Paolo porque gasta créditos.
+- Los videos 8 a 10 sí tienen guion: subtítulos automáticos en inglés bajados con `yt-dlp`
+  el 22/09/2026. Son automáticos, así que algún nombre sale mal escrito ("Hermozi").
 - Lo visual sale de capturas cada 5 a 10 segundos, a baja resolución: los números chicos
   en pantalla no siempre se leen.
 - Las afirmaciones de los creadores sobre ingresos y alumnos no están verificadas.
@@ -403,8 +710,12 @@ Videos:
 5. https://www.youtube.com/watch?v=6cm2o8zzuNw
 6. https://www.youtube.com/watch?v=OgIw3Zd-Zrs
 7. https://www.youtube.com/watch?v=04l69IvsW98
+8. https://www.youtube.com/watch?v=zA0B-VwOPn4
+9. https://www.youtube.com/watch?v=KneaEGicMZ4
+10. https://www.youtube.com/watch?v=PcwuZJNJny4
 
 Páginas de los creadores, revisadas el 19/09/2026: las de Gumroad de E'Calm, la masterclass
 y Freedom Profit System de Richard Yu, Build Your Digital Product de Nathan Nazareth,
 Trend2Design y Clipart Accelerator de Alex, y Posted y App Accelerator de Steven Cravotta.
-Los links están en cada video.
+Revisadas el 22/09/2026: la agencia, el swipe file, la auditoría, los regalos y el
+formulario de lista de espera de Arsh Sanwarwala. Los links están en cada video.

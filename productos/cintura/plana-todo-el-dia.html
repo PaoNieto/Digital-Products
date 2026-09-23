@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plana todo el día</title>
+<link rel="stylesheet" href="estilo.css">
+<style>
+  @page { size: 6in 9in; margin: 0; }
+
+  body { counter-reset: pag; }
+
+  .pagina {
+    position: relative;
+    width: 6in; height: 9in;
+    padding: 0.62in 0.6in 0.75in;
+    break-after: page; page-break-after: always;
+    overflow: hidden;
+  }
+  .pagina:last-child { break-after: auto; page-break-after: auto; }
+  .pagina:not(.tapa-p) { counter-increment: pag; }
+
+  .tapa-p { padding: 0; }
+  .tapa-p img { width: 6in; height: 9in; display: block; }
+
+  /* encabezado y pie: los mismos en todas las páginas de adentro */
+  .seccion {
+    font-size: var(--t-pie); font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--acento);
+    border-bottom: .75pt solid var(--linea); padding-bottom: 5pt; margin-bottom: 15pt;
+  }
+  .num { position: absolute; right: 0.6in; bottom: 0.4in;
+         font-size: var(--t-pie); color: var(--gris); }
+  .num::after { content: counter(pag); }
+
+  h1 { margin-bottom: 10pt; }
+  h1 + .sub { font-size: var(--t-subtitulo); font-weight: 600; color: var(--gris);
+              margin: -4pt 0 14pt; line-height: 1.35; }
+
+  /* índice */
+  .idx { list-style: none; padding: 0; margin: 0; }
+  .idx li { margin: 0; border-bottom: .75pt solid var(--linea); }
+  .idx a { display: flex; gap: 8pt; align-items: baseline; padding: 3.2pt 0;
+            color: var(--tinta); font-size: 11pt; line-height: 1.35; }
+  .idx .n { font-weight: 700; color: var(--acento); min-width: 24pt; }
+  .idx .t { flex: 1; }
+  .idx .grupo { font-size: var(--t-pie); font-weight: 700; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--acento);
+                padding: 10pt 0 2.5pt; border: 0; }
+
+  /* calendario */
+  .cal td, .cal th { text-align: center; padding: 4.5pt 2pt; font-size: 10pt; }
+  .cal td:first-child, .cal th:first-child { text-align: left; font-weight: 700; }
+  .cal .r7 { color: var(--acento); font-weight: 700; }
+
+  /* la tabla de medirse */
+  .medir td { height: 26pt; }
+  .medir .hueco { border-bottom: 1pt solid var(--tinta); }
+
+.tick { display: inline-block; width: 9.5pt; height: 9.5pt; border: 1pt solid var(--acento);
+          border-radius: 2pt; vertical-align: -1pt; }
+  .tick + .tick { margin-left: 2.5pt; }
+
+  .dos { display: flex; gap: 14pt; }
+  .dos > * { flex: 1; }
+</style>
+</head>
+<body>
+
+<!-- 1 ............................................................ tapa -->
+<section class="pagina tapa-p"><img src="portada.png" alt="Plana todo el día"></section>
+
+
+<!-- 2 ............................................................ índice -->
+<section class="pagina">
+  <div class="seccion">Índice · tocá una línea para saltar a esa página</div>
+  <h1 style="margin-bottom:8pt">Qué hay adentro</h1>
+
+  <ul class="idx">
+    <li class="grupo">Antes de empezar</li>
+    <li><a href="#empezar"><span class="n">1</span><span class="t">Leé esto, son 2 minutos</span></a></li>
+    <li><a href="#numero"><span class="n">2</span><span class="t">Tu número de partida: el método 9 a 9</span></a></li>
+    <li><a href="#motivos"><span class="n">3</span><span class="t">Los 3 motivos por los que tu panza no baja</span></a></li>
+    <li><a href="#funciona"><span class="n">4</span><span class="t">Cómo funciona el reto</span></a></li>
+
+    <li class="grupo">Las 7 rutinas</li>
+    <li><a href="#r1"><span class="n">R1</span><span class="t">Respiración 360 · 8 min · todos los días</span></a></li>
+    <li><a href="#r2"><span class="n">R2</span><span class="t">Core profundo de pie · 10 min</span></a></li>
+    <li><a href="#r3"><span class="n">R3</span><span class="t">Cintura y oblicuos · 10 min</span></a></li>
+    <li><a href="#r4"><span class="n">R4</span><span class="t">Piso: cinturón interno y glúteo · 12 min</span></a></li>
+    <li><a href="#r5"><span class="n">R5</span><span class="t">Cardio de bajo impacto · 12 min</span></a></li>
+    <li><a href="#r6"><span class="n">R6</span><span class="t">Movilidad y descarga · 8 min</span></a></li>
+    <li><a href="#r7"><span class="n">R7</span><span class="t">La de 6 minutos, para el día que no da</span></a></li>
+
+    <li class="grupo">El plan</li>
+    <li><a href="#calendario"><span class="n">5</span><span class="t">El calendario de 28 días</span></a></li>
+    <li><a href="#comida"><span class="n">6</span><span class="t">Comida sin dieta (5 páginas)</span></a></li>
+    <li><a href="#postura"><span class="n">7</span><span class="t">Postura y vida diaria</span></a></li>
+    <li><a href="#dia28"><span class="n">8</span><span class="t">Día 28: medí y compará</span></a></li>
+    <li><a href="#hoja"><span class="n">9</span><span class="t">Hoja de seguimiento</span></a></li>
+  </ul>
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 3 ............................................................ antes de empezar -->
+<section class="pagina" id="empezar">
+  <div class="seccion">Antes de empezar</div>
+  <h1>Leé esto, son 2 minutos</h1>
+
+  <p>Este reto no es para bajar de peso. Es para que tu cintura mida lo mismo a las 9 de
+  la noche que a las 9 de la mañana.</p>
+
+  <h3>Si te pasa esto, es para vos</h3>
+  <ul>
+    <li>Te despertás con la panza plana y a las 6 de la tarde no te cierra el pantalón.</li>
+    <li>Bajaste de peso y la cintura te quedó igual de recta.</li>
+    <li>Hacés abdominales hace meses y la panza se ve más dura, pero no más angosta.</li>
+  </ul>
+
+  <div class="caja">
+    <p><span class="ojo">Qué necesitás:</span> una colchoneta o una toalla grande, una
+    cinta métrica (la de costura; si no tenés, un cordón y una regla) y 10 minutos.</p>
+    <p><span class="ojo">Qué NO necesitás:</span> gimnasio, mancuernas, suplementos, tés,
+    fajas ni dejar de comer.</p>
+  </div>
+
+  <p class="chico">Una aclaración de entrada: si estás embarazada, tuviste un bebé hace
+  menos de 6 meses o te operaron del abdomen, esto no es para vos todavía. Hablalo con tu
+  médico o con un fisioterapeuta de piso pélvico primero.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 4 ............................................................ tu número -->
+<section class="pagina" id="numero">
+  <div class="seccion">Antes de empezar</div>
+  <h1>Tu número de partida</h1>
+  <p class="sub">El método 9 a 9</p>
+
+  <p>Antes de hacer un solo ejercicio, necesitás dos números. No es el peso. Es tu cintura
+  <strong>dos veces en el mismo día</strong>.</p>
+
+  <h3>Cómo medirte, siempre igual</h3>
+  <ol>
+    <li>De pie, descalza, sin ropa gruesa.</li>
+    <li>La cinta a la altura del ombligo, paralela al piso.</li>
+    <li>Soltá el aire normal. <strong>No metas la panza.</strong> No aprietes la cinta:
+    que apoye.</li>
+    <li>Anotá el número.</li>
+  </ol>
+
+  <p><strong>Cuándo:</strong> hoy apenas te levantes (antes de desayunar) y hoy a la
+  noche, después de cenar. Dos números, el mismo día.</p>
+
+  <table class="medir">
+    <tr><th></th><th>Mañana</th><th>Noche</th><th>Diferencia</th></tr>
+    <tr><td><strong>Día 1</strong></td><td class="hueco"></td><td class="hueco"></td><td class="hueco"></td></tr>
+    <tr><td><strong>Día 28</strong></td><td class="hueco"></td><td class="hueco"></td><td class="hueco"></td></tr>
+  </table>
+
+  <p class="chico">Sacale una foto a esta hoja con los números escritos. En 4 semanas no te
+  vas a acordar.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 4b .......................................................... qué significa -->
+<section class="pagina">
+  <div class="seccion">Antes de empezar</div>
+  <h1>Esa diferencia es el número del reto</h1>
+
+  <p>Si a la mañana medís 74 y a la noche 80, tu diferencia es 6 cm.</p>
+
+  <div class="caja">
+    <p><span class="ojo">Eso no es grasa:</span> la grasa no aparece en 12 horas. Es aire,
+    comida en tránsito y una pared abdominal que no sostiene.</p>
+  </div>
+
+  <p>El día 28 volvés a medir las dos veces. El objetivo es que esa diferencia se achique.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 5 ............................................................ motivos 1 y 2 -->
+<section class="pagina" id="motivos">
+  <div class="seccion">Antes de empezar</div>
+  <h1>Los 3 motivos por los que tu panza no baja</h1>
+
+  <h2>Motivo 1: hinchazón</h2>
+  <p>Lo que se hincha durante el día es el intestino: gas, líquido y comida en tránsito.
+  Por eso amanecés plana. Ninguna cantidad de abdominales toca esto; se toca con qué
+  comés, cuánto tomás y cómo masticás.</p>
+
+  <h2>Motivo 2: postura</h2>
+  <p>Ocho horas sentada con la pelvis volcada hacia adelante y las costillas hundidas
+  hacen que la panza salga aunque no haya un gramo más de grasa.</p>
+  <div class="caja">
+    <p>Es como una bolsa: si aflojás los bordes, el contenido se va para adelante.</p>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 6 ............................................................ motivo 3 -->
+<section class="pagina">
+  <div class="seccion">Antes de empezar</div>
+  <h1>Motivo 3: el cinturón interno dormido</h1>
+
+  <p>Tu abdomen tiene dos capas.</p>
+  <ul>
+    <li>La de <strong>afuera</strong> es el músculo que se ve, el de la tableta. Es el que
+    trabajás con los abdominales clásicos. Su trabajo es doblarte hacia adelante.</li>
+    <li>La de <strong>adentro</strong> es el transverso: una faja natural que te rodea la
+    cintura y la aprieta. No se ve nunca. Y es la que decide cuánto sale tu panza en
+    reposo.</li>
+  </ul>
+
+  <p>Años de crunches inflan la capa de afuera con la faja de adentro floja. Por eso el
+  abdomen se siente más duro y la cintura no se marca.</p>
+
+  <div class="caja">
+    <p><span class="ojo">Este reto entrena la capa de adentro.</span> Por eso el primer
+    ejercicio no parece ejercicio: es respirar.</p>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 7 ............................................................ cómo funciona -->
+<section class="pagina" id="funciona">
+  <div class="seccion">Antes de empezar</div>
+  <h1>Cómo funciona el reto</h1>
+
+  <ul>
+    <li><strong>Todos los días hacés la Rutina 1</strong> (respiración, 8 minutos). Es el
+    motor.</li>
+    <li><strong>Además</strong>, el calendario te dice qué rutina sumar ese día.</li>
+    <li><strong>El día que se te cae el mundo encima</strong>, hacés la Rutina 7: 6
+    minutos, y cuenta igual. No existe "hoy no hice nada".</li>
+    <li>Marcá cada día en la hoja de seguimiento. Marcar es la mitad del reto.</li>
+  </ul>
+
+  <div class="caja">
+    <p><span class="ojo">Una regla:</span> nunca metas la panza para adentro a la fuerza.
+    Ni al medirte, ni al caminar, ni en los ejercicios. Meter la panza empuja todo hacia
+    abajo. Lo que vas a aprender es lo contrario: apretar desde adentro sin dejar de
+    respirar.</p>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 8 ............................................................ R1 parte 1 -->
+<section class="pagina" id="r1">
+  <div class="seccion">Rutina 1 · 8 minutos · todos los días</div>
+  <h1>Respiración 360</h1>
+  <p class="sub">Esta es la rutina que hace el trabajo. Si algún día hacés solo esta, el
+  reto sigue vivo.</p>
+
+  <figure>
+    <img src="ilustraciones/respiracion-360.svg" alt="Acostada boca arriba, rodillas dobladas, las manos en la cintura. Las flechas muestran las costillas abriéndose.">
+    <figcaption>Las costillas se abren hacia tus manos. La panza no sube.</figcaption>
+  </figure>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">1. Respiración 360</span><span class="puntos"></span><span class="dosis">2 min</span></div>
+    <div class="como">Acostada boca arriba, rodillas dobladas, pies en el piso. Las manos
+    en la cintura, los pulgares atrás y los dedos adelante, justo abajo de las últimas
+    costillas. Tomá aire por la nariz y buscá que <strong>las costillas se abran hacia tus
+    manos y hacia atrás</strong>, no que la panza suba. Soltá el aire por la boca,
+    despacio, como si empañaras un vidrio, hasta el final.</div>
+  </div>
+  <p class="chico"><strong>Error típico:</strong> levantar el pecho y los hombros. Si se te
+  levantan, estás respirando arriba.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 9 ............................................................ R1 parte 2 -->
+<section class="pagina">
+  <div class="seccion">Rutina 1 · 8 minutos · todos los días</div>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">2. Exhalación larga con cierre</span><span class="puntos"></span><span class="dosis">3 min</span></div>
+    <div class="como">Misma posición. Tomá aire 3 segundos. Soltá en 6 segundos y,
+    <strong>en la última parte del soplido</strong>, sentí cómo la zona entre las caderas
+    se cierra sola, como un cordón que se ajusta. No metas la panza: dejá que se cierre al
+    soltar el aire. 8 a 10 respiraciones, descanso de 30 segundos, otra vuelta.</div>
+  </div>
+  <p class="chico"><strong>Cómo saber si va bien:</strong> apoyás dos dedos adentro del
+  hueso de la cadera; al soltar el aire tiene que ponerse firme abajo de tus dedos, sin que
+  el abdomen salte hacia afuera.</p>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">3. Hipopresivo suave</span><span class="puntos"></span><span class="dosis">2 min</span></div>
+    <div class="como">Sentada bien derecha o de pie contra la pared. Soltá
+    <strong>todo</strong> el aire, hasta el final. Con el aire afuera, sin tomar aire,
+    <strong>abrí las costillas</strong> como si fueras a respirar pero sin dejar entrar
+    aire, 2 a 3 segundos. Vas a sentir que la panza se mete sola hacia arriba y adentro.
+    Tomá aire y descansá. 4 repeticiones, nunca más de 3 segundos cada una.</div>
+  </div>
+  <p class="chico">No lo hagas si estás embarazada o tenés presión alta sin controlar.</p>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">4. Cierre</span><span class="puntos"></span><span class="dosis">1 min</span></div>
+    <div class="como">De pie, costillas abajo, coronilla al techo, respirá normal 10 veces
+    sintiendo la faja interna firme. Así se camina el resto del día.</div>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 10 ........................................................... R2 -->
+<section class="pagina" id="r2">
+  <div class="seccion">Rutina 2 · 10 minutos</div>
+  <h1>Core profundo de pie</h1>
+  <p class="sub">Para hacerla en pijama, sin tirarte al piso. Sin saltos: el vecino de
+  abajo no se entera.</p>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Marcha con costillas abajo</span><span class="puntos"></span><span class="dosis">20</span></div>
+    <div class="como">De pie, espalda contra la pared. Levantá una rodilla a la altura de
+    la cadera sin que la espalda se despegue de la pared. 10 por pierna.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Empuje contra la pared</span><span class="puntos"></span><span class="dosis">8</span></div>
+    <div class="como">De frente a la pared, manos apoyadas, empujá fuerte 5 segundos
+    soltando el aire. La panza no sale.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Antigiro con toalla</span><span class="puntos"></span><span class="dosis">8 por lado</span></div>
+    <div class="como">Tomá una toalla enrollada con las dos manos, brazos estirados
+    adelante. Alguien imaginario tira de un lado: vos resistís sin girar el tronco.
+    5 segundos cada uno.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Sentadilla a la silla</span><span class="puntos"></span><span class="dosis">12</span></div>
+    <div class="como">Sentarte y levantarte de una silla, sin manos, soltando el aire al
+    subir.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Elevación de talones lenta</span><span class="puntos"></span><span class="dosis">12</span></div>
+    <div class="como">De pie, subí a la punta de los pies en 3 segundos y bajá en 3.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Estiramiento de flexores</span><span class="puntos"></span><span class="dosis">40 s por lado</span></div>
+    <div class="como">Un pie adelante en tijera, meté la cola hacia abajo y sentí adelante
+    de la cadera de atrás.</div>
+  </div>
+
+  <p class="chico">Dos vueltas si te queda tiempo. Entre ejercicios, 3 respiraciones de la
+  Rutina 1.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 11 ........................................................... R3 -->
+<section class="pagina" id="r3">
+  <div class="seccion">Rutina 3 · 10 minutos</div>
+  <h1>Cintura y oblicuos</h1>
+  <p class="sub">Acá se trabaja la forma de la cintura: girar y, sobre todo, aguantar sin
+  girar. Cero abdominales clásicos.</p>
+
+  <figure>
+    <img src="ilustraciones/plancha-lateral-rodillas.svg" alt="Plancha apoyada en el antebrazo y las rodillas, cadera arriba, el cuerpo en línea.">
+    <figcaption>Plancha lateral de rodillas: la cadera sube hasta quedar en línea.</figcaption>
+  </figure>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Plancha lateral de rodillas</span><span class="puntos"></span><span class="dosis">20 s × 3</span></div>
+    <div class="como">De costado, apoyada en el antebrazo y las rodillas, cadera arriba en
+    línea. Por lado.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Bicho muerto</span><span class="puntos"></span><span class="dosis">10 por lado</span></div>
+    <div class="como">Boca arriba, brazos al techo, rodillas a 90°. Estirá un brazo y la
+    pierna contraria soltando el aire, sin que la espalda se despegue del piso.</div>
+  </div>
+  <div class="num">Página </div>
+</section>
+
+<section class="pagina">
+  <div class="seccion">Rutina 3 · 10 minutos</div>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Perro-pájaro</span><span class="puntos"></span><span class="dosis">8 por lado</span></div>
+    <div class="como">En cuatro apoyos, estirá brazo y pierna contraria y aguantá 3
+    segundos sin torcer la cadera.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Giro sentada, lento</span><span class="puntos"></span><span class="dosis">16</span></div>
+    <div class="como">Sentada, rodillas dobladas, espalda recta. Girá el tronco despacio de
+    un lado al otro, soltando el aire en cada giro.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Rodillas al costado</span><span class="puntos"></span><span class="dosis">10 por lado</span></div>
+    <div class="como">Boca arriba, rodillas juntas dobladas, dejalas caer despacio a un
+    lado y volvé con el abdomen, no con el impulso.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Estiramiento de costado</span><span class="puntos"></span><span class="dosis">30 s por lado</span></div>
+    <div class="como">De pie, un brazo arriba, inclinate al lado contrario y respirá hacia
+    esas costillas.</div>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 12 ........................................................... R4 -->
+<section class="pagina" id="r4">
+  <div class="seccion">Rutina 4 · 12 minutos</div>
+  <h1>Piso: cinturón interno y glúteo</h1>
+  <p class="sub">El glúteo dormido es medio problema de postura: si no sostiene atrás, la
+  pelvis se vuelca y la panza sale adelante.</p>
+
+  <figure>
+    <img src="ilustraciones/puente-de-gluteo.svg" alt="Boca arriba con los pies apoyados, la cadera sube.">
+    <figcaption>Puente de glúteo: la cadera sube soltando el aire.</figcaption>
+  </figure>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Puente de glúteo</span><span class="puntos"></span><span class="dosis">15</span></div>
+    <div class="como">Boca arriba, pies apoyados. Subí la cadera soltando el aire, apretá
+    el glúteo arriba 2 segundos.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Puente a una pierna</span><span class="puntos"></span><span class="dosis">8 por lado</span></div>
+    <div class="como">Igual, con una pierna estirada. Si es mucho, quedate en el
+    anterior.</div>
+  </div>
+  <div class="num">Página </div>
+</section>
+
+<section class="pagina">
+  <div class="seccion">Rutina 4 · 12 minutos</div>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Almeja</span><span class="puntos"></span><span class="dosis">15 por lado</span></div>
+    <div class="como">De costado, rodillas dobladas, abrí la rodilla de arriba sin mover la
+    cadera.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Patada atrás en cuatro apoyos</span><span class="puntos"></span><span class="dosis">12 por lado</span></div>
+    <div class="como">Empujá el talón al techo sin arquear la espalda.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Plancha de antebrazos</span><span class="puntos"></span><span class="dosis">20 a 30 s × 3</span></div>
+    <div class="como">Cuerpo en línea, costillas abajo, respirando. Si la espalda se hunde,
+    bajá a rodillas.</div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">Postura del niño con respiración</span><span class="puntos"></span><span class="dosis">1 min</span></div>
+    <div class="como">De rodillas, sentada sobre los talones, frente al piso, respirá hacia
+    la espalda.</div>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 13 ........................................................... R5 y R6 -->
+<section class="pagina" id="r5">
+  <div class="seccion">Rutinas 5 y 6</div>
+  <h1>Cardio de bajo impacto</h1>
+  <p class="sub">12 minutos · sin saltos, sin correr</p>
+
+  <p>Mover el cuerpo entero ayuda a que el intestino también se mueva.</p>
+
+  <div class="caja">
+    <p><span class="ojo">Cuatro vueltas de:</span></p>
+    <ul style="margin-bottom:0">
+      <li>Marcha en el lugar levantando rodillas — 45 segundos</li>
+      <li>Paso lateral amplio — 45 segundos</li>
+      <li>Sentadilla a la silla — 30 segundos</li>
+      <li>Caminar por la casa respirando por la nariz — 30 segundos</li>
+    </ul>
+  </div>
+
+  <p class="chico">Si podés, cambiala por <strong>20 minutos de caminata afuera</strong>.
+  Es mejor y es gratis.</p>
+
+  <div class="num">Página </div>
+</section>
+
+<section class="pagina">
+  <div class="seccion">Rutinas 5 y 6</div>
+  <h1 id="r6">Movilidad y descarga</h1>
+  <p class="sub">8 minutos · para el día 7 y para cuando estás dura de estar sentada</p>
+
+  <ul>
+    <li>Gato-camello en cuatro apoyos — 10 veces lento</li>
+    <li>Rotación de columna de costado — 8 por lado</li>
+    <li>Estiramiento de flexores de cadera — 40 segundos por lado</li>
+    <li>Postura del niño — 1 minuto</li>
+    <li>Respiración 360 acostada — 2 minutos</li>
+  </ul>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 14 ........................................................... R7 -->
+<section class="pagina" id="r7">
+  <div class="seccion">Rutina 7 · 6 minutos</div>
+  <h1>La de 6 minutos</h1>
+  <p class="sub">Para el día que no da</p>
+
+  <div class="caja">
+    <p>Esta rutina existe por una razón: <span class="ojo">que no abandones.</span> El día
+    que llegás a las 11 de la noche muerta, hacés esta y el reto sigue entero.</p>
+  </div>
+
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">1. Respiración 360 acostada</span><span class="puntos"></span><span class="dosis">10 resp.</span></div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">2. Exhalación larga con cierre</span><span class="puntos"></span><span class="dosis">10 resp.</span></div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">3. Puente de glúteo</span><span class="puntos"></span><span class="dosis">15</span></div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">4. Bicho muerto</span><span class="puntos"></span><span class="dosis">8 por lado</span></div>
+  </div>
+  <div class="ejercicio">
+    <div class="fila"><span class="nombre">5. Postura del niño</span><span class="puntos"></span><span class="dosis">1 min</span></div>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 15 ........................................................... calendario -->
+<section class="pagina" id="calendario">
+  <div class="seccion">El plan</div>
+  <h1>El calendario de 28 días</h1>
+
+  <table class="cal">
+    <tr><th>Día</th><th>Semana 1</th><th>Semana 2</th><th>Semana 3</th><th>Semana 4</th></tr>
+    <tr><td>1</td><td>R1</td><td>R1 + R2</td><td>R1 + R3</td><td>R1 + R2</td></tr>
+    <tr><td>2</td><td>R1 + R2</td><td>R1 + R4</td><td>R1 + R5</td><td>R1 + R4</td></tr>
+    <tr><td>3</td><td>R1</td><td>R1 + R3</td><td class="r7">R1 + R7</td><td>R1 + R3</td></tr>
+    <tr><td>4</td><td>R1 + R3</td><td>R1 + R5</td><td>R1 + R4</td><td>R1 + R5</td></tr>
+    <tr><td>5</td><td>R1</td><td>R1 + R2</td><td class="r7">R1 + R7</td><td>R1 + R2</td></tr>
+    <tr><td>6</td><td>R1 + R5</td><td>R1 + R4</td><td>R1 + R3</td><td>R1 + R4</td></tr>
+    <tr><td>7</td><td>R1 + R6</td><td>R1 + R6</td><td>R1 + R6</td><td>R6 + medir</td></tr>
+  </table>
+
+  <p><strong>Semana 1:</strong> aprender a respirar y a activar. No vas a sudar, y está
+  bien.</p>
+  <p><strong>Semana 2:</strong> entra la carga.</p>
+  <p><strong>Semana 3:</strong> la semana en que casi todas abandonan. Por eso hay dos días
+  de R7: úsalos sin culpa.</p>
+  <p><strong>Semana 4:</strong> apretar y volver a la cinta métrica.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 16 ........................................................... comida 1 -->
+<section class="pagina" id="comida">
+  <div class="seccion">Comida sin dieta · 1 de 5</div>
+  <h1>Lo que más hincha y con qué cambiarlo</h1>
+
+  <p>No vas a contar una caloría. Solo vas a cambiar cuatro cosas que inflan el intestino
+  en la mayoría de la gente.</p>
+
+  <table>
+    <tr><th>En vez de</th><th>Probá</th><th>Por qué</th></tr>
+    <tr><td>Gaseosa, agua con gas, cerveza</td><td>Agua, agua con limón, infusión tibia</td><td>El gas que tomás es gas que se queda</td></tr>
+    <tr><td>Chicle y caramelos sin azúcar</td><td>Fruta</td><td>Los polialcoholes (sorbitol, maltitol) fermentan y producen gas</td></tr>
+    <tr><td>Ensalada cruda enorme de noche</td><td>La misma verdura cocida</td><td>Cocida ocupa menos y se digiere más fácil</td></tr>
+    <tr><td>Comer rápido, en 8 minutos</td><td>Los mismos platos, en 20 minutos</td><td>Comer rápido es tragar aire</td></tr>
+  </table>
+
+  <p class="chico">Esto no es para siempre: son 4 semanas para ver qué te hincha a vos. En
+  la hoja de seguimiento hay una columna para anotar cuándo te hinchaste; a los 10 días ya
+  vas a ver el patrón.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 17 ........................................................... comida 2 y 3 -->
+<section class="pagina">
+  <div class="seccion">Comida sin dieta · 2 y 3 de 5</div>
+  <h1>El plato de 3 partes</h1>
+
+  <p>Sin pesar nada, sin app. Mirá el plato y dividilo:</p>
+  <ul>
+    <li><strong>La mitad:</strong> verdura (cocida de noche).</li>
+    <li><strong>Un cuarto:</strong> proteína (huevo, pollo, pescado, carne, legumbres,
+    queso fresco).</li>
+    <li><strong>Un cuarto:</strong> el resto (arroz, papa, pasta, pan, quinua).</li>
+  </ul>
+
+  <div class="caja">
+    <p>Y la regla del tenedor: <span class="ojo">soltá el tenedor entre bocado y
+    bocado.</span> Suena tonto y es lo que más cambia la panza de la tarde.</p>
+  </div>
+
+  <h1 style="margin-top:8pt">Agua, sal y fibra: los tres diales</h1>
+  <ul>
+    <li><strong>Agua:</strong> si tomás poco, el cuerpo retiene. Dos litros repartidos, no
+    un litro de golpe a la noche.</li>
+    <li><strong>Sal:</strong> el problema no es el salero, son los ultraprocesados. Dos
+    comidas caseras más por semana bajan más sodio que sacar la sal de la mesa.</li>
+    <li><strong>Fibra:</strong> si hoy comés poca, no pases de 0 a 100: mucha fibra de
+    golpe hincha más. Subí de a poco y acompañá con agua.</li>
+  </ul>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 18 ........................................................... comida 4 -->
+<section class="pagina">
+  <div class="seccion">Comida sin dieta · 4 de 5</div>
+  <h1>El día después de la comilona</h1>
+
+  <p>Un sábado no arruina nada. Lo que arruina es lo que hacés el domingo.</p>
+
+  <h3>Qué NO hacer</h3>
+  <ul>
+    <li>Saltarte el desayuno.</li>
+    <li>Hacer doble rutina.</li>
+    <li>Tomar laxantes o tés detox.</li>
+  </ul>
+
+  <h3>Qué hacer</h3>
+  <ul>
+    <li>Desayunar normal.</li>
+    <li>Tomar agua.</li>
+    <li>Caminar 20 minutos.</li>
+    <li>Hacer la R1 y seguir el calendario donde ibas.</li>
+  </ul>
+
+  <div class="caja">
+    <p>La panza del domingo es aire y sodio, y se va sola en 48 horas si no hacés ninguna
+    locura.</p>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 19 ........................................................... comida 5a -->
+<section class="pagina">
+  <div class="seccion">Comida sin dieta · 5 de 5</div>
+  <h1>La lista de compras</h1>
+  <p class="sub">Una hoja por semana</p>
+
+  <p>Esto es lo que ninguna guía te da: el papel que te llevás al mercado. Comprá esto y
+  las cuatro páginas anteriores se resuelven solas.</p>
+
+  <table>
+    <tr><th colspan="2">Todas las semanas</th></tr>
+    <tr><td><strong>Verdura para cocinar</strong></td><td>Zapallito, zanahoria, brócoli o coliflor, espinaca, vainita, zapallo</td></tr>
+    <tr><td><strong>Verdura para crudo</strong></td><td>Tomate, pepino, lechuga (mediodía)</td></tr>
+    <tr><td><strong>Proteína</strong></td><td>Huevos (12), pollo, pescado (jurel, bonito), lentejas o garbanzos, queso fresco</td></tr>
+    <tr><td><strong>El cuarto del plato</strong></td><td>Arroz, papa o camote, quinua, avena</td></tr>
+    <tr><td><strong>Fruta</strong></td><td>Plátano, papaya, manzana, mandarina</td></tr>
+    <tr><td><strong>Para tomar</strong></td><td>Manzanilla, anís, hierbaluisa (la infusión tibia de la noche)</td></tr>
+  </table>
+
+  <p class="chico"><strong>Lo que NO entra al carrito estas 4 semanas:</strong> gaseosa y
+  agua con gas, chicles y caramelos "sin azúcar", galletas y snacks de paquete, jugos de
+  caja.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 20 ........................................................... comida 5b -->
+<section class="pagina">
+  <div class="seccion">Comida sin dieta · 5 de 5</div>
+  <h1>El truco de las 3 ollas del domingo</h1>
+
+  <div class="caja">
+    <p>Poné a cocinar al mismo tiempo una olla de verdura, una de un cereal (arroz o
+    quinua) y una fuente de proteína. Guardalas por separado en tres táperes. De lunes a
+    miércoles, tu plato de 3 partes se arma en 4 minutos.</p>
+  </div>
+
+  <h2>Semana a semana</h2>
+  <table>
+    <tr><th>Semana</th><th>Sumá al carrito</th><th>Por qué</th></tr>
+    <tr><td><strong>1</strong></td><td>Cinta métrica, si no tenés</td><td>Sin medir no hay reto</td></tr>
+    <tr><td><strong>2</strong></td><td>Un táper más y una botella de 1 litro</td><td>Para el plato armado y para repartir el agua</td></tr>
+    <tr><td><strong>3</strong></td><td>Algo que te guste y no te hinche (chocolate amargo, fruta congelada)</td><td>Es la semana en que se abandona</td></tr>
+    <tr><td><strong>4</strong></td><td>Lo mismo de la semana 2</td><td>Cierre sin sorpresas</td></tr>
+  </table>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 21 ........................................................... postura -->
+<section class="pagina" id="postura">
+  <div class="seccion">Postura y vida diaria</div>
+  <h1>Sentarse 8 horas sin que la panza salga</h1>
+
+  <ul>
+    <li>Cola contra el respaldo, pies apoyados en el piso.</li>
+    <li>La pantalla a la altura de los ojos: si mirás para abajo, las costillas se hunden y
+    la panza sale.</li>
+  </ul>
+
+  <div class="caja">
+    <p><span class="ojo">Los 3 chequeos de 20 segundos</span><br>
+    Ponelos de alarma en el celu: 11, 15 y 18 horas.</p>
+    <ol style="margin:0; padding-left:15pt">
+      <li>Costillas abajo, coronilla al techo.</li>
+      <li>Tres respiraciones 360.</li>
+      <li>Levantate y caminá 20 pasos.</li>
+    </ol>
+  </div>
+
+  <p>Eso solo ya cambia la foto de las 6 de la tarde.</p>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 22 ........................................................... dormir -->
+<section class="pagina">
+  <div class="seccion">Postura y vida diaria</div>
+  <h1>Dormir y estrés: la parte corta y honesta</h1>
+
+  <p>Dormir mal y vivir apurada no "engordan la panza" por arte de magia, pero te hacen
+  comer peor, moverte menos y digerir peor.</p>
+
+  <h3>Dos cosas que entran en 10 minutos</h3>
+  <ul>
+    <li>Cenar 2 horas antes de acostarte, aunque sea 3 días a la semana.</li>
+    <li>Cinco minutos de la respiración de la R1 en la cama, antes de dormir.</li>
+  </ul>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 23 ........................................................... día 28 -->
+<section class="pagina" id="dia28">
+  <div class="seccion">Cierre</div>
+  <h1>Día 28: medí y compará</h1>
+
+  <p>Volvé a medirte igual que el día 1: a la mañana al levantarte y a la noche después de
+  cenar.</p>
+
+  <table class="medir">
+    <tr><th></th><th>Mañana</th><th>Noche</th><th>Diferencia</th></tr>
+    <tr><td><strong>Día 1</strong></td><td class="hueco"></td><td class="hueco"></td><td class="hueco"></td></tr>
+    <tr><td><strong>Día 28</strong></td><td class="hueco"></td><td class="hueco"></td><td class="hueco"></td></tr>
+  </table>
+
+  <div class="caja">
+    <p>Mirá <span class="ojo">la diferencia</span>, no el número solo. Si tu cintura
+    cambiaba 6 cm en el día y ahora cambia 3, tu abdomen está sosteniendo. Eso es lo que se
+    ve en la ropa a las 6 de la tarde.</p>
+  </div>
+
+  <h3>Y mirá estas tres, que no salen en la cinta</h3>
+  <ul>
+    <li>¿Te cuesta menos sentarte derecha?</li>
+    <li>¿Te hinchás menos después de comer?</li>
+    <li>¿La ropa te aprieta menos a la noche?</li>
+  </ul>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 24 ........................................................... día 29 -->
+<section class="pagina">
+  <div class="seccion">Cierre</div>
+  <h1>El día 29</h1>
+  <p class="sub">No vuelvas a cero.</p>
+
+  <ul>
+    <li><strong>Todos los días:</strong> R1, 8 minutos. Es el mantenimiento.</li>
+    <li><strong>Tres días por semana:</strong> una rutina del reto, la que quieras.</li>
+    <li><strong>Una vez por mes:</strong> medite mañana y noche y anotá la diferencia.</li>
+  </ul>
+
+  <div class="caja">
+    <p>Ya sabés qué te hincha, ya sabés cómo se siente la faja interna cuando trabaja. Eso
+    no se pierde.</p>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+
+<!-- 25 ........................................................... hoja de seguimiento -->
+<section class="pagina" id="hoja">
+  <div class="seccion">Hoja de seguimiento</div>
+  <h1>Los 28 días</h1>
+  <p class="chico">Marcá con el dedo en el celular o imprimila. Hay una versión en A4 para
+  imprimir en <em>hoja-de-seguimiento.pdf</em>.</p>
+
+  <table style="margin-top:8pt">
+    <tr><th>Día</th><th>Rutina</th><th>Hecho</th><th>Hinchazón</th><th>Qué comí antes</th></tr>
+    <tr><td>1</td><td>R1</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>2</td><td>R1+R2</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>3</td><td>R1</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>4</td><td>R1+R3</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>5</td><td>R1</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>6</td><td>R1+R5</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>7</td><td>R1+R6</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>8</td><td>R1+R2</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>9</td><td>R1+R4</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>10</td><td>R1+R3</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>11</td><td>R1+R5</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>12</td><td>R1+R2</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>13</td><td>R1+R4</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>14</td><td>R1+R6</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+  </table>
+  <p class="chico">Hinchazón: nada · poco · mucho. Sigue en la página siguiente.</p>
+
+  <div class="num">Página </div>
+</section>
+
+<section class="pagina">
+  <div class="seccion">Hoja de seguimiento</div>
+  <table style="margin-top:0">
+    <tr><th>Día</th><th>Rutina</th><th>Hecho</th><th>Hinchazón</th><th>Qué comí antes</th></tr>
+    <tr><td>15</td><td>R1+R3</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>16</td><td>R1+R5</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>17</td><td>R1+R7</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>18</td><td>R1+R4</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>19</td><td>R1+R7</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>20</td><td>R1+R3</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>21</td><td>R1+R6</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>22</td><td>R1+R2</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>23</td><td>R1+R4</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>24</td><td>R1+R3</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>25</td><td>R1+R5</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>26</td><td>R1+R2</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>27</td><td>R1+R4</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+    <tr><td>28</td><td>R6 + medir</td><td><span class="tick"></span></td><td><span class="tick"></span><span class="tick"></span><span class="tick"></span></td><td></td></tr>
+  </table>
+
+  <div class="caja">
+    <p><span class="ojo">Día 28:</span> volvé a la página "Día 28" y anotá los dos números.
+    La diferencia es el resultado del reto.</p>
+  </div>
+
+  <div class="num">Página </div>
+</section>
+
+</body>
+</html>

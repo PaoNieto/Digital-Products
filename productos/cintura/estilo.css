@@ -1,0 +1,106 @@
+/* Ficha de estilo del producto "Plana todo el día". Ver DISENO.md.
+   Un solo archivo: lo usan la portada, el PDF y la hoja de seguimiento.
+   Si un color o un tamaño cambia acá, cambia en las tres piezas a la vez. */
+
+@font-face { font-family: "Open Sans"; font-weight: 400; font-style: normal;
+             src: url("tipografia/OpenSans-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-weight: 600; font-style: normal;
+             src: url("tipografia/OpenSans-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-weight: 700; font-style: normal;
+             src: url("tipografia/OpenSans-Bold.ttf") format("truetype"); }
+
+:root {
+  --tinta:        #1A1A1A;   /* color 1: todo el texto */
+  --acento:       #0E7C66;   /* color 2: títulos, cajas, ilustraciones, botón del checkout */
+  --acento-medio: #93C3B7;   /* el acento aguado: lado lejano de las ilustraciones */
+  --acento-suave: #EDF5F2;   /* el acento muy aguado: fondo de cajas e ilustraciones */
+  --linea:        #D7E3DF;   /* líneas de tabla */
+  --gris:         #5C6B67;   /* letra chica de servicio */
+
+  --t-titulo:    26pt;
+  --t-subtitulo: 15pt;
+  --t-texto:     12.5pt;
+  --t-pie:       8.5pt;      /* única excepción: número de página y etiquetas */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Segoe UI", sans-serif;
+  font-size: var(--t-texto);
+  line-height: 1.62;
+  color: var(--tinta);
+  background: #FFFFFF;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+h1, h2, h3 { margin: 0; font-weight: 700; }
+h1 { font-size: var(--t-titulo); line-height: 1.15; color: var(--acento); letter-spacing: -.01em; }
+h2 { font-size: var(--t-subtitulo); line-height: 1.3; margin: 18pt 0 6pt; }
+h3 { font-size: var(--t-texto); line-height: 1.4; margin: 14pt 0 2pt; }
+p  { margin: 0 0 9pt; }
+strong { font-weight: 700; }
+a { color: var(--acento); text-decoration: none; }
+
+ul { margin: 0 0 9pt; padding-left: 15pt; }
+li { margin-bottom: 4pt; }
+li::marker { color: var(--acento); }
+
+/* --- la caja de "hacé esto": un solo estilo en todo el PDF --- */
+.caja {
+  background: var(--acento-suave);
+  border-left: 3.5pt solid var(--acento);
+  border-radius: 0 6pt 6pt 0;
+  padding: 10pt 12pt;
+  margin: 12pt 0;
+}
+.caja > :last-child { margin-bottom: 0; }
+
+.ojo { font-weight: 700; color: var(--acento); }
+.chico { font-size: var(--t-pie); color: var(--gris); line-height: 1.5; }
+
+/* --- tablas --- */
+table { width: 100%; border-collapse: collapse; margin: 10pt 0; }
+th, td { text-align: left; padding: 5pt 7pt; border-bottom: .75pt solid var(--linea); vertical-align: top; }
+th { background: var(--acento-suave); color: var(--acento); font-weight: 700;
+     font-size: var(--t-pie); text-transform: uppercase; letter-spacing: .06em; }
+td { font-size: 11pt; line-height: 1.45; }
+
+/* --- lista de ejercicios: nombre + dosis en una línea, el cómo debajo --- */
+.ejercicio { margin: 0 0 11pt; }
+.ejercicio .fila { display: flex; align-items: baseline; gap: 8pt; }
+.ejercicio .nombre { font-weight: 700; }
+.ejercicio .puntos { flex: 1; border-bottom: .75pt dotted var(--linea); transform: translateY(-3pt); }
+.ejercicio .dosis { font-weight: 700; color: var(--acento); white-space: nowrap; font-size: 11pt; }
+.ejercicio .como { font-size: 11pt; line-height: 1.45; color: var(--tinta); margin-top: 1pt; }
+
+/* --- ilustración de ejercicio ---
+   76% del ancho de la caja de texto: entra grande en el celular y deja lugar
+   para dos ejercicios debajo. El mismo ancho en todas, siempre centrada. */
+figure { width: 76%; margin: 12pt auto; }
+figure img { width: 100%; display: block; border-radius: 8pt; }
+figcaption { font-size: var(--t-pie); color: var(--gris); margin-top: 4pt; }
+
+/* --- la tapa (la usan portada.html y la pagina 1 del PDF) --- */
+.tapa { position: relative; width: 6in; height: 9in; background: #FFFFFF; overflow: hidden; }
+.tapa .bloque {
+  position: absolute; inset: 0 0 auto 0; height: 6.2in;
+  background: var(--acento); color: #fff; padding: 0.8in 0.6in 0;
+}
+.tapa .sello {
+  font-size: 9.5pt; font-weight: 700; letter-spacing: .22em;
+  text-transform: uppercase; opacity: .82; margin-bottom: 0.34in;
+}
+.tapa .titulo {
+  font-size: 86pt; font-weight: 700; line-height: 1.12;
+  letter-spacing: -.025em; text-transform: uppercase; color: #fff;
+}
+.tapa .cinta { position: absolute; left: 0.6in; right: 0.6in; top: 5.6in; }
+.tapa .abajo { position: absolute; left: 0.6in; right: 0.6in; top: 6.85in; }
+.tapa .bajada {
+  font-size: 15.5pt; font-weight: 600; line-height: 1.34;
+  color: var(--tinta); margin: 0 0 0.26in;
+}
+.tapa .pie-tapa { font-size: 12pt; font-weight: 700; color: var(--acento); margin: 0; }

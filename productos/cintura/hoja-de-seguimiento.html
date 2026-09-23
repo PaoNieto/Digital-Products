@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plana todo el día — hoja de seguimiento</title>
+<link rel="stylesheet" href="estilo.css">
+<style>
+  @page { size: A4; margin: 0; }
+  body { font-size: 10pt; }
+
+  .hoja { width: 210mm; height: 297mm; padding: 13mm 14mm 10mm; position: relative; }
+
+  .cabeza { display: flex; align-items: flex-end; justify-content: space-between;
+            border-bottom: 2.5pt solid var(--acento); padding-bottom: 7pt; margin-bottom: 11pt; }
+  .cabeza h1 { font-size: 21pt; line-height: 1.05; }
+  .cabeza .lema { font-size: 9pt; color: var(--gris); margin: 2pt 0 0; }
+  .cabeza .marca { font-size: 8pt; font-weight: 700; letter-spacing: .16em;
+                   text-transform: uppercase; color: var(--acento); text-align: right; }
+
+  /* los dos números del método 9 a 9, arriba de todo */
+  .nueve { display: flex; gap: 7mm; margin-bottom: 10pt; }
+  .nueve .bloque { flex: 1; background: var(--acento-suave);
+                   border-left: 3pt solid var(--acento); border-radius: 0 5pt 5pt 0;
+                   padding: 7pt 9pt; }
+  .nueve .rot { font-size: 8pt; font-weight: 700; letter-spacing: .12em;
+                text-transform: uppercase; color: var(--acento); }
+  .nueve table { margin: 4pt 0 0; }
+  .nueve th { background: none; padding: 1pt 4pt; font-size: 7.5pt; border: 0; white-space: nowrap; }
+  .nueve td { padding: 0 4pt; height: 20pt; border-bottom: 1pt solid var(--acento); font-size: 9pt; }
+  .nueve td:first-child { border: 0; font-weight: 700; width: 26pt; }
+
+  /* el calendario de 28 casillas: 7 columnas, 4 filas */
+  .rejilla { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3.2mm; }
+  .dia { border: .9pt solid var(--linea); border-radius: 5pt; padding: 4pt 4pt 5pt;
+         height: 41mm; display: flex; flex-direction: column; }
+  .dia .n { display: block; font-size: 13pt; font-weight: 700; color: var(--acento); line-height: 1; }
+  .dia .rut { display: block; font-size: 7.5pt; font-weight: 700; color: var(--tinta); margin-top: 2pt; }
+  .dia .tic { display: block; margin-top: auto; }
+  .dia .cuadro { width: 13pt; height: 13pt; border: 1.4pt solid var(--acento);
+                 border-radius: 3pt; display: block; }
+  .dia .hinch { display: block; font-size: 6pt; color: var(--gris); margin-top: 5pt;
+               white-space: nowrap; }
+  .dia .comi { display: block; font-size: 5.6pt; color: var(--gris); margin-top: 7pt;
+               text-transform: uppercase; letter-spacing: .07em; }
+  .dia .raya { display: block; border-bottom: .8pt solid var(--linea); height: 11pt; }
+  .dia .raya + .raya { margin-top: 2pt; }
+  .dia.medir { background: var(--acento-suave); border-color: var(--acento); }
+  .dia.floja .rut { color: var(--acento); }
+
+  .semana { grid-column: 1 / -1; font-size: 7.5pt; font-weight: 700; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--gris); margin: 3pt 0 -1mm; }
+
+  .pie-hoja { position: absolute; left: 14mm; right: 14mm; bottom: 9mm;
+              display: flex; justify-content: space-between; gap: 8mm;
+              border-top: .9pt solid var(--linea); padding-top: 6pt;
+              font-size: 8pt; color: var(--gris); }
+</style>
+</head>
+<body>
+<div class="hoja">
+
+  <div class="cabeza">
+    <div>
+      <h1>Mis 28 días</h1>
+      <p class="lema">Marcá el cuadrito el día que la hiciste. Marcar es la mitad del reto.</p>
+    </div>
+    <div class="marca">Plana todo el día</div>
+  </div>
+
+  <div class="nueve">
+    <div class="bloque">
+      <div class="rot">Día 1 · método 9 a 9</div>
+      <table>
+        <tr><th></th><th>9 AM</th><th>9 PM</th><th>Diferencia</th></tr>
+        <tr><td>cm</td><td></td><td></td><td></td></tr>
+      </table>
+    </div>
+    <div class="bloque">
+      <div class="rot">Día 28 · método 9 a 9</div>
+      <table>
+        <tr><th></th><th>9 AM</th><th>9 PM</th><th>Diferencia</th></tr>
+        <tr><td>cm</td><td></td><td></td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="rejilla">
+    <div class="semana">Semana 1 · aprender a respirar</div>
+    <div class="dia"><span class="n">1</span><span class="rut">R1</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">2</span><span class="rut">R1 + R2</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">3</span><span class="rut">R1</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">4</span><span class="rut">R1 + R3</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">5</span><span class="rut">R1</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">6</span><span class="rut">R1 + R5</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">7</span><span class="rut">R1 + R6</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+
+    <div class="semana">Semana 2 · entra la carga</div>
+    <div class="dia"><span class="n">8</span><span class="rut">R1 + R2</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">9</span><span class="rut">R1 + R4</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">10</span><span class="rut">R1 + R3</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">11</span><span class="rut">R1 + R5</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">12</span><span class="rut">R1 + R2</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">13</span><span class="rut">R1 + R4</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">14</span><span class="rut">R1 + R6</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+
+    <div class="semana">Semana 3 · la semana en que casi todas abandonan</div>
+    <div class="dia"><span class="n">15</span><span class="rut">R1 + R3</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">16</span><span class="rut">R1 + R5</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia floja"><span class="n">17</span><span class="rut">R1 + R7</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">18</span><span class="rut">R1 + R4</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia floja"><span class="n">19</span><span class="rut">R1 + R7</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">20</span><span class="rut">R1 + R3</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">21</span><span class="rut">R1 + R6</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+
+    <div class="semana">Semana 4 · apretar y volver a la cinta</div>
+    <div class="dia"><span class="n">22</span><span class="rut">R1 + R2</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">23</span><span class="rut">R1 + R4</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">24</span><span class="rut">R1 + R3</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">25</span><span class="rut">R1 + R5</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">26</span><span class="rut">R1 + R2</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia"><span class="n">27</span><span class="rut">R1 + R4</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+    <div class="dia medir"><span class="n">28</span><span class="rut">R6 + medir</span><span class="tic"><span class="cuadro"></span><span class="hinch">nada · poco · mucho</span><span class="comi">Qué comí</span><span class="raya"></span><span class="raya"></span></span></div>
+  </div>
+
+  <div class="pie-hoja">
+    <span><strong>R1 todos los días.</strong> El día que no da, R7: 6 minutos y el reto sigue entero.</span>
+    <span>Nunca metas la panza a la fuerza.</span>
+  </div>
+
+</div>
+</body>
+</html>

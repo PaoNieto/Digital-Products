@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Durar más — portada y sistema visual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --tinta:#12161C;
+    --cobre:#AD6015;
+    --cobre-claro:#E0954A;
+    --papel:#FFFFFF;
+    --caja:#F8F2EC;
+    --linea:#E3E1DD;
+    --gris:#55585E;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;padding:32px 16px 80px;
+    font-family:"Open Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+    background:#F4F2EF;color:var(--tinta);
+  }
+  .wrap{max-width:1000px;margin:0 auto}
+  h1{font-size:26px;font-weight:800;margin:0 0 4px;letter-spacing:-.3px}
+  .sub{color:var(--gris);font-size:14px;margin:0 0 32px}
+  h2{font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;
+     color:var(--cobre);margin:40px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--linea)}
+  .card{background:#fff;border:1px solid var(--linea);border-radius:10px;padding:22px}
+  .row{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+  .note{font-size:13px;color:var(--gris);line-height:1.6;margin:10px 0 0}
+  .thumbs{display:flex;gap:26px;align-items:flex-end;flex-wrap:wrap}
+  .thumbs figcaption{font-size:11px;color:var(--gris);text-align:center;margin-top:8px;
+     letter-spacing:1px;text-transform:uppercase;font-weight:700}
+  .sw{display:flex;gap:14px;flex-wrap:wrap}
+  .sw div{width:150px}
+  .chip{height:64px;border-radius:8px;border:1px solid var(--linea)}
+  .sw b{display:block;font-size:13px;margin-top:8px}
+  .sw span{font-size:12px;color:var(--gris)}
+  table{border-collapse:collapse;width:100%;font-size:13px;margin-top:6px}
+  th{background:var(--cobre);color:#fff;text-align:left;padding:8px 10px;
+     font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:700}
+  td{padding:8px 10px;border-bottom:1px solid var(--linea)}
+  @media (max-width:640px){ .thumbs{gap:16px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Durar más — el plan de 21 días</h1>
+  <p class="sub">Portada y pieza central del PDF. Abrila, achicá la ventana y hacé la prueba del pulgar. 23/09/2026.</p>
+
+  <h2>1 · La portada</h2>
+  <div class="card">
+  <div class="row">
+
+    <!-- ====================== PORTADA ====================== -->
+    <svg width="400" height="600" viewBox="0 0 600 900" role="img" aria-label="Portada Durar más">
+      <rect width="600" height="900" fill="#12161C"/>
+
+      <!-- kicker -->
+      <text x="72" y="128" font-family="Open Sans, sans-serif" font-size="21" font-weight="700"
+            letter-spacing="4.5" fill="#E0954A">EL PLAN DE 21 DÍAS</text>
+      <rect x="72" y="150" width="64" height="3" fill="#E0954A"/>
+
+      <!-- título -->
+      <text x="72" y="300" font-family="Open Sans, sans-serif" font-size="128" font-weight="800"
+            letter-spacing="-2" fill="#FFFFFF">DURAR</text>
+      <text x="72" y="420" font-family="Open Sans, sans-serif" font-size="128" font-weight="800"
+            letter-spacing="-2" fill="#FFFFFF">MÁS</text>
+
+      <!-- medidor de 10 barras: el 7 es el único encendido -->
+      <g>
+        <rect x="69"  y="716" width="30" height="44"  rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="117" y="694" width="30" height="66"  rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="165" y="668" width="30" height="92"  rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="213" y="640" width="30" height="120" rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="261" y="608" width="30" height="152" rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="309" y="572" width="30" height="188" rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="357" y="520" width="30" height="240" rx="3" fill="#E0954A"/>
+        <rect x="405" y="512" width="30" height="248" rx="3" fill="#FFFFFF" opacity="0.09"/>
+        <rect x="453" y="506" width="30" height="254" rx="3" fill="#FFFFFF" opacity="0.09"/>
+        <rect x="501" y="502" width="30" height="258" rx="3" fill="#FFFFFF" opacity="0.09"/>
+        <rect x="69"  y="760" width="462" height="2" fill="#FFFFFF" opacity="0.18"/>
+        <text x="372" y="806" text-anchor="middle" font-family="Open Sans, sans-serif"
+              font-size="36" font-weight="800" fill="#E0954A">7</text>
+      </g>
+
+      <!-- pie -->
+      <rect x="72" y="836" width="456" height="1" fill="#FFFFFF" opacity="0.14"/>
+      <text x="72" y="872" font-family="Open Sans, sans-serif" font-size="22" font-weight="600"
+            fill="#FFFFFF" opacity="0.78">Entrenamiento de control. Sin pastillas.</text>
+    </svg>
+
+    <div style="flex:1;min-width:260px">
+      <p class="note"><b>La idea en una línea:</b> diez barras, una sola encendida. Es el mapa del 1 al 10
+      del capítulo 4 convertido en imagen: el 7 es donde se frena.</p>
+      <p class="note"><b>Por qué es discreta:</b> de lejos parece un medidor de sonido o una app de
+      entrenamiento. No hay cuerpos, no hay pareja, no hay rojo de farmacia y la palabra del
+      diagnóstico no aparece en ningún lado. Si alguien la ve de costado en el celular, no sabe
+      de qué es.</p>
+      <p class="note"><b>Lo único que tiene que leerse en miniatura:</b> DURAR MÁS y la barra naranja.
+      Todo lo demás es textura.</p>
+    </div>
+  </div>
+  </div>
+
+  <!-- copia reutilizable de la portada para las miniaturas -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="mini">
+        <rect width="600" height="900" fill="#12161C"/>
+        <text x="72" y="128" font-family="Open Sans, sans-serif" font-size="21" font-weight="700"
+              letter-spacing="4.5" fill="#E0954A">EL PLAN DE 21 DÍAS</text>
+        <rect x="72" y="150" width="64" height="3" fill="#E0954A"/>
+        <text x="72" y="300" font-family="Open Sans, sans-serif" font-size="128" font-weight="800"
+              letter-spacing="-2" fill="#FFFFFF">DURAR</text>
+        <text x="72" y="420" font-family="Open Sans, sans-serif" font-size="128" font-weight="800"
+              letter-spacing="-2" fill="#FFFFFF">MÁS</text>
+        <rect x="69"  y="716" width="30" height="44"  rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="117" y="694" width="30" height="66"  rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="165" y="668" width="30" height="92"  rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="213" y="640" width="30" height="120" rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="261" y="608" width="30" height="152" rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="309" y="572" width="30" height="188" rx="3" fill="#FFFFFF" opacity="0.20"/>
+        <rect x="357" y="520" width="30" height="240" rx="3" fill="#E0954A"/>
+        <rect x="405" y="512" width="30" height="248" rx="3" fill="#FFFFFF" opacity="0.09"/>
+        <rect x="453" y="506" width="30" height="254" rx="3" fill="#FFFFFF" opacity="0.09"/>
+        <rect x="501" y="502" width="30" height="258" rx="3" fill="#FFFFFF" opacity="0.09"/>
+        <rect x="69"  y="760" width="462" height="2" fill="#FFFFFF" opacity="0.18"/>
+        <text x="372" y="806" text-anchor="middle" font-family="Open Sans, sans-serif"
+              font-size="36" font-weight="800" fill="#E0954A">7</text>
+        <rect x="72" y="836" width="456" height="1" fill="#FFFFFF" opacity="0.14"/>
+        <text x="72" y="872" font-family="Open Sans, sans-serif" font-size="22" font-weight="600"
+              fill="#FFFFFF" opacity="0.78">Entrenamiento de control. Sin pastillas.</text>
+      </g>
+    </defs>
+  </svg>
+
+  <h2>2 · Prueba del pulgar</h2>
+  <div class="card">
+    <div class="thumbs">
+      <figure style="margin:0">
+        <svg width="300" height="450" viewBox="0 0 600 900"><use href="#mini"/></svg>
+        <figcaption>300 px · galería de Whop</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <svg width="150" height="225" viewBox="0 0 600 900"><use href="#mini"/></svg>
+        <figcaption>150 px · lista</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <svg width="80" height="120" viewBox="0 0 600 900"><use href="#mini"/></svg>
+        <figcaption>80 px · ícono</figcaption>
+      </figure>
+    </div>
+    <p class="note">A 80 px ya no se lee el pie y no importa: se sigue entendiendo que dice DURAR MÁS
+    y se sigue viendo la barra. Eso es aprobar la prueba.</p>
+  </div>
+
+  <h2>3 · El mapa del 1 al 10 (capítulo 4, página entera)</h2>
+  <div class="card">
+    <div class="row">
+    <svg width="520" height="620" viewBox="0 0 520 620" role="img" aria-label="Mapa del 1 al 10">
+      <rect width="520" height="620" fill="#FFFFFF"/>
+
+      <!-- bandas, de abajo hacia arriba; los escalones de arriba son más cortos -->
+      <g>
+        <rect x="60" y="494" width="96" height="66" fill="#F2F0ED"/>
+        <rect x="60" y="428" width="96" height="66" fill="#EFEDE9"/>
+        <rect x="60" y="362" width="96" height="66" fill="#EBE8E4"/>
+        <rect x="60" y="302" width="96" height="60" fill="#E8E5E0"/>
+        <rect x="60" y="242" width="96" height="60" fill="#E4E1DC"/>
+        <rect x="60" y="190" width="96" height="52" fill="#DEDAD4"/>
+        <rect x="60" y="138" width="96" height="52" fill="#AD6015"/>
+        <rect x="36" y="150" width="24" height="28" fill="#AD6015"/>
+        <rect x="60" y="104" width="96" height="34" fill="#2D3138"/>
+        <rect x="60" y="78"  width="96" height="26" fill="#1D2128"/>
+        <rect x="60" y="60"  width="96" height="18" fill="#12161C"/>
+      </g>
+
+      <!-- números dentro -->
+      <g font-family="Open Sans, sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+        <text x="108" y="533" fill="#12161C">1</text>
+        <text x="108" y="467" fill="#12161C">2</text>
+        <text x="108" y="401" fill="#12161C">3</text>
+        <text x="108" y="338" fill="#12161C">4</text>
+        <text x="108" y="278" fill="#12161C">5</text>
+        <text x="108" y="222" fill="#12161C">6</text>
+        <text x="108" y="172" fill="#FFFFFF" font-size="24" font-weight="800">7</text>
+        <text x="108" y="127" fill="#FFFFFF">8</text>
+        <text x="108" y="97"  fill="#FFFFFF" font-size="14">9</text>
+        <text x="108" y="74"  fill="#FFFFFF" font-size="13">10</text>
+      </g>
+
+      <!-- punto sin retorno -->
+      <line x1="36" y1="104" x2="500" y2="104" stroke="#12161C" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+      <!-- etiquetas -->
+      <g font-family="Open Sans, sans-serif" font-size="15" fill="#55585E">
+        <text x="180" y="538">Nada todavía.</text>
+        <text x="180" y="472">Recién arranca. Tranquilo.</text>
+        <text x="180" y="406">Tranquilo. Control total.</text>
+        <text x="180" y="343">Excitado y cómodo.</text>
+        <text x="180" y="283">Cómodo. Todavía sobra margen.</text>
+        <text x="180" y="227">Empieza a acelerar. Lo notas.</text>
+        <text x="180" y="168" fill="#AD6015" font-size="19" font-weight="800">AQUÍ FRENAS.</text>
+        <text x="180" y="188" fill="#55585E" font-size="14">Se siente que va en serio. Todavía es tuyo.</text>
+        <text x="180" y="128" fill="#12161C" font-weight="700">Muy cerca. Frenar cuesta.</text>
+        <text x="180" y="98"  fill="#55585E" font-size="13">Punto sin retorno. Ya no decides tú.</text>
+        <text x="180" y="74"  fill="#55585E" font-size="13">Pasó.</text>
+      </g>
+
+      <!-- pie del gráfico -->
+      <rect x="36" y="582" width="448" height="1" fill="#E3E1DD"/>
+      <text x="36" y="606" font-family="Open Sans, sans-serif" font-size="15" font-weight="700"
+            fill="#AD6015">Los últimos escalones son más cortos. Ahí está toda la trampa.</text>
+    </svg>
+
+    <div style="flex:1;min-width:250px">
+      <p class="note"><b>Lo que hace distinto a este gráfico:</b> las bandas no miden lo mismo.
+      Del 1 al 5 son anchas, del 8 al 10 son finitas. El dibujo enseña solo la regla 2 del capítulo:
+      entre el 8 y el 9 casi no hay nada.</p>
+      <p class="note"><b>La cima se oscurece.</b> De blanco a cobre a negro. El que mira tres segundos
+      ya entendió: abajo hay luz, en el 7 está la línea, arriba se cierra.</p>
+      <p class="note"><b>Versión chica:</b> la misma barra sin etiquetas, 8 mm de ancho por 60 mm de
+      alto, con el 7 en cobre, metida en el margen derecho de los capítulos 5, 11 y 13.</p>
+    </div>
+    </div>
+  </div>
+
+  <h2>4 · La ficha: dos colores y una letra</h2>
+  <div class="card">
+    <div class="sw">
+      <div><div class="chip" style="background:#12161C"></div><b>Tinta · #12161C</b><span>texto y fondo de portada</span></div>
+      <div><div class="chip" style="background:#AD6015"></div><b>Cobre · #AD6015</b><span>acento sobre blanco · botón del checkout</span></div>
+      <div><div class="chip" style="background:#E0954A"></div><b>Cobre claro · #E0954A</b><span>el mismo cobre, solo sobre fondo oscuro</span></div>
+      <div><div class="chip" style="background:#F8F2EC"></div><b>Caja · #F8F2EC</b><span>fondo de "ojo con esto"</span></div>
+      <div><div class="chip" style="background:#E3E1DD"></div><b>Línea · #E3E1DD</b><span>filas de tabla y pie de página</span></div>
+    </div>
+    <table>
+      <tr><th>Tamaño</th><th>Qué es</th><th>Cómo se ve</th></tr>
+      <tr><td><b>26 pt</b></td><td>Título de capítulo</td><td style="font-size:22px;font-weight:800">Parar y seguir</td></tr>
+      <tr><td><b>15 pt</b></td><td>Subtítulo</td><td style="font-size:15px;font-weight:700">Cuántas series y cada cuánto</td></tr>
+      <tr><td><b>12,5 pt</b></td><td>Texto, interlineado 1,6</td><td style="font-size:13px;line-height:1.6">Le enseña al cuerpo una cosa: que estar excitado y terminar no son lo mismo.</td></tr>
+    </table>
+    <p class="note">Una sola letra: <b>Open Sans</b>. Está en Canva y es una de las tres del checkout de Whop,
+    así que el PDF y la página de pago se ven de la misma familia.</p>
+  </div>
+
+</div>
+</body>
+</html>

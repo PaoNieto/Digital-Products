@@ -68,20 +68,23 @@ th { background: var(--acento-suave); color: var(--acento); font-weight: 700;
      font-size: var(--t-pie); text-transform: uppercase; letter-spacing: .06em; }
 td { font-size: 11pt; line-height: 1.45; }
 
-/* --- lista de ejercicios: nombre + dosis en una línea, el cómo debajo --- */
-.ejercicio { margin: 0 0 11pt; }
+/* --- ejercicio: el dibujo a la izquierda, el texto a la derecha ---
+   Un tercio del ancho para el dibujo. Entra grande para una silueta simple y
+   deja lugar a cuatro ejercicios por hoja. Todos iguales, sin excepciones. */
+.ejercicio { display: flex; gap: 10pt; align-items: flex-start; margin: 0 0 10pt; }
+.ejercicio .dibujo { flex: 0 0 33%; }
+.ejercicio .dibujo img { width: 100%; display: block; border-radius: 6pt; }
+.ejercicio .texto { flex: 1; min-width: 0; }
 .ejercicio .fila { display: flex; align-items: baseline; gap: 8pt; }
 .ejercicio .nombre { font-weight: 700; }
 .ejercicio .puntos { flex: 1; border-bottom: .75pt dotted var(--linea); transform: translateY(-3pt); }
 .ejercicio .dosis { font-weight: 700; color: var(--acento); white-space: nowrap; font-size: 11pt; }
 .ejercicio .como { font-size: 11pt; line-height: 1.45; color: var(--tinta); margin-top: 1pt; }
 
-/* --- ilustración de ejercicio ---
-   76% del ancho de la caja de texto: entra grande en el celular y deja lugar
-   para dos ejercicios debajo. El mismo ancho en todas, siempre centrada. */
-figure { width: 76%; margin: 12pt auto; }
-figure img { width: 100%; display: block; border-radius: 8pt; }
-figcaption { font-size: var(--t-pie); color: var(--gris); margin-top: 4pt; }
+/* --- lista simple con viñeta de color (rutinas sin dosis) --- */
+.pasos { list-style: none; padding: 0; margin: 10pt 0; }
+.pasos li { display: flex; gap: 8pt; align-items: baseline; margin-bottom: 6pt; }
+.pasos .n { font-weight: 700; color: var(--acento); min-width: 14pt; }
 
 /* --- la tapa (la usan portada.html y la pagina 1 del PDF) --- */
 .tapa { position: relative; width: 6in; height: 9in; background: #FFFFFF; overflow: hidden; }

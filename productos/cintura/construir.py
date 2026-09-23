@@ -61,7 +61,7 @@ def pdf(html, salida):
 
 if __name__ == "__main__":
     captura("portada.html", "portada.png", 600, 900)
-    captura("ilustraciones/muestras.html", "ilustraciones/muestras.png", 520, 1290)
+    captura("ilustraciones/muestras.html", "ilustraciones/muestras.png", 620, 1560)
     pdf("plana-todo-el-dia.html", "plana-todo-el-dia.pdf")
     pdf("hoja-de-seguimiento.html", "hoja-de-seguimiento.pdf")
     print("\nListo. Abri el PDF en el celular antes de publicarlo.")

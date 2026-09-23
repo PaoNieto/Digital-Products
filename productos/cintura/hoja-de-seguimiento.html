@@ -24,15 +24,17 @@
                    padding: 7pt 9pt; }
   .nueve .rot { font-size: 8pt; font-weight: 700; letter-spacing: .12em;
                 text-transform: uppercase; color: var(--acento); }
-  .nueve table { margin: 4pt 0 0; }
-  .nueve th { background: none; padding: 1pt 4pt; font-size: 7.5pt; border: 0; white-space: nowrap; }
-  .nueve td { padding: 0 4pt; height: 20pt; border-bottom: 1pt solid var(--acento); font-size: 9pt; }
-  .nueve td:first-child { border: 0; font-weight: 700; width: 26pt; }
+  .nueve table { margin: 4pt 0 0; border-collapse: separate; border-spacing: 6pt 0; }
+  .nueve th { background: none; padding: 0 4pt 2pt; font-size: 7pt; border: 0;
+              white-space: nowrap; color: var(--acento); letter-spacing: .04em; }
+  .nueve td { padding: 0 4pt; height: 17pt; border-bottom: 1pt solid var(--acento); font-size: 8.5pt; }
+  .nueve td:first-child { border: 0; font-weight: 700; width: 64pt; font-size: 7.5pt;
+                        white-space: nowrap; }
 
   /* el calendario de 28 casillas: 7 columnas, 4 filas */
   .rejilla { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3.2mm; }
   .dia { border: .9pt solid var(--linea); border-radius: 5pt; padding: 4pt 4pt 5pt;
-         height: 41mm; display: flex; flex-direction: column; }
+         height: 38mm; display: flex; flex-direction: column; }
   .dia .n { display: block; font-size: 13pt; font-weight: 700; color: var(--acento); line-height: 1; }
   .dia .rut { display: block; font-size: 7.5pt; font-weight: 700; color: var(--tinta); margin-top: 2pt; }
   .dia .tic { display: block; margin-top: auto; }
@@ -42,7 +44,7 @@
                white-space: nowrap; }
   .dia .comi { display: block; font-size: 5.6pt; color: var(--gris); margin-top: 7pt;
                text-transform: uppercase; letter-spacing: .07em; }
-  .dia .raya { display: block; border-bottom: .8pt solid var(--linea); height: 11pt; }
+  .dia .raya { display: block; border-bottom: .8pt solid var(--linea); height: 10pt; }
   .dia .raya + .raya { margin-top: 2pt; }
   .dia.medir { background: var(--acento-suave); border-color: var(--acento); }
   .dia.floja .rut { color: var(--acento); }
@@ -62,7 +64,7 @@
   <div class="cabeza">
     <div>
       <h1>Mis 28 días</h1>
-      <p class="lema">Marcá el cuadrito el día que la hiciste. Marcar es la mitad del reto.</p>
+      <p class="lema">Los tres puntos, mañana y noche. Y marcá el cuadrito el día que la hiciste.</p>
     </div>
     <div class="marca">Plana todo el día</div>
   </div>
@@ -72,14 +74,18 @@
       <div class="rot">Día 1 · método 9 a 9</div>
       <table>
         <tr><th></th><th>9 AM</th><th>9 PM</th><th>Diferencia</th></tr>
-        <tr><td>cm</td><td></td><td></td><td></td></tr>
+        <tr><td>Cintura</td><td></td><td></td><td></td></tr>
+        <tr><td>Abdomen</td><td></td><td></td><td></td></tr>
+        <tr><td>Abdomen bajo</td><td></td><td></td><td></td></tr>
       </table>
     </div>
     <div class="bloque">
       <div class="rot">Día 28 · método 9 a 9</div>
       <table>
         <tr><th></th><th>9 AM</th><th>9 PM</th><th>Diferencia</th></tr>
-        <tr><td>cm</td><td></td><td></td><td></td></tr>
+        <tr><td>Cintura</td><td></td><td></td><td></td></tr>
+        <tr><td>Abdomen</td><td></td><td></td><td></td></tr>
+        <tr><td>Abdomen bajo</td><td></td><td></td><td></td></tr>
       </table>
     </div>
   </div>

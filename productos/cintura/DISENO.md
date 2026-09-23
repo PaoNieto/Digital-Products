@@ -1,6 +1,7 @@
 # Diseño de "Plana todo el día"
 
-_Diseñante, 23/09/2026. La camiseta del equipo: poco y siempre igual._
+_Diseñante, 23/09/2026 (actualizado con las 27 ilustraciones y las páginas nuevas de
+`CONTENIDO.md`). La camiseta del equipo: poco y siempre igual._
 _El archivo que manda es `estilo.css`. Este documento lo explica; no lo repite._
 
 ## La ficha: 2 colores, 1 letra, 3 tamaños
@@ -59,25 +60,24 @@ zoom; una A4 obliga a agrandar. Márgenes: 1.6 cm a los lados, 1.6 arriba, 1.9 a
 │ El glúteo dormido es medio   │ ← bajada, 15 pt, gris
 │ problema de postura...       │
 │                              │
-│     ┌──────────────────┐     │ ← ilustración: 76% del ancho, centrada
-│     │   [silueta]      │     │
-│     └──────────────────┘     │
-│     pie de la ilustración    │
-│                              │
-│ Puente de glúteo ······  15  │ ← nombre en negrita · dosis en acento
-│ Boca arriba, pies apoyados.  │ ← el cómo, 11 pt, debajo
-│                              │
-│ Puente a una pierna ·· 8 x 2 │
-│ Igual, con una pierna...     │
+│ ┌────────┐ Puente de glúteo │ ← el dibujo ocupa un tercio, a la izquierda
+│ │silueta │ ············  15  │ ← nombre en negrita · dosis en acento
+│ └────────┘ Boca arriba, pies │ ← el cómo, 11 pt, al lado
+│            apoyados. Subí... │
+│ ┌────────┐ Puente a 1 pierna │
+│ │silueta │ ·········· 8 x 2  │
+│ └────────┘ Igual, con una... │
 │                       Pág. 13│
 └──────────────────────────────┘
 ```
 
 Reglas de la página: **una columna**, **una idea por página**, título arriba siempre,
 número de página siempre, y un único estilo de caja destacada (fondo aguado + barra de
-acento a la izquierda).
+acento a la izquierda). Cada ejercicio es siempre la misma fila: dibujo a la izquierda
+(un tercio del ancho), nombre y dosis arriba a la derecha, el cómo debajo. Entran cuatro
+ejercicios por hoja, así que las rutinas de seis ocupan dos páginas.
 
-## El estilo de las 25 ilustraciones
+## El estilo de las 27 ilustraciones
 
 Una sola línea visual, y no la dibuja un modelo de imagen: la dibuja
 `ilustraciones/generar.py`. **Un generador de imágenes cambia de trazo en cada tirada e
@@ -95,11 +95,16 @@ distinto cada vez.
 | Separación | lo que está adelante lleva un halo del color del fondo: un brazo nunca se funde con el tronco |
 | Flecha | negra, gruesa. **Recta = a dónde va el movimiento.** Curva = solo para girar |
 | Vista | siempre de perfil, mirando a la derecha |
+| Pared y silla | línea del color del piso; **no cuentan para centrar**, se mueven con la figura |
 | Prohibido | fotos, caras, gestos, sombras, degradados, texto adentro del dibujo |
 
-**Muestras hechas: 3 de 25** (respiración 360, puente de glúteo, plancha lateral de
-rodillas). Ver `ilustraciones/muestras.png`. Las otras 22 salen copiando un bloque de
-`POSES` y cambiando coordenadas; están listadas en `PENDIENTES` dentro del script.
+**Están las 27**, una por cada ejercicio de las rutinas 1 a 7. Se ven todas juntas en
+`ilustraciones/muestras.png`, que el script rehace solo cada vez que corre: esa hoja nunca
+queda vieja. El script también avisa si una flecha se sale del marco, que fue el único
+error que apareció dibujándolas.
+
+Para agregar un ejercicio: copiar un bloque de `POSES`, cambiar las coordenadas de las
+articulaciones y correr `python generar.py`. Nada más.
 
 ## Lo que no se hace, nunca
 
@@ -114,7 +119,7 @@ rodillas). Ver `ilustraciones/muestras.png`. Las otras 22 salen copiando un bloq
 |---|---|
 | `estilo.css` | **la ficha, de verdad.** Un color o un tamaño se cambia acá y cambia en las tres piezas |
 | `portada.html` → `portada.png` | la tapa, 1200 × 1800 (6 × 9 pulgadas a 200 ppp) |
-| `plana-todo-el-dia.html` → `.pdf` | el reto: **30 páginas**, hoja de 6 × 9, índice con links, 3 ilustraciones |
+| `plana-todo-el-dia.html` → `.pdf` | el reto: **38 páginas**, hoja de 6 × 9, índice con 18 links, las 27 ilustraciones |
 | `hoja-de-seguimiento.html` → `.pdf` | la hoja de 1 página en A4, para imprimir |
 | `ilustraciones/generar.py` | el molde de las 25 siluetas |
 | `tipografia/` | Open Sans (licencia SIL Open Font, gratis para uso comercial) |
@@ -127,7 +132,6 @@ puedan desincronizar.
 
 ## Pendiente
 
-- Las 22 ilustraciones que faltan.
 - Las 3 imágenes de la página de Whop (banner 16:9 + 2 vistas de adentro). No estaban en
   este pedido.
 - Abrir el PDF en un celular de verdad y leerlo sin zoom: es el chequeo 3 de Whoper y

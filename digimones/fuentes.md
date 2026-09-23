@@ -34,6 +34,7 @@ Lo que los digimones aprendieron de fuentes que no son los videos (los videos es
 3. Distribución y conversión
 4. Whop y derechos
 5. Anuncios pagados
+6. Referencias dentro del producto (bibliografía en el PDF o la plantilla)
 
 ## 1. Validación, oferta y precio
 
@@ -690,3 +691,69 @@ _Cómo leer la columna "¿verificado?": **verificado** = vi el dato y la fuente 
 - TikTok: la página oficial de la Commercial Content Library no cargó. Que solo cubra el EEE, Suiza y el Reino Unido lo dicen terceros. El "Top Ads" del Creative Center no lo revisé.
 - No hay ningún dato oficial sobre qué porcentaje de cuentas nuevas termina restringido.
 - No revisé las herramientas de anuncios propias de Whop (quedaban fuera del tema).
+
+## 6. Referencias dentro del producto (bibliografía en el PDF o la plantilla)
+
+_Investigación del 23/09/2026 (Vegeta), para decidir si lo que junta Bibliomon en `productos/<producto>/BIBLIOGRAFIA.md` va dentro de lo que recibe el comprador. Reddit no se pudo leer (bloqueado para el agente): los hilos quedan como hueco._
+
+### Lo que dicen las fuentes
+
+**A favor de poner referencias**
+- Autoedición: "Footnotes aren't just about protecting yourself—they're about serving your readers" y la falta de citas es "a sure clue your book is self-published". Pide citar estadísticas, estudios e ideas ajenas "even self-help, business, or memoir books" [1].
+- Una historiadora, citada por una autora: "notes are where your credibility lies" [2].
+- En salud, los que venden información seria citan todo: Precision Nutrition cierra su guía de menopausia con una lista numerada de unas 20 a 25 referencias [3]; Examine.com decía tener más de 50,000 referencias (09/2016) y nació porque "unsourced and incorrect marketing claims" hacían difícil sacar conclusiones [4].
+
+**En contra, o con freno**
+- El lector común se satura: una autora de no ficción pide equilibrio y se burla de anotar "every burp and grunt" [5]. Que "la mayoría de los lectores no mira las fuentes, pero confía al verlas" sale solo de un resumen de búsqueda; no se encontró la frase original.
+- Criterio práctico: "The endnotes should give the curious reader enough information to find the cited resource"; no hace falta formato académico, y conviene mirar si los libros de tu género usan notas [6].
+- Solo links en vez de notas: lectores lo critican ("URLs lapse after a few years"; "making it more difficult for readers to follow up ... is deplorable") [7].
+
+**Plataformas (lo que dicen, no lo que se supone)**
+- Whop prohíbe productos promocionados como "cures, treatments, or disease-prevention remedies without substantiated evidence or regulatory authorization"; los claims de ingresos deben ser "accurate, substantiated, and not misleading" [8]. No pide bibliografía dentro del archivo: pide sustento de lo que se promete.
+- FTC: "doesn't regulate the content or accuracy of statements made in independently written and published books", pero sí "the deceptive use of such materials in the marketing of products". Citar un estudio no alcanza si no respalda la promesa concreta [9].
+- Meta (Salud y bienestar): no pide citas; prohíbe prometer resultados concretos en un plazo "without disclaimers or qualifiers" y, en salud sexual, exige hablar de salud y no de placer [10].
+- Amazon KDP: notas con links de ida y vuelta, y recomienda archivar los links web y poner el link archivado en nota [11].
+
+### Cómo se hace en la práctica
+
+| Forma | Quién la usa | Ojo |
+|---|---|---|
+| Notas numeradas al final del capítulo o del libro, con link de ida y vuelta | KDP, guías de maquetación [11][12] | En ebook no hay nota al pie real: todo termina como nota al final |
+| Sección "Referencias" numerada al final | Precision Nutrition [3] | La más simple para un PDF |
+| Notas por capítulo con la frase citada, sin superíndice | Janzer [6] | Lectura limpia, el curioso igual encuentra la fuente |
+| Solo URLs | Una editorial, criticada [7] | Los links se rompen: archivar (KDP) [11] |
+| Ensayo bibliográfico + notas | Blumenthal [5] | Para libros largos |
+
+### Por nicho
+
+- **Salud y legal:** donde más se cita y donde las plataformas exigen sustento de lo que se promete [3][4][8][9][10]. Una referencia no salva una promesa que el estudio no dice [9].
+- **Productividad y plantillas:** no se encontró ninguna fuente que hable de citas dentro de una plantilla de Notion (hueco).
+
+### Efecto en confianza, devoluciones o ventas
+
+- No se encontró ningún dato medido de que las referencias suban la conversión o bajen las devoluciones. Todo lo que hay es opinión de autores (no verificado).
+- Un blog de venta de ebooks (08/2026) dice que "buyers refund products that read like unedited output" [13]: no verificado, sin datos, y habla de calidad, no de citas.
+
+### Fuentes (N. Título — autor — link — tipo — fecha — consultado 23/09/2026)
+
+1. Why Indie Authors Can't Skip Footnotes — Michelle Rayburn — https://indieauthorblueprint.substack.com/p/why-indie-authors-cant-skip-footnotes — newsletter de autoedición — 06/05/2025
+2. Endnotes – Like Rearranging Deck Chairs on the Titanic — Kim Messier — https://www.goodreads.com/author_blog_posts/16350733-endnotes-like-rearranging-deck-chairs-on-the-titanic — blog de autora — 04/02/2018
+3. All About Menopause — Precision Nutrition — https://www.precisionnutrition.com/all-about-menopause — guía de empresa de nutrición — sin fecha leída
+4. Examine.com — Wikipedia — https://en.wikipedia.org/wiki/Examine.com — enciclopedia (la página propia de Examine devolvió 429)
+5. Sources and Sensibility: Those Pesky Notes — Karen Blumenthal — https://www.goodreads.com/author_blog_posts/3725324-sources-and-sensibility-those-pesky-notes — blog de autora — 15/02/2013
+6. Field Notes on Endnotes — Anne H. Janzer — https://www.goodreads.com/author_blog_posts/26439476-field-notes-on-endnotes — blog de autora — 11/03/2026
+7. Quick take: that book with the URL (comentarios) — Derek Krissoff — https://derekkrissoff.substack.com/p/quick-take-that-book-with-the-url/comments — newsletter de editor — comentarios del 13-14/10, año no leído
+8. Prohibited businesses — Whop — https://docs.whop.com/trust-and-safety/trust-safety-overview/what-is-not-allowed-on-whop — doc oficial — sin fecha
+9. Health Products Compliance Guidance — FTC — https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance — oficial — 12/2022
+10. Health and Wellness (Ad Standards) — Meta — https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/ — oficial — sin fecha leída
+11. Hyperlink Guidelines — Amazon KDP — https://kdp.amazon.com/en_US/help/topic/GQ6JQ7FM6C72HE4X — ayuda oficial — sin fecha
+12. Footnotes and Endnotes in Print and Ebook — ebookpbook — https://www.ebookpbook.com/2026/05/12/footnotes-endnotes-print-ebook/ — blog de maquetación — 12/05/2026
+13. How to Sell Ebooks on Gumroad: What 1,400+ Books Show — Inkfluence AI — https://www.inkfluenceai.com/sell-ebooks-on-gumroad — blog de un proveedor (registro de lo que hace otro, no opción) — actualizado 08/2026
+
+### Huecos
+
+- Reddit (r/selfpublish, r/Entrepreneur, r/passive_income, etc.) y el foro de la comunidad KDP no se pudieron leer: faltan las voces de vendedores y compradores.
+- No hay ningún dato medido sobre el efecto de las referencias en ventas, devoluciones o reseñas.
+- No se encontró nada sobre citas dentro de plantillas de Notion.
+- No se verificó qué hacen los PDF de salud de creadores que venden en Whop o en otras tiendas: haría falta comprar uno (fuera de alcance).
+

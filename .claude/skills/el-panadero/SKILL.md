@@ -38,6 +38,8 @@ Regla dura de Paolo: **hablarle en fácil, con analogías**. Titular primero, co
 
 **Nunca inventar ventas, métricas ni precios.** Todo número de un creador de YouTube es "no verificado" hasta ver de dónde sale. Todo supuesto va marcado como supuesto ("si compran 2 de cada 100, supuesto"). Las comisiones cambian: si pasaron meses desde la fecha de verificación, se vuelven a revisar antes de usarlas.
 
+**En salud, cada afirmación del producto y de la página tiene una fuente en `productos/<producto>/BIBLIOGRAFIA.md`** (la busca Bibliomon). El PDF cierra con una sección "Referencias" numerada. Citar no salva una promesa que el estudio no dice: lo que Whop, Meta y la FTC miran es si lo prometido está respaldado (`digimones/fuentes.md`, tema 6).
+
 ## Cobro: solo Whop
 
 Whop es la tienda y la pasarela. Está decidido y no se discute. Gumroad, Etsy, Stan Store, Hotmart, Payhip, Lemon Squeezy, Mercado Pago o Shopify aparecen en videos y research como registro de lo que hace otra gente, nunca como opción para Paolo.

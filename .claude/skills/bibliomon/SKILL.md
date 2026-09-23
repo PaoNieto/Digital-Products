@@ -80,6 +80,16 @@ _Lo busca Bibliomon. Cada dato con fuente, link y fecha de consulta._
 - En un chat de producto se escribe **solo** en esa carpeta (regla "Un chat por producto" del `CLAUDE.md`). Lo que sirva para todo el negocio, como aprender que una fuente es buena para un tema, va al `NOTAS.md` del producto y la torre de control lo pasa a `digimones/fuentes.md`.
 - Commit solo de lo que tocaste, en una rama propia, nunca en `main`.
 
+## Referencias dentro del producto
+
+`BIBLIOGRAFIA.md` es la trastienda; al comprador le llega una versión corta. Lo que hace la comunidad (evidencia en `digimones/fuentes.md`, tema 6):
+
+- **Sí van, sobre todo en salud**, en una sección **"Referencias" numerada al final** del PDF, con un número chico en el texto que lleva a la nota. Nada de notas al pie: en un ebook terminan al final igual.
+- Solo las que respaldan algo que el producto afirma, no todo lo que se leyó. El lector se satura con una nota por cada frase.
+- Cada una con lo justo para encontrarla: autor, título, revista o sitio, año y link. Formato académico, no.
+- Los links se rompen: guardá la página en web.archive.org y poné el link archivado al lado del original.
+- En legal va la norma con su número y artículo. En plantillas de Notion no hay costumbre: una página "Fuentes" solo si la plantilla afirma datos.
+
 ## Cómo hablar
 
 Español coloquial, en fácil, con analogías. Titular primero. Tablas antes que párrafos. Corto, cero emoji, cero relleno. Al terminar: una línea con cuántos datos quedaron, cuántos sin fuente y dónde se guardó.

@@ -60,6 +60,18 @@ solo con Whop.
 | 22/09/2026 | Fitness mujer: fuerza 40+ y 50+ | Guía sencilla de fuerza para mujeres mayores de 50, Kindle | KU | Amazon MX | 168 calificaciones (4.8) | https://www.amazon.com.mx/dp/B0GYF3GW42 |
 | 22/09/2026 | Fitness mujer: sobrepeso sin saltos | Plan de Entrenamiento sin Saltos, ebook | US$6 (S/22) | Hotmart | alumnos no visibles, alta 01/2026 | https://hotmart.com/es/marketplace/productos/plan-de-entrenamiento-sin-saltos/V103928578W |
 | 22/09/2026 | Fitness mujer: planners | Plantilla de entrenamiento Excel automatizada, 3 meses | US$31 (S/112) | Hotmart | 11 reseñas (5), desde 03/2023 | https://hotmart.com/es/marketplace/productos/diario-de-entrenamiento-automatizado-plantilla-excel/S81111579M |
+| 23/09/2026 | Fitness mujer: abdomen y cintura | Dance Fit Couple, escalera completa: Express US$19.99 → 8 semanas / Nivel 2 / Nivel 3 US$49.99 → **Club HN US$29/mes** | US$19.99 a US$49.99 + suscripción | Hotmart | Club HN dado de alta el 11/09/2026: están pasando de retos sueltos a cobrar todos los meses | https://hotmart.com/es/marketplace/productos/reto-express-de-hipopresivos-para-reducir-cintura/S87241633U |
+| 23/09/2026 | Fitness mujer: abdomen y cintura | Zuriworkout, segundo producto: Full Body de 30 días | US$42.24 (S/152) | Hotmart | 1,400 alumnos, alta 19/10/2023 | https://hotmart.com/es/marketplace/productos/zuriworkout-full-body/ |
+| 23/09/2026 | Fitness mujer: abdomen y cintura | Zuriworkout AB Maker: su página propia está pausada y abandonada (countdown en 00:00, copyright 2019) y cobra US$29, más caro que Hotmart | US$29 en su web vs US$25 en Hotmart | Web propia | Las 100 reseñas son de la semana del lanzamiento (oct-2020); varias dicen "el día 1" | https://www.zuriworkout.com/abmaker |
+| 23/09/2026 | Fitness mujer: abdomen y cintura | Quema de Grasa Extremo: su marca murió (metodocore.com hoy es otra empresa); el producto sobrevive solo en Hotmart | US$40.52 | Hotmart | Su garantía histórica era de 60 días condicionada ("si sigues el programa al pie de la letra"), Wayback 04/04/2023 | http://web.archive.org/web/20230404211455/https://metodocore.com/quema-grasa-mujeres/ |
+| 23/09/2026 | Fitness mujer: abdomen y cintura | Real Fit, escalera: guía de abdominales €7.99 → reto 6 semanas €27.99 → pack 90 días €34.99 → club €7.25/mes → asesoría 1 a 1 | €7.99 a €34.99 | Tienda propia | 10 reseñas verificadas, todas 5/5; sin garantía visible en ninguna página | https://realfit.es/ |
+| 23/09/2026 | Fitness mujer: abdomen y cintura | Whop, marketplace público: 7 productos de abdomen o cintura (US$7.99 a US$375) | US$7.99 a US$375 | Whop | **Ninguno tiene miembros ni reseñas**: el tráfico hispano del nicho no está en Whop | https://whop.com/discover/ |
+
+Observación transversal del 23/09/2026: ninguno de los 3 checkouts de Hotmart del nicho
+tiene order bump ni upsell; la escalera la venden después, por mail o comunidad. Las 4
+ofertas prometen centímetros y **ninguna entrega cómo medirse**, y ninguna trae lista de
+compras. Las garantías son más cortas que la propia promesa: 3 días para un reto de 28,
+7 días para uno de 8 semanas, y Real Fit sin garantía.
 
 No se pudo ver: días que llevan corriendo los anuncios (la Biblioteca de anuncios de Meta
 no conecta desde Claude; hay que abrirla a mano) ni rankings de Amazon.

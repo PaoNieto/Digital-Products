@@ -1,5 +1,14 @@
 # Fitness y físico para mujeres: subnichos rankeados
 
+**Elegido el 23/09/2026: reducir cintura y marcar abdomen.** Se trabaja en
+`productos/cintura/`.
+
+**En la fila de espera, para después de este** (decisión de Paolo, 23/09/2026):
+
+1. Hipopresivos para reducir cintura (hoy: 700 alumnas a US$19.99 en una sola oferta).
+2. Glúteos en casa (hoy: 700 alumnas a US$29; demanda de 7.89M pero todos canales
+   gigantes).
+
 _22/09/2026. Datos: El Gato (quién ya vende, en Hotmart, Amazon y Whop) y Vegeta
 (demanda en YouTube). Filas completas con links en `digimones/mercado.md`._
 

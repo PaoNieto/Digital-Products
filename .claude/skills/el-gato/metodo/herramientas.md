@@ -72,6 +72,21 @@ scripts están en `.claude/skills/el-gato/scripts/` y se corren con `python`.
   Kindle Unlimited.
 - No funcionan: Etsy (error 403) y TikTok Creative Center (no carga).
 
+**Reseñas de Hotmart, gratis y sin login** (probado el 23/09/2026):
+
+```
+https://api-ask.hotmart.com/api/v1/survey/product/<productId>/answers?page_size=50&offset=0&evaluation=ALL
+```
+
+- El `productId` numérico sale del `__NEXT_DATA__` de la ficha del marketplace.
+- Devuelve texto, estrellas, fecha y nombre de pila. Máximo 50 por llamada: `page_size=100`
+  vuelve vacío y `offset=50` falla. `evaluation=POSITIVE` funciona (las no positivas se
+  cuentan por resta); `NEGATIVE` y `1..5` no devuelven nada. **HTTP 204 = tiene estrellas
+  pero ninguna reseña con texto.**
+- Para lo que sirve de verdad es para ver **las fechas**: las 100 reseñas de un producto
+  con 4,300 alumnos eran todas de la semana del lanzamiento, y varias decían "el día 1 le
+  doy excelente". Ese 4.9 mide la emoción de la compra, no el resultado.
+
 ## Lo que ninguna herramienta cambia
 
 - El veredicto sale de días corriendo y creativos activos, no del puntaje de una app.

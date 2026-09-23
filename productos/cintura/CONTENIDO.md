@@ -1,4 +1,4 @@
-# Reto 28 días: Abdomen Desinflamado
+# Plana todo el día — Reto de 28 días
 
 _Borrador del contenido del PDF. 23/09/2026. Cada `##` es una página o dos del PDF._
 
@@ -6,12 +6,11 @@ _Borrador del contenido del PDF. 23/09/2026. Cada `##` es una página o dos del 
 
 ## Portada
 
-**RETO 28 DÍAS**
-**ABDOMEN DESINFLAMADO**
+**PLANA TODO EL DÍA**
 
-Cintura de 9 a 9
+Reto de 28 días para desinflamar el abdomen y marcar cintura
 
-10 minutos por día · sin saltos · sin dieta · sin equipo
+10 min al día · sin dieta · sin equipo
 
 ---
 
@@ -49,13 +48,28 @@ Antes de hacer un solo ejercicio, necesitás dos números. No es el peso. Es tu 
 3. Soltá el aire normal. **No metas la panza.** No aprietes la cinta: que apoye.
 4. Anotá el número.
 
-**Cuándo:** hoy apenas te levantes (antes de desayunar) y hoy a la noche, después de
-cenar. Dos números, el mismo día.
+**Dónde:** tres puntos, siempre los mismos. No hace falta balanza, y de hecho no la vas a
+usar en todo el reto.
 
-| | Mañana | Noche | Diferencia |
+1. **Cintura:** la parte más angosta, arriba del ombligo.
+2. **Abdomen:** justo a la altura del ombligo.
+3. **Abdomen bajo:** cuatro dedos abajo del ombligo. Este es el que casi nunca se mide y
+   es el que más te molesta.
+
+**Cuándo:** hoy apenas te levantes (antes de desayunar) y hoy a la noche, después de
+cenar. Seis números, el mismo día.
+
+| Día 1 | Mañana | Noche | Diferencia |
 |---|---|---|---|
-| Día 1 | ___ cm | ___ cm | ___ cm |
-| Día 28 | ___ cm | ___ cm | ___ cm |
+| Cintura | ___ cm | ___ cm | ___ cm |
+| Abdomen | ___ cm | ___ cm | ___ cm |
+| Abdomen bajo | ___ cm | ___ cm | ___ cm |
+
+| Día 28 | Mañana | Noche | Diferencia |
+|---|---|---|---|
+| Cintura | ___ cm | ___ cm | ___ cm |
+| Abdomen | ___ cm | ___ cm | ___ cm |
+| Abdomen bajo | ___ cm | ___ cm | ___ cm |
 
 **Esa diferencia es el número del reto.** Si a la mañana medís 74 y a la noche 80, tu
 diferencia es 6 cm. Eso no es grasa: la grasa no aparece en 12 horas. Es aire, comida en
@@ -89,6 +103,29 @@ abdomen se siente más duro y la cintura no se marca.
 
 **Este reto entrena la capa de adentro.** Por eso el primer ejercicio no parece
 ejercicio: es respirar.
+
+---
+
+## Hablemos del abdomen bajo
+
+Es la pregunta que más se repite y la que peor se contesta: *"arriba del ombligo se me
+marca, y abajo sigue la pancita"*.
+
+Lo primero, para que dejes de pelearte con eso: **no existe el ejercicio que saque grasa
+de un solo lugar.** Podés hacer mil abdominales bajos y no se va de ahí. Y hay tres
+motivos por los que esa zona se ve distinta al resto:
+
+- **Ahí el cuerpo guarda y suelta último.** Es el orden que te tocó, y no se cambia con
+  ejercicios.
+- **Ahí está el intestino.** Todo lo que sea gas y comida en tránsito empuja justo abajo
+  del ombligo. Esta parte sí se mueve rápido, y en días.
+- **Ahí termina el cinturón interno.** La parte baja del transverso es la que menos se
+  usa en la vida diaria y la que primero se afloja. Es la que entrenás en la Rutina 1 y
+  en la 4.
+
+Entonces: de los tres motivos, **dos se trabajan en este reto** y por eso medís el abdomen
+bajo aparte. El tercero necesita meses y no depende de un plan de 28 días. Si alguien te
+promete lo contrario, te está vendiendo humo.
 
 ---
 
@@ -138,6 +175,36 @@ arriba y adentro. Tomá aire y descansá.
 **4. Cierre · 1 minuto**
 De pie, costillas abajo, coronilla al techo, respirá normal 10 veces sintiendo la faja
 interna firme. Así se camina el resto del día.
+
+---
+
+## ¿Lo estoy haciendo bien? (la página que nadie te da)
+
+Esta es la duda número uno de todas las que empiezan con respiración e hipopresivos. Así
+se saca, sin necesidad de que nadie te mire.
+
+**Prueba 1 · Las manos en las costillas.** Al tomar aire, tus manos se tienen que separar
+hacia los costados y hacia atrás. Si lo único que se mueve es la panza para arriba, estás
+respirando con el diafragma pero no en 360.
+
+**Prueba 2 · Los dos dedos.** Apoyá dos dedos justo por dentro del hueso de la cadera. Al
+soltar el aire hasta el final, abajo de tus dedos tiene que ponerse firme, suave, sin que
+el abdomen salte hacia afuera. Si salta, estás empujando en vez de cerrar.
+
+**Prueba 3 · El espejo de costado.** Durante el hipopresivo, la panza se mete **hacia
+arriba y adentro**, como si la aspiraran debajo de las costillas. Si se mete hacia abajo,
+estás metiendo la panza a la fuerza: no es lo mismo.
+
+**Prueba 4 · La voz.** Si no podés decir tu nombre en voz baja mientras aguantás la
+posición, estás apretando de más. Tiene que ser firme, no duro.
+
+**Lo que NO tiene que pasar nunca:** que te maree, que te duela la cabeza, que te
+tiemblen las piernas o que sientas presión hacia abajo, en el piso pélvico. Si pasa algo
+de eso, parás, respirás normal y al día siguiente hacés la mitad de repeticiones.
+
+**Y la respuesta a la otra pregunta que todas hacen:** no hace falta aguantar mucho el
+aire. Tres segundos alcanzan. Aguantar más no acelera nada; lo que acelera es hacerlo
+todos los días.
 
 ---
 

@@ -1,7 +1,13 @@
 # Producto: reto de 28 días para la cintura y el abdomen
 
-_Brief del 23/09/2026. Nombre de trabajo: **"Reto 28 días: Abdomen Desinflamado"**,
-con bajada **"Cintura de 9 a 9"**._
+_Brief del 23/09/2026. Nombre elegido por Paolo:_
+
+> **PLANA TODO EL DÍA**
+> Reto de 28 días para desinflamar el abdomen y marcar cintura
+> 10 min al día · sin dieta · sin equipo
+
+_En el título de Whop conviene que aparezca "desinflamar abdomen", que es la palabra por
+la que la buscan. "Método 9 a 9" queda como nombre del ritual de medirse adentro del PDF._
 
 ## Comprador
 

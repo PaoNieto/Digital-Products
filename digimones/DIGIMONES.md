@@ -3,7 +3,7 @@
 Los agentes de este negocio. Son a Digital-Products lo que los minions son a Vendí: otro
 equipo, otras cuentas. Ningún digimon usa números de Vendí y ningún minion trabaja acá.
 
-_Última actualización: 21/09/2026_
+_Última actualización: 23/09/2026_
 
 ## Regla de nombre
 
@@ -21,6 +21,7 @@ Los nombres los eligió Paolo. En claude.ai, Diseñante figura como `disenante` 
 | **Whoper** | vidriera | Escribe la página de venta dentro de Whop, arma el checkout y la entrega, y hace los 4 chequeos antes de publicar | Con producto y precio definidos | Frontero |
 | **Diseñante** | diseño | Portada, maquetado del PDF o ebook, look de la plantilla de Notion, miniaturas | Con producto definido | Davinci |
 | **Bilbito** | pauta | Anuncios pagados con el método de Santi Bilbao: testeo, escalado y anti-baneo | Recién después de 10 ventas a desconocidos | Metapod |
+| **Bibliomon** | bibliografía | Busca información de cualquier tema en cualquier circunstancia para detallar y respaldar el contenido de un producto, con fuente, link y fecha de cada dato | Al escribir o revisar el contenido de un producto | — |
 
 ## Compuertas
 
@@ -43,6 +44,7 @@ Los nombres los eligió Paolo. En claude.ai, Diseñante figura como `disenante` 
 | `fuentes.md` | estudios, documentación, artículos y libros, por tema | Vegeta |
 | `mercado.md` | ofertas, precios y anuncios de la competencia, con fecha | El Gato (se crea con la primera observación) |
 | `publicaciones.md` | cada publicación propia y de dónde vino cada venta | el-panadero (se crea con la primera publicación) |
+| `productos/<producto>/BIBLIOGRAFIA.md` | cada dato del contenido del producto con su fuente | Bibliomon |
 
 ## Huecos del equipo
 

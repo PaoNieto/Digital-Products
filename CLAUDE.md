@@ -89,7 +89,7 @@ probablemente de su propia cuenta y eso contaminó el veredicto durante meses.
 ## Qué se escribe en el repo
 
 Sí: este archivo, `CONTEXTO.md` (el por qué de cada decisión), notas de nicho y
-comprador, lo que aprenden los digimones en `digimones/` (el equipo en `DIGIMONES.md`,
+comprador, la bibliografía de cada producto en `productos/<producto>/BIBLIOGRAFIA.md` (la busca Bibliomon), lo que aprenden los digimones en `digimones/` (el equipo en `DIGIMONES.md`,
 videos en `videos.md`, otras fuentes en `fuentes.md`, ofertas de la competencia en
 `mercado.md`, publicaciones en `publicaciones.md`), los manuales de los digimones en
 `.claude/skills/` y `.claude/agents/`, y borradores de producto y de copy.

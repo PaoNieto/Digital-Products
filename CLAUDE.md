@@ -147,18 +147,18 @@ Cuando Paolo trabaja con un chat para cada producto y uno central (la torre de c
 
 ## Estado actual — actualizar cuando cambie
 
-_Última actualización: 22/09/2026_
+_Última actualización: 23/09/2026_
 
-- Nicho: **3 en prueba**, sin validar todavía con la Biblioteca de anuncios de Meta:
-  grasa abdominal en la perimenopausia · eyaculación precoz por ansiedad · IA para
-  abogados en Perú. Ecommerce quedó afuera (demanda floja).
+- Nicho: **3 en prueba**: grasa abdominal en la perimenopausia · **durar más en la cama**
+  (antes "eyaculación precoz por ansiedad") · IA para abogados en Perú. Ecommerce quedó
+  afuera (demanda floja).
 - Comprador concreto: **uno por producto**, en `productos/<producto>/BRIEF.md`.
-- Formato: **PDF** (menopausia y eyaculación precoz) y **plantilla de Notion** (abogados).
-- Precio: **sin definir** (lo propone Mercaneto en cada `NOTAS.md`)
-- Canal elegido (uno solo): **sin definir**
+- Formato: **PDF** (menopausia y durar más) y **plantilla de Notion** (abogados).
+- Precio: **durar más = US$27**, garantía de 7 días. Los otros dos, sin definir.
+- Canal elegido (uno solo): **sin definir** (candidato: búsqueda de YouTube)
 - Cuenta de Whop: **sin abrir**
 - Productos publicados: **0** · Ventas a desconocidos: **0 de 10**
 - Cobrado: **US$0** · acumulado sin retirar: **US$0**
 - Pauta: **apagada** (compuerta: 10 ventas)
-- Próximo paso: los 3 productos al 80% el miércoles 23/09/2026. En paralelo, Paolo revisa
-  la Biblioteca de anuncios (15 minutos por nicho) y abre la cuenta de Whop.
+- Próximo paso: "durar más" ya tiene contenido, precio y diseño. Falta maquetarlo en
+  Canva (unas 4 horas) y abrir la cuenta de Whop para publicarlo.

@@ -19,6 +19,15 @@ import subprocess
 import sys
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
+# Las piezas terminadas salen a ../producto/ (lo que se abre); el taller queda limpio.
+SALIDA = os.path.abspath(os.path.join(AQUI, "..", "producto"))
+
+
+def destino(nombre):
+    if nombre.startswith("ilustraciones/"):
+        return os.path.join(AQUI, nombre)
+    os.makedirs(SALIDA, exist_ok=True)
+    return os.path.join(SALIDA, nombre)
 
 
 def navegador():
@@ -50,12 +59,12 @@ def correr(args):
 
 def captura(html, png, ancho, alto, escala=2):
     correr([f"--window-size={ancho},{alto}", f"--force-device-scale-factor={escala}",
-            "--screenshot=" + os.path.join(AQUI, png), url(html)])
+            "--screenshot=" + destino(png), url(html)])
     print("imagen:", png)
 
 
 def pdf(html, salida):
-    correr(["--print-to-pdf=" + os.path.join(AQUI, salida), "--print-to-pdf-no-header", url(html)])
+    correr(["--print-to-pdf=" + destino(salida), "--print-to-pdf-no-header", url(html)])
     print("pdf:   ", salida)
 
 
